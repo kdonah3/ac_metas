@@ -1,29 +1,25 @@
 STATE: {Default}
 	IF:	Always
 		DO:	Chat {/vt opt set EnableNav true}
-	IF:	Always
-		DO:	Chat {/vt opt set navclosestoprange 0.0065}
-	IF:	Always
-		DO:	Chat {/vt opt set OpenDoors true}
 	IF: Always
 		DO: Chat {/ub combatstate peace}
 	IF:	ItemCountGE 1 {The Aethereal Heartstone Ring}
 		DO:	SetState {GlendenWood Turnin}
-	IF:	ItemCountGE 1 {The Eclipsed Band}
+	IF:	ItemCountGE 1 {The Eclipsed Band }
 		DO:	SetState {Baishi Turnin}
 	IF:	ItemCountGE 1 {Virindi Mask of Queens}
 		DO:	SetState {Kara Turnin}
 	IF:	ItemCountGE 1 {The Emberforged Gauntlets}
 		DO:	SetState {Stonehold Turnin}
-	IF:	ItemCountGE 1 {Black Tear Pendant}
+	IF:	ItemCountGE 1 {The Black Tear Pendant}
 		DO:	SetState {Plateau Turnin}
-	IF:	ItemCountGE 1 {The Scepter of Astral Dominions}
+	IF:	ItemCountGE 1 {The Scepter of Astral Dominion}
 		DO:	SetState {Tufa Turnin}
-	IF:	ItemCountGE 1 {The Moonlit Serpent Pendants}
+	IF:	ItemCountGE 1 {The Moonlit Serpent Pendant}
 		DO:	SetState {Yanshi Turnin}
-	IF:	ItemCountGE 1 {The Shadowweaver's Veil}
+	IF:	ItemCountGE 1 {The Shadowweaver's Veil }
 		DO:	SetState {AlJalima Turnin}
-	IF: Always
+	IF: Always	
 		DO: SetState {Holtburg Turnin}
 
 STATE: {GlendenWood Turnin} 
@@ -33,7 +29,7 @@ STATE: {GlendenWood Turnin}
 		DO: DoAll
 				Chat {/ub face 0}
 				CallState {Go to TN} {Default}
-	IF:	ItemCountGE 1 {Item}
+	IF:	ItemCountGE 1 {The Aethereal Heartstone Ring}
 		DO:	Chat {/ub give The Aethereal Heartstone Ring to Elara Stoneshaper}
 	IF: SecsInStateGE 10
 		DO: SetState {GlendenWood Turnin}
@@ -53,11 +49,11 @@ STATE: {Nav GlendenWood Vendor_2}
 STATE: {Baishi Turnin} 
 	IF: Not CellE CD41001D
 		DO: CallState {Nav Baishi Vendor} {Baishi Turnin}
-	IF:	ItemCountLE 0 {The Eclipsed Band}
+	IF:	ItemCountLE 0 {The Eclipsed Band }
 		DO: DoAll
 				Chat {/ub face 90}
 				CallState {Go to TN} {Default}
-	IF:	ItemCountGE 1 {The Eclipsed Band}
+	IF:	ItemCountGE 1 {The Eclipsed Band }
 		DO:	Chat {/ub give The Eclipsed Band to Master Althion}
 	IF: SecsInStateGE 10
 		DO: SetState {Baishi Turnin}
@@ -122,15 +118,39 @@ STATE: {Nav Stonehold Vendor_2}
 	IF: NavEmpty
 		DO: SetState {Stonehold Turnin} 
 
-STATE: {Plateau Turnin} 
-	IF: Not CellE 49B60015
-		DO: CallState {Nav Plateau Vendor} {Plateau Turnin}
-	IF:	ItemCountLE 0 {Black Tear Pendant}
+STATE: {Tufa Turnin} 
+	IF: Not CellE 866E0001
+		DO: CallState {Nav Tufa Vendor} {Tufa Turnin}
+	IF:	ItemCountLE 0 {The Scepter of Astral Dominion}
 		DO: DoAll
 				Chat {/ub face 90}
 				CallState {Go to TN} {Default}
-	IF:	ItemCountGE 1 {Black Tear Pendant}
-		DO:	Chat {/ub give Black Tear Pendant to Lirael Dawnwhisper}
+	IF:	ItemCountGE 1 {The Scepter of Astral Dominion}
+		DO:	Chat {/ub give The Scepter of Astral Dominion to Thalorin Skygazer}
+	IF: SecsInStateGE 10
+		DO: SetState {Tufa Turnin}
+
+STATE: {Nav Tufa Vendor}
+	IF: Not BlockE 876C0008
+		DO: EmbedNav nav_tn_tufa {nav_tn_tufa.nav}
+	IF: NavEmpty
+		DO: SetState {Nav Tufa Vendor_2}
+
+STATE: {Nav Tufa Vendor_2}
+	IF: Not CellE 866E0001
+		DO: EmbedNav nav_tufa_vendor {nav_tufa_vendor.nav}
+	IF: NavEmpty
+		DO: SetState {Tufa Turnin} 
+
+STATE: {Plateau Turnin} 
+	IF: Not CellE 49B60015
+		DO: CallState {Nav Plateau Vendor} {Plateau Turnin}
+	IF:	ItemCountLE 0 {The Black Tear Pendant}
+		DO: DoAll
+				Chat {/ub face 90}
+				CallState {Go to TN} {Default}
+	IF:	ItemCountGE 1 {The Black Tear Pendant}
+		DO:	Chat {/ub give The Black Tear Pendant to Lirael Dawnwhisper}
 	IF: SecsInStateGE 10
 		DO: SetState {Plateau Turnin}
 
@@ -149,12 +169,12 @@ STATE: {Nav Plateau Vendor_2}
 STATE: {Yanshi Turnin} 
 	IF: Not CellE B4700014
 		DO: CallState {Nav Yanshi Vendor} {Yanshi Turnin}
-	IF:	ItemCountLE 0 {The Moonlit Serpent Pendants}
+	IF:	ItemCountLE 0 {The Moonlit Serpent Pendant}
 		DO: DoAll
 				Chat {/ub face 90}
 				CallState {Go to TN} {Default}
-	IF:	ItemCountGE 1 {The Moonlit Serpent Pendants}
-		DO:	Chat {/ub give The Moonlit Serpent Pendants to Elandra Greenleaf}
+	IF:	ItemCountGE 1 {The Moonlit Serpent Pendant}
+		DO:	Chat {/ub give The Moonlit Serpent Pendant to Elandra Greenleaf}
 	IF: SecsInStateGE 10
 		DO: SetState {Yanshi Turnin}
 
@@ -173,11 +193,11 @@ STATE: {Nav Yanshi Vendor_2}
 STATE: {AlJalima Turnin} 
 	IF: Not CellE 85880014
 		DO: CallState {Nav AlJalima Vendor} {AlJalima Turnin}
-	IF:	ItemCountLE 0 {The Shadowweaver's Veil}
+	IF:	ItemCountLE 0 {The Shadowweaver's Veil }
 		DO: DoAll
 				Chat {/ub face 90}
 				CallState {Go to TN} {Default}
-	IF:	ItemCountGE 1 {The Shadowweaver's Veil}
+	IF:	ItemCountGE 1 {The Shadowweaver's Veil }
 		DO:	Chat {/ub give The Shadowweaver's Veil to Thessalia Shadowcloak}
 	IF: SecsInStateGE 10
 		DO: SetState {AlJalima Turnin}
@@ -213,17 +233,27 @@ STATE: {Go to TN}
 	IF: BlockE 00070000
 		DO: Return
 	IF: Always
-		DO: Chat {/ub delay 1000 /ub use Infinite Town Network Portal Gem}
-	IF: SecsInStateGE 3
+		DO: SetState {Go To TN_2}
+
+STATE: {Go To TN_2}
+	IF: ItemCountGE 1 {Town Network Sending Gem}
+		DO: Chat {/ub delay 5000 /ub use Town Network Sending Gem}
+	IF: ItemCountLE 1 {Town Network Sending Gem}
+		DO: Chat {/ub delay 4000 /ub use Infinite Town Network Portal Gem}
+	IF: All
+			ItemCountLE 1 {Town Network Sending Gem}
+			SecsInStateGE 6
 		DO: Chat {/ub portal Gateway}
-	IF: SecsInStateGE 8
-		DO: Return
+	IF:  All
+			ItemCountLE 1 {Town Network Sending Gem}
+			SecsInStateGE 10
+		DO: SetState  {Go to TN}
 		
 NAV: nav_glendenwood_vendor once ~~ {
 	pnt 26.4512583414714 29.7493625005086 0.249811108907064
-	pnt 27.1630849838257 29.434384059906 0.275020853678385
-	tlk 27.1630849838257 29.434384059906 0.275020853678385 27.1717370986938 29.4316162427266 0.275020867586136 37 {Elara Stoneshaper}
-	pau 27.1630849838257 29.434384059906 0.275020853678385 5000
+	pnt 26.8637340664864 29.7493461608887 0.208354171117147
+	pnt 27.1649166107178 29.4414152940114 0.275020853678385
+	pau 27.1649166107178 29.4414152940114 0.275020853678385 5000
 ~~ }
 NAV: nav_tn_glendenwood once ~~ {
 	pnt -101.658333333333 -96.6833333333333 2.08333134651184E-05
@@ -247,7 +277,6 @@ NAV: nav_baishi_vendor once ~~ {
 	pnt 62.6772742589315 -49.2787654240926 0.225020837783813
 	pnt 62.4663150787353 -49.4024740219116 0.225020837783813
 	pnt 62.4343686421712 -49.4993165969849 0.225020837783813
-	tlk 62.4343686421712 -49.4993165969849 0.225020837783813 62.4275191624959 -49.5064916610718 0.225020840764046 37 {Master Althion}
 	pau 62.4343686421712 -49.4993165969849 0.225020837783813 5000
 ~~ }
 NAV: nav_tn_kara once ~~ {
@@ -265,7 +294,6 @@ NAV: nav_kara_vendor once ~~ {
 	pnt 47.2693885485331 -83.3076291561127 0.54840513865153
 	pnt 47.1873605092367 -83.2878129323324 0.550020790100098
 	pnt 47.098281844457 -83.1695941289266 0.550020790100098
-	tlk -101.658333333333 -96.6833333333333 2.08333134651184E-05 47.0934366703033 -83.1618987401327 0.550020813941956 37 {Selena Stormweaver}
 	pau 47.0934366703033 -83.1618987401327 0.550020813941956 5000
 ~~ }
 
@@ -282,7 +310,6 @@ NAV: nav_tn_stonehold once ~~ {
 NAV: nav_stonehold_vendor once ~~ {
 	pnt -21.825 68.6583333333333 0.325020853678385
 	pnt -21.5429142634074 68.8725337664286 0.325020853678385
-	tlk -21.5429142634074 68.8725337664286 0.325020853678385 -21.5359687487284 68.8758000055949 0.325025022029877 37 {Kaelor Swiftwind}
 	pau -21.5429142634074 68.8725337664286 0.325020853678385 5000
 ~~ }
 
@@ -299,7 +326,6 @@ NAV: nav_tn_plateau once ~~ {
 NAV: nav_plateau_vendor once ~~ {
 	pnt -43.1329166730245 44.5366666634878 0.994222195943197
 	pnt -43.2739406903585 44.1076427141825 1.0000207901001
-	tlk -43.2739406903585 44.1076427141825 1.0000207901001 -43.2763191541036 44.0994625091553 1.00002074241638 37 {Lirael Dawnwhisper}
 	pau -43.2739406903585 44.1076427141825 1.0000207901001 5000
 ~~ }
 
@@ -311,13 +337,13 @@ NAV: nav_tn_tufa once ~~ {
 	ptl -101.921358678738 -96.6829919179281 2.08333134651184E-05 -101.932960750659 -96.6833333333333 -0.000262499845121056 14 {Tufa Portal}
 	pau -101.921358678738 -96.6829919179281 2.08333134651184E-05 5000
 ~~ }
-
 NAV: nav_tufa_vendor once ~~ {
 	pnt 6.05833333333333 -14.7712500254313 0.0750208298365275
-	pnt 5.65190140406291 -13.8682117462158 0.145717938741048
-	pnt 5.55537214279175 -13.8259154319763 0.0869355916976929
-	pnt 5.32612932523092 -13.860312628746 -0.00039583295583725
-	tlk 5.32612932523092 -13.860312628746 -0.00039583295583725 5.31856208642324 -13.8629095872243 -0.000395833456423134 37 {Thalorin Skygazer}
+	pnt 5.6796124458313 -13.8553819259008 0.129382212956746
+	pnt 5.64080537160238 -13.8258838574092 0.138917255401611
+	pnt 5.54411350886027 -13.8222272555033 0.0833541631698608
+	pnt 5.43336412111918 -13.8165395577749 0.0694909334182739
+	pnt 5.3250857035319 -13.8616201003393 -0.000395833452542623
 	pau 5.32612932523092 -13.860312628746 -0.00039583295583725 5000
 ~~ }
 
@@ -335,7 +361,6 @@ NAV: nav_yanshi_vendor once ~~ {
 	pnt 42.4096218744914 -12.2710431734721 0.175020837783813
 	pnt 42.3649064699809 -12.0408920605977 0.177297814687093
 	pnt 42.2642307917277 -11.9975943247477 0.175020837783813
-	tlk 42.2642307917277 -11.9975943247477 0.175020837783813 42.2582187493642 -11.9931154251099 0.175020843744278 37 {Elandra Greenleaf}
 	pau 42.2642307917277 -11.9975943247477 0.175020837783813 5000
 ~~ }
 
@@ -351,18 +376,18 @@ NAV: nav_tn_aljalima once ~~ {
 NAV: nav_aljalima_vendor once ~~ {
 	pnt 4.95149583816528 7.24779167175293 0.375204849243164
 	pnt 4.65826239585877 7.18994483947754 0.358354187011719
-	tlk 4.65826239585877 7.18994483947754 0.358354187011719 4.65010250409444 7.18729499181112 0.358354181051254 37 {Thessalia Shadowcloak}
 	pau 4.65826239585877 7.18994483947754 0.358354187011719 5000
 ~~ }
 
 NAV: nav_tn_holtburg once ~~ {
 	pnt -101.658333333333 -96.6833333333333 2.08333134651184E-05
-	pnt -101.69228960673 -96.6500341733297 2.08333134651184E-05
-	pnt -101.658661270142 -96.5876923243205 2.08333134651184E-05
-	pnt -101.659022712708 -96.5229555288951 2.08333134651184E-05
-	pnt -101.710320901871 -96.5156186739604 2.08333134651184E-05
-	ptl -101.710320901871 -96.5156186739604 2.08333134651184E-05 -101.725391674042 -96.5164708296458 -0.000262499845121056 14 {Portal to Holtburg}
-	pau -101.710320901871 -96.5156186739604 2.08333134651184E-05 5000
+	pnt -101.705399386088 -96.6493825276693 2.08333134651184E-05
+	pnt -101.659375540415 -96.5865375200907 2.08333134651184E-05
+	pnt -101.65913845698 -96.5315870285034 2.08333134651184E-05
+	pnt -101.682361634572 -96.5327149073283 2.08333134651184E-05
+	pnt -101.714390516281 -96.5166593074799 2.08333134651184E-05
+	ptl -101.714390516281 -96.5166593074799 2.08333134651184E-05 -101.725391674042 -96.5164708296458 -0.000262499845121056 14 {Portal to Holtburg}
+	pau -101.714390516281 -96.5166593074799 2.08333134651184E-05 5000
 ~~ }
 
 NAV: nav_holtburg_vendor once ~~ {

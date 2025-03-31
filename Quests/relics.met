@@ -11,7 +11,7 @@ n
 n
 n
 n
-77
+85
 i
 1
 i
@@ -20,26 +20,6 @@ i
 0
 s
 /vt opt set EnableNav true
-s
-Default
-i
-1
-i
-2
-i
-0
-s
-/vt opt set navclosestoprange 0.0065
-s
-Default
-i
-1
-i
-2
-i
-0
-s
-/vt opt set OpenDoors true
 s
 Default
 i
@@ -89,7 +69,7 @@ n
 s
 n
 s
-The Eclipsed Band
+The Eclipsed Band 
 s
 c
 i
@@ -158,7 +138,7 @@ n
 s
 n
 s
-Black Tear Pendant
+The Black Tear Pendant
 s
 c
 i
@@ -181,7 +161,7 @@ n
 s
 n
 s
-The Scepter of Astral Dominions
+The Scepter of Astral Dominion
 s
 c
 i
@@ -204,7 +184,7 @@ n
 s
 n
 s
-The Moonlit Serpent Pendants
+The Moonlit Serpent Pendant
 s
 c
 i
@@ -227,7 +207,7 @@ n
 s
 n
 s
-The Shadowweaver's Veil
+The Shadowweaver's Veil 
 s
 c
 i
@@ -341,7 +321,7 @@ n
 s
 n
 s
-Item
+The Aethereal Heartstone Ring
 s
 c
 i
@@ -452,7 +432,7 @@ i
 i
 -1583087590
 ba
-384
+303
 nav_glendenwood_vendor.nav
 4
 uTank2 NAV 1.2
@@ -464,24 +444,18 @@ uTank2 NAV 1.2
 0.249811108907064
 0
 0
-27.1630849838257
-29.434384059906
+26.8637340664864
+29.7493461608887
+0.208354171117147
+0
+0
+27.1649166107178
+29.4414152940114
 0.275020853678385
 0
-7
-27.1630849838257
-29.434384059906
-0.275020853678385
-0
-Elara Stoneshaper
-37
-True
-27.1717370986938
-29.4316162427266
-0.275020867586136
 3
-27.1630849838257
-29.434384059906
+27.1649166107178
+29.4414152940114
 0.275020853678385
 0
 5000
@@ -543,7 +517,7 @@ n
 s
 n
 s
-The Eclipsed Band
+The Eclipsed Band 
 s
 c
 i
@@ -592,7 +566,7 @@ n
 s
 n
 s
-The Eclipsed Band
+The Eclipsed Band 
 s
 c
 i
@@ -697,12 +671,12 @@ i
 i
 -851378147
 ba
-508
+364
 nav_baishi_vendor.nav
-6
+5
 uTank2 NAV 1.2
 4
-6
+5
 0
 62.9025000015895
 -49.3133333206177
@@ -723,17 +697,6 @@ uTank2 NAV 1.2
 -49.4993165969849
 0.225020837783813
 0
-7
-62.4343686421712
--49.4993165969849
-0.225020837783813
-0
-Master Althion
-37
-True
-62.4275191624959
--49.5064916610718
-0.225020840764046
 3
 62.4343686421712
 -49.4993165969849
@@ -963,12 +926,12 @@ i
 i
 -1172897772
 ba
-511
+359
 nav_kara_vendor.nav
-6
+5
 uTank2 NAV 1.2
 4
-6
+5
 0
 47.6049999872843
 -83.536666666468
@@ -989,17 +952,6 @@ uTank2 NAV 1.2
 -83.1695941289266
 0.550020790100098
 0
-7
--101.658333333333
--96.6833333333333
-2.08333134651184E-05
-0
-Selena Stormweaver
-37
-True
-47.0934366703033
--83.1618987401327
-0.550020813941956
 3
 47.0934366703033
 -83.1618987401327
@@ -1224,12 +1176,12 @@ i
 i
 1691680805
 ba
-379
+233
 nav_stonehold_vendor.nav
-4
+3
 uTank2 NAV 1.2
 4
-4
+3
 0
 -21.825
 68.6583333333333
@@ -1240,17 +1192,6 @@ uTank2 NAV 1.2
 68.8725337664286
 0.325020853678385
 0
-7
--21.5429142634074
-68.8725337664286
-0.325020853678385
-0
-Kaelor Swiftwind
-37
-True
--21.5359687487284
-68.8758000055949
-0.325025022029877
 3
 -21.5429142634074
 68.8725337664286
@@ -1269,6 +1210,261 @@ s
 Stonehold Turnin
 s
 Nav Stonehold Vendor_2
+i
+21
+i
+5
+TABLE
+2
+K
+V
+n
+n
+1
+i
+18
+i
+-2039611391
+TABLE
+2
+k
+v
+n
+n
+2
+s
+st
+s
+Nav Tufa Vendor
+s
+ret
+s
+Tufa Turnin
+s
+Tufa Turnin
+i
+11
+i
+3
+TABLE
+2
+k
+v
+n
+n
+2
+s
+n
+s
+The Scepter of Astral Dominion
+s
+c
+i
+0
+TABLE
+2
+K
+V
+n
+n
+2
+i
+2
+s
+/ub face 90
+i
+5
+TABLE
+2
+k
+v
+n
+n
+2
+s
+st
+s
+Go to TN
+s
+ret
+s
+Default
+s
+Tufa Turnin
+i
+12
+i
+2
+TABLE
+2
+k
+v
+n
+n
+2
+s
+n
+s
+The Scepter of Astral Dominion
+s
+c
+i
+1
+s
+/ub give The Scepter of Astral Dominion to Thalorin Skygazer
+s
+Tufa Turnin
+i
+6
+i
+1
+i
+10
+s
+Tufa Turnin
+s
+Tufa Turnin
+i
+21
+i
+4
+TABLE
+2
+K
+V
+n
+n
+1
+i
+17
+i
+-2022965240
+ba
+528
+nav_tn_tufa.nav
+6
+uTank2 NAV 1.2
+4
+6
+0
+-101.658333333333
+-96.6833333333333
+2.08333134651184E-05
+0
+0
+-101.704833046595
+-96.6423888524373
+2.08333134651184E-05
+0
+0
+-101.830118044217
+-96.6399051348368
+2.08333134651184E-05
+0
+0
+-101.921358678738
+-96.6829919179281
+2.08333134651184E-05
+0
+6
+-101.921358678738
+-96.6829919179281
+2.08333134651184E-05
+0
+Tufa Portal
+14
+True
+-101.932960750659
+-96.6833333333333
+-0.000262499845121056
+3
+-101.921358678738
+-96.6829919179281
+2.08333134651184E-05
+0
+5000
+s
+Nav Tufa Vendor
+i
+7
+i
+1
+i
+0
+s
+Nav Tufa Vendor_2
+s
+Nav Tufa Vendor
+i
+21
+i
+4
+TABLE
+2
+K
+V
+n
+n
+1
+i
+18
+i
+-2039611391
+ba
+493
+nav_tufa_vendor.nav
+7
+uTank2 NAV 1.2
+4
+7
+0
+6.05833333333333
+-14.7712500254313
+0.0750208298365275
+0
+0
+5.6796124458313
+-13.8553819259008
+0.129382212956746
+0
+0
+5.64080537160238
+-13.8258838574092
+0.138917255401611
+0
+0
+5.54411350886027
+-13.8222272555033
+0.0833541631698608
+0
+0
+5.43336412111918
+-13.8165395577749
+0.0694909334182739
+0
+0
+5.3250857035319
+-13.8616201003393
+-0.000395833452542623
+0
+3
+5.32612932523092
+-13.860312628746
+-0.00039583295583725
+0
+5000
+s
+Nav Tufa Vendor_2
+i
+7
+i
+1
+i
+0
+s
+Tufa Turnin
+s
+Nav Tufa Vendor_2
 i
 21
 i
@@ -1315,7 +1511,7 @@ n
 s
 n
 s
-Black Tear Pendant
+The Black Tear Pendant
 s
 c
 i
@@ -1364,13 +1560,13 @@ n
 s
 n
 s
-Black Tear Pendant
+The Black Tear Pendant
 s
 c
 i
 1
 s
-/ub give Black Tear Pendant to Lirael Dawnwhisper
+/ub give The Black Tear Pendant to Lirael Dawnwhisper
 s
 Plateau Turnin
 i
@@ -1475,12 +1671,12 @@ i
 i
 1236664341
 ba
-382
+237
 nav_plateau_vendor.nav
-4
+3
 uTank2 NAV 1.2
 4
-4
+3
 0
 -43.1329166730245
 44.5366666634878
@@ -1491,17 +1687,6 @@ uTank2 NAV 1.2
 44.1076427141825
 1.0000207901001
 0
-7
--43.2739406903585
-44.1076427141825
-1.0000207901001
-0
-Lirael Dawnwhisper
-37
-True
--43.2763191541036
-44.0994625091553
-1.00002074241638
 3
 -43.2739406903585
 44.1076427141825
@@ -1566,7 +1751,7 @@ n
 s
 n
 s
-The Moonlit Serpent Pendants
+The Moonlit Serpent Pendant
 s
 c
 i
@@ -1615,13 +1800,13 @@ n
 s
 n
 s
-The Moonlit Serpent Pendants
+The Moonlit Serpent Pendant
 s
 c
 i
 1
 s
-/ub give The Moonlit Serpent Pendants to Elandra Greenleaf
+/ub give The Moonlit Serpent Pendant to Elandra Greenleaf
 s
 Yanshi Turnin
 i
@@ -1721,12 +1906,12 @@ i
 i
 -1267728364
 ba
-511
+364
 nav_yanshi_vendor.nav
-6
+5
 uTank2 NAV 1.2
 4
-6
+5
 0
 42.3633333206177
 -12.6329166730245
@@ -1747,17 +1932,6 @@ uTank2 NAV 1.2
 -11.9975943247477
 0.175020837783813
 0
-7
-42.2642307917277
--11.9975943247477
-0.175020837783813
-0
-Elandra Greenleaf
-37
-True
-42.2582187493642
--11.9931154251099
-0.175020843744278
 3
 42.2642307917277
 -11.9975943247477
@@ -1822,7 +1996,7 @@ n
 s
 n
 s
-The Shadowweaver's Veil
+The Shadowweaver's Veil 
 s
 c
 i
@@ -1871,7 +2045,7 @@ n
 s
 n
 s
-The Shadowweaver's Veil
+The Shadowweaver's Veil 
 s
 c
 i
@@ -1977,12 +2151,12 @@ i
 i
 -2054684652
 ba
-388
+239
 nav_aljalima_vendor.nav
-4
+3
 uTank2 NAV 1.2
 4
-4
+3
 0
 4.95149583816528
 7.24779167175293
@@ -1993,17 +2167,6 @@ uTank2 NAV 1.2
 7.18994483947754
 0.358354187011719
 0
-7
-4.65826239585877
-7.18994483947754
-0.358354187011719
-0
-Thessalia Shadowcloak
-37
-True
-4.65010250409444
-7.18729499181112
-0.358354181051254
 3
 4.65826239585877
 7.18994483947754
@@ -2070,40 +2233,45 @@ i
 i
 -1447821287
 ba
-604
+670
 nav_tn_holtburg.nav
-7
+8
 uTank2 NAV 1.2
 4
-7
+8
 0
 -101.658333333333
 -96.6833333333333
 2.08333134651184E-05
 0
 0
--101.69228960673
--96.6500341733297
+-101.705399386088
+-96.6493825276693
 2.08333134651184E-05
 0
 0
--101.658661270142
--96.5876923243205
+-101.659375540415
+-96.5865375200907
 2.08333134651184E-05
 0
 0
--101.659022712708
--96.5229555288951
+-101.65913845698
+-96.5315870285034
 2.08333134651184E-05
 0
 0
--101.710320901871
--96.5156186739604
+-101.682361634572
+-96.5327149073283
+2.08333134651184E-05
+0
+0
+-101.714390516281
+-96.5166593074799
 2.08333134651184E-05
 0
 6
--101.710320901871
--96.5156186739604
+-101.714390516281
+-96.5166593074799
 2.08333134651184E-05
 0
 Portal to Holtburg
@@ -2113,8 +2281,8 @@ True
 -96.5164708296458
 -0.000262499845121056
 3
--101.710320901871
--96.5156186739604
+-101.714390516281
+-96.5166593074799
 2.08333134651184E-05
 0
 5000
@@ -2210,30 +2378,128 @@ Go to TN
 i
 1
 i
-2
+1
 i
 0
 s
-/ub delay 1000 /ub use Infinite Town Network Portal Gem
+Go To TN_2
 s
 Go to TN
 i
-6
+12
+i
+2
+TABLE
+2
+k
+v
+n
+n
+2
+s
+n
+s
+Town Network Sending Gem
+s
+c
+i
+1
+s
+/ub delay 5000 /ub use Town Network Sending Gem
+s
+Go To TN_2
+i
+11
+i
+2
+TABLE
+2
+k
+v
+n
+n
+2
+s
+n
+s
+Town Network Sending Gem
+s
+c
+i
+1
+s
+/ub delay 4000 /ub use Infinite Town Network Portal Gem
+s
+Go To TN_2
 i
 2
 i
-3
+2
+TABLE
+2
+K
+V
+n
+n
+2
+i
+11
+TABLE
+2
+k
+v
+n
+n
+2
+s
+n
+s
+Town Network Sending Gem
+s
+c
+i
+1
+i
+6
+i
+6
 s
 /ub portal Gateway
 s
-Go to TN
+Go To TN_2
+i
+2
+i
+1
+TABLE
+2
+K
+V
+n
+n
+2
+i
+11
+TABLE
+2
+k
+v
+n
+n
+2
+s
+n
+s
+Town Network Sending Gem
+s
+c
+i
+1
 i
 6
 i
-6
-i
-8
-i
-0
+10
 s
 Go to TN
+s
+Go To TN_2
