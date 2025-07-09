@@ -1,0 +1,3875 @@
+~~ {
+~~ Salvage: V_Agate V_Alabaster V_Amber V_Amethyst V_Aquamarine V_ArmoredilloHide V_Azurite V_BlackGarnet V_BlackOpal V_Bloodstone V_Brass V_Bronze V_Carnelian V_Ceramic V_Citrine V_Copper V_Diamond V_Ebony V_Emerald V_FireOpal V_Gold V_Granite V_GreenGarnet V_GreenJade V_GromnieHide V_Hematite V_ImperialTopaz V_Iron V_Ivory V_Jet V_LapisLazuli V_LavenderJade V_Leather V_Linen V_Mahogany V_Malachite V_Marble V_Moonstone V_Oak V_Obsidian V_Onyx V_Opal V_Peridot V_Pine V_Porcelain V_Pyreal V_RedGarnet V_RedJade V_ReedSharkHide V_RoseQuartz V_Ruby V_Sandstone V_Sapphire V_Satin V_Serpentine V_Silk V_Silver V_SmokeyQuartz V_Steel V_Sunstone V_Teak V_TigerEye V_Tourmaline V_Turquoise V_Velvet V_WhiteJade V_WhiteQuartz V_WhiteSapphire V_Wool V_YellowGarnet V_YellowTopaz V_Zircon
+~~
+~~ ArmorColorLike ActsOn: A_None A_Amuli_Coat_Chest A_Amuli_Coat_CollarShoulder A_Amuli_Coat_ArmsTrim A_Amuli_Legs_Base A_Amuli_Legs_Trim A_Celdon_Base A_Celdon_Veins A_Chiran_Coat_BaseArms A_Chiran_Coat_Stripes A_Chiran_Legs_Girth A_Chiran_Legs_Legs A_Chiran_Legs_Trim A_Chiran_Helm_Horns A_Chiran_Helm_Base A_Haebrean_BP_Chest A_Haebrean_BP_Ornaments A_Haebrean_BP_Trim A_Haebrean_Girth_Base A_Haebrean_Girth_BeltScales A_Haebrean_Helm_Base A_Haebrean_Helm_Mask A_Haebrean_Pauldrons_Base A_Haebrean_Pauldrons_Ornaments A_Lorica_BP_Veins A_Lorica_BP_Base A_Lorica_BP_NeckTrim A_Lorica_Legs_Base A_Lorica_Legs_KneesBeltCrotch A_Lorica_Legs_Legs A_Nariyid_BP_CircleLines A_Nariyid_BP_Base A_Nariyid_BP_Shoulders A_Nariyid_Girth_Base A_Nariyid_Girth_BeltLines A_Nariyid_Girth_Ornaments A_Nariyid_Sleeves_Shoulders A_Nariyid_Sleeves_UpperArm A_Nariyid_Sleeves_LowerArm A_Olthoi_BP_Base A_Olthoi_BP_Veins A_Olthoi_Alduressa_Legs_GirthBase A_Olthoi_Alduressa_Legs_GirthLines A_Olthoi_Alduressa_Legs_LegsLines A_Olthoi_Amuli_Coat_Base A_Olthoi_Amuli_Coat_Trim A_Olthoi_Amuli_Coat_Shoulders A_Olthoi_Amuli_Legs_Trim A_Olthoi_Koujia_Kabuton_Base A_Olthoi_Koujia_Kabuton_Horns A_Olthoi_Koujia_Legs_Base A_Olthoi_Koujia_Legs_SidesShins A_Scalemail_Cuirass_Base A_Scalemail_Cuirass_Bumps A_Scalemail_Cuirass_Belt A_Tenassa_Legs_LineAtSide A_Tenassa_Legs_Base A_Tenassa_Legs_Highlight A_Tenassa_BP_Shoulders A_Tenassa_BP_Base A_Yoroi_Cuirass_Base A_Yoroi_Cuirass_Belt A_Yoroi_Girth_Base A_Yoroi_Girth_Belt
+~~ 
+~~ MatchRx ActsOn: M_DateBorn M_FellowshipName M_FullDescription M_ImbuedBy M_InscribedBy M_Inscription M_LastTinkeredBy M_MonarchName M_Name M_OnlyActivatedBy M_Patron M_PortalDestination M_SecondaryName M_SimpleDescription M_Title M_UsageInstructions
+~~
+~~ ObjClass ActsOn: C_Armor C_BaseAlchemy C_BaseCooking C_BaseFletching C_Book C_Bundle C_Clothing C_Container C_Corpse C_CraftedAlchemy C_CraftedCooking C_CraftedFletching C_Door C_Foci C_Food C_Gem C_HealingKit C_Housing C_Jewelry C_Journal C_Key C_Lifestone C_Lockpick C_ManaStone C_MeleeWeapon C_Misc C_MissileWeapon C_Money C_Monster C_Npc C_Plant C_Player C_Portal C_Salvage C_Scroll C_Services C_Sign C_SpellComponent C_TradeNote C_Unknown C_Ust C_Vendor C_WandStaffOrb
+~~ 
+~~ LKey* ActsOn: L_ActivationReqSkillId L_ActiveSpellCount L_AffectsVitalAmt L_AffectsVitalId L_Age L_ArmorLevel L_ArmorSetID L_AssociatedSpell L_Attuned L_Behavior L_Bonded L_Burden L_Category L_CloakChanceType L_Container L_CooldownSeconds L_Coverage L_CreateFlags1 L_CreateFlags2 L_CreatureLevel L_CritDamRating L_CritDamResistRating L_CritRating L_CritResistRating L_CurrentMana L_DamageType L_DamRating L_DamResistRating L_DateOfBirth L_Deaths L_DescriptionFormat L_ElementalDmgBonus L_EquipableSlots L_EquippedSlots L_EquipSkill L_EquipType L_FishingSkill L_Flags L_GemSettingQty L_GemSettingType L_Gender L_HealBoostRating L_Heritage L_HookMask L_HookType L_HouseOwner L_Icon L_IconOutline L_IconOverlay L_IconUnderlay L_Imbued L_ItemMaxLevel L_ItemSlots L_KeysHeld L_Landblock L_LockpickDifficulty L_LockpickSkillBonus L_LoreRequirement L_MagicDef L_ManaCost L_Material L_MaxDamage L_MaximumMana L_MaxLevelRestrict L_MinLevelRestrict L_MissileType L_Model L_Monarch L_NumberFollowers L_NumberItemsSalvaged L_NumberTimesTinkered L_PackSlots L_PagesTotal L_PagesUsed L_PhysicsDataFlags L_PortalRestrictions L_Rank L_RankRequirement L_RareId L_RestrictedToToD L_SkillCreditsAvail L_SkillLevelReq L_SlayerSpecies L_Slot L_SpecialProps L_Species L_SpellCount L_Spellcraft L_StackCount L_StackMax L_SummoningGemBuffed L_SummoningGemLevel L_TotalValue L_Type L_Unenchantable L_Unknown10 L_Unknown100000 L_Unknown800000 L_Unknown8000000 L_UsageMask L_UsesRemaining L_UsesTotal L_Value L_VitalityRating L_WandElemDmgType L_WeaponMasteryCategory L_WeapSpeed L_Wielder L_WieldingSlot L_WieldReqAttribute L_WieldReqType L_WieldReqValue L_Workmanship L_XPForVPReduction
+~~ 
+~~ DKey* ActsOn: D_AcidProt D_ApproachDistance D_AttackBonus D_BludgeonProt D_ColdProt D_DamageBonus D_ElementalDamageVersus D_FireProt D_Heading D_HealingKitRestoreBonus D_LightningProt D_MagicDBonus D_ManaCBonus D_ManaRateOfChange D_ManaStoneChanceDestruct D_ManaTransferEfficiency D_MeleeDefenseBonus D_MissileDBonus D_PierceProt D_Range D_SalvageWorkmanship D_Scale D_SlashProt D_Variance
+~~
+~~ *Skill* ActsOn: S_Alchemy S_ArcaneLore S_ArmorTinkering S_AssessCreature S_AssessPerson S_Axe S_Bow S_Cooking S_CreatureEnchantment S_Crossbow S_Dagger S_Deception S_DirtyFighting S_DualWield S_FinesseWeapons S_Fletching S_Gearcraft S_Healing S_HeavyWeapons S_ItemEnchantment S_ItemTinkering S_Jump S_Leadership S_LifeMagic S_LightWeapons S_Lockpick S_Loyalty S_Mace S_MagicDefense S_MagicItemTinkering S_ManaConversion S_MeleeDefense S_MissileDefense S_MissileWeapons S_Recklessness S_Run S_Salvaging S_Shield S_SneakAttack S_Spear S_Staff S_Summoning S_Sword S_ThrownWeapons S_TwoHandedCombat S_Unarmed S_VoidMagic S_WarMagic S_WeaponTinkering
+~~ }
+~~ {																																		
+~~ File auto-generated by myutilootor, a program created by Eskarina of Morningthaw/Coldeve.												
+~~																																			
+~~ REQUIREMENT KEYWORDS:		(See myutilootorReference.mut for more.)																	
+~~																																			
+~~		MatchRx			LKeyBuffedGE		DKeyBuffedGE		CalcedBuffedMedianDmgGE			BaseSkillRange			ArmorColorLike		
+~~		ObjClass		LKeyE				DKeyGE				CalcedBuffedMissileDmgGE		BuffedSkillGE			ColorLike			
+~~						LKeyGE				DKeyLE				CalcedBuffedTinkDmgGE			CharLevelGE				SlotPalette			
+~~		NSpellsGE		LKeyFlags								CalcedBuffedTinkTarget			CharLevelLE				SlotColorLike		
+~~		NSpellsRxGE		LKeyLE				DmgPercentGE		CalcedTotalRatingsGE			EmptyMainPackSlotsGE						
+~~		SpellRx			LKeyNE				MinDmgGE																						
+~~ }																																		
+
+NO: {***** Trophies *****} {Keep} ~~ {
+	MatchRx M_Name {leave this disabled}
+~~ }
+ON: {   ** Aetheria **} {Keep} ~~ {
+	MatchRx M_Name {do not edit}
+~~ }
+ON: {    (T) Aetheria (5)} {Keep} ~~ {
+	MatchRx M_Name {Aetheria}
+	LKeyE L_IconOverlay 27704
+~~ }
+ON: {    (T) Aetheria (4+)} {Keep} ~~ {
+	MatchRx M_Name {Aetheria}
+	LKeyGE L_IconOverlay 27703
+~~ }
+NO: {    (T) Aetheria (3+)} {Keep} ~~ {
+	MatchRx M_Name {Aetheria}
+	LKeyGE L_IconOverlay 27702
+~~ }
+ON: {    (T) Aetheria (All)} {Keep} ~~ {
+	MatchRx M_Name {Coalesced Aetheria}
+~~ }
+ON: {    (T) Aetheria (Red only)} {Keep} ~~ {
+	MatchRx M_Name {Coalesced Aetheria}
+	LKeyE L_Type 42636
+~~ }
+ON: {    (T) Aetheria (Blue only)} {Keep} ~~ {
+	MatchRx M_Name {Coalesced Aetheria}
+	LKeyE L_Type 42635
+~~ }
+NO: {    (T) Aetheria (Yellow only)} {Keep} ~~ {
+	MatchRx M_Name {Coalesced Aetheria}
+	LKeyE L_Type 42637
+~~ }
+ON: {   ** Armor **} {Keep} ~~ {
+	MatchRx M_Name {do not edit}
+~~ }
+ON: {    (T) Rynthid Masks} {Keep} ~~ {
+	MatchRx M_Name {Rynthid}
+	ObjClass C_Armor
+~~ }
+ON: {   ** Crafting **} {Keep} ~~ {
+	MatchRx M_Name {do not edit}
+~~ }
+ON: {   ** Direlands Gear Knight Invasion Area **} {Keep} ~~ {
+	MatchRx M_Name {do not edit}
+~~ }
+ON: {    (T) Aetherium-infused Gear} {Keep} ~~ {
+	MatchRx M_Name {Aetherium-infused Gear}
+~~ }
+ON: {    (T) Large Aetherium Power Core} {Keep} ~~ {
+	MatchRx M_Name {Large Aetherium Power Core|Aetherium Power Core}
+~~ }
+NO: {} {Keep} ~~ {
+~~ }
+NO: {} {Keep} ~~ {
+~~ }
+ON: {   ** Keys **} {Keep} ~~ {
+	MatchRx M_Name {do not edit}
+~~ }
+NO: {    (T) Aged Legendary Key} {Keep} ~~ {
+	MatchRx M_Name {Aged Legendary Key}
+~~ }
+NO: {    (T) Shattered Legendary Key} {Keep} ~~ {
+	MatchRx M_Name {Shattered Legendary Key}
+	BuffedSkillGE S_Lockpick 350
+~~ }
+NO: {    (T) Depleted Mythical Key} {Keep} ~~ {
+	MatchRx M_Name {Depleted Mythical Key}
+~~ }
+NO: {} {Keep} ~~ {
+~~ }
+ON: {   ** Misc **} {Keep} ~~ {
+	MatchRx M_Name {do not edit}
+~~ }
+ON: {    (T) Alternate Currency} {Keep} ~~ {
+	MatchRx M_Name {Colosseum Coin|A'nekshay Token|Small Olthoi Venom Sac|Ornate Gear Marker|Ancient Mhoire Coin|Mutated OIthoi Gland|Enlightened Coin}
+~~ }
+ON: {    (T) Monougat} {Keep} ~~ {
+	MatchRx M_Name {Valley Monougat}
+~~ }
+ON: {    (T) Gromnie Eye} {Keep} ~~ {
+	MatchRx M_Name {Gromnie Eye}
+~~ }
+ON: {    (T) Ancient Trinkets} {Keep} ~~ {
+	MatchRx M_Name {Trinket}
+	ObjClass C_Gem
+~~ }
+ON: {    (T) Badass Skull} {Keep} ~~ {
+	MatchRx M_Name {Badass Skull}
+~~ }
+ON: {    (T) Sentient Shards} {Keep} ~~ {
+	MatchRx M_Name {Sentient Shard}
+~~ }
+ON: {    (T) Olthoi's Blood} {Keep} ~~ {
+	MatchRx M_Name {Olthoi's Blood}
+~~ }
+ON: {    (T) VOD Trophies} {Keep} ~~ {
+	MatchRx M_Name {Trophy}
+~~ }
+ON: {    (T) Head of Banderling} {Keep} ~~ {
+	MatchRx M_Name {Head of Banderling}
+~~ }
+ON: {    (T) Intact Drudge Skull} {Keep} ~~ {
+	MatchRx M_Name {Intact Drudge Skull}
+~~ }
+NO: {    (T) Drudge Charms} {Keep} ~~ {
+	MatchRx M_Name {Drudge Charm}
+~~ }
+ON: {    (T) Gem of Luminance} {Keep} ~~ {
+	MatchRx M_Name {Luminance}
+~~ }
+NO: {    (T) Level 8 Glyphs} {Keep} ~~ {
+	MatchRx M_Name {Glyph of}
+~~ }
+NO: {    (T) Level 8 Inks & Quills} {Keep} ~~ {
+	MatchRx M_Name {Alacritous Ink|Ink of Direction|Ink of Formation|Ink of Conveyance|Ink of Objectification|Ink of Partition|Ink of Nullification|Ink of Separation|Quill of Introspection|Quill of Benevolence|Quill of Infliction|Quill of Extraction|Parabolic Ink}
+~~ }
+NO: {    (T) Pyreal Pea} {Keep} ~~ {
+	MatchRx M_Name {Pyreal Pea|Powdered Chorizite Pea}
+~~ }
+ON: {    (T) Gauntlet Jewelry} {Keep} ~~ {
+	MatchRx M_Name {Society Band}
+~~ }
+ON: {    (T) Rare!} {Keep} ~~ {
+	LKeyE L_IconUnderlay 23308
+~~ }
+NO: {} {Keep} ~~ {
+~~ }
+NO: {} {Keep} ~~ {
+~~ }
+NO: {} {Keep} ~~ {
+~~ }
+ON: {   ** Quest **} {Keep} ~~ {
+	MatchRx M_Name {do not edit}
+~~ }
+ON: {    (T) Augmentation Gem} {Keep} ~~ {
+	MatchRx M_Name {Augmentation Gem}
+~~ }
+ON: {    (T) Crystal Shard} {Keep} ~~ {
+	MatchRx M_Name {Cracked Shard|Tiny Shard|Small Shard}
+~~ }
+ON: {    (T) Daimyo Mask} {Keep} ~~ {
+	MatchRx M_Name {Daimyo}
+	ObjClass C_Armor
+~~ }
+ON: {    (T) Egg Orchard XP Trophy} {Keep} ~~ {
+	MatchRx M_Name {Spine|Carapace|Larvae Steak}
+	ObjClass C_Misc
+	MatchRx M_Name {^((?!Brood).)*$}
+	MatchRx M_Name {^((?!Armor).)*$}
+~~ }
+ON: {    (T) Forgotten Chasm XP Trophy} {Keep} ~~ {
+	MatchRx M_Name {Bandage|Jawbone}
+	ObjClass C_Misc
+~~ }
+ON: {    (T) Path of the Blind XP Trophies} {Keep} ~~ {
+	MatchRx M_Name {Insignia}
+	ObjClass C_Misc
+	MatchRx M_Name {^((?!Gold Tumerok).)*$}
+~~ }
+ON: {    (T) Portal Gem (Quest)} {Keep} ~~ {
+	MatchRx M_Name {Dark Monolith Caverns|Drudge Fight|Gold Hill Ruins|Lair of The Homunculus|Niffis Fighting Pits|Oubliette|Resting Place|Cavernous Olthoi Chasm|Dark Towers|Caul Asylum|The Orphanage}
+	ObjClass C_Gem
+~~ }
+NO: {    (T) Shadow Fragment Shards} {Keep} ~~ {
+	MatchRx M_Name {Dark Speck|Dark Sliver|Dark Shard}
+~~ }
+ON: {    (T) Vissidal XP Trophy} {Keep} ~~ {
+	MatchRx M_Name {Gold Shallows Shredder Fin|Gold Niffis Tentacle|Gold Remoran Eggs|Gold Moarsman Tooth}
+~~ }
+NO: {} {Keep} ~~ {
+~~ }
+NO: {} {Keep} ~~ {
+~~ }
+ON: {   ** Summoning **} {Keep} ~~ {
+	MatchRx M_Name {do not edit}
+~~ }
+NO: {    (T) Encapsulated Spirit} {Keep 100} ~~ {
+	MatchRx M_Name {Encapsulated Spirit}
+~~ }
+NO: {    (T) Essence (200 Naturalist)} {Keep} ~~ {
+	MatchRx M_Name {Essence}
+	LKeyE L_IconOverlay 29736
+	CalcedTotalRatingsGE 70
+	MatchRx M_Name {Moar|Grievver|Phyntos}
+	LKeyGE L_DamRating 15
+	LKeyGE L_DamResistRating 15
+~~ }
+NO: {    (T) Essence (200 Necromancer)} {Keep} ~~ {
+	MatchRx M_Name {Essence}
+	LKeyE L_IconOverlay 29736
+	CalcedTotalRatingsGE 70
+	MatchRx M_Name {Zombie|Spectre|Skeleton|Maiden}
+	LKeyGE L_DamRating 15
+~~ }
+NO: {    (T) Essence (200 Primalist)} {Keep} ~~ {
+	MatchRx M_Name {Essence}
+	LKeyE L_IconOverlay 29736
+	CalcedTotalRatingsGE 70
+	MatchRx M_Name {Elemental|Child|Wisp|Knight|K'nath}
+	LKeyGE L_DamRating 15
+~~ }
+NO: {} {Keep} ~~ {
+~~ }
+NO: {} {Keep} ~~ {
+~~ }
+ON: {   ** Viridian Rise **} {Keep} ~~ {
+	MatchRx M_Name {do not edit}
+~~ }
+NO: {    (T) Infused Amber Shard} {Keep} ~~ {
+	MatchRx M_Name {Infused Amber Shard}
+~~ }
+NO: {    (T) Corrupted Amber Shard} {Keep} ~~ {
+	MatchRx M_Name {Corrupted Amber Shard}
+~~ }
+NO: {    (T) Viridian Essence} {Keep 10} ~~ {
+	MatchRx M_Name {Viridian Essence}
+~~ }
+NO: {} {Keep} ~~ {
+~~ }
+ON: {   ** Weapons **} {Keep} ~~ {
+	MatchRx M_Name {do not edit}
+~~ }
+NO: {    (T) Banished Weapon} {Keep} ~~ {
+	MatchRx M_Name {Banished}
+~~ }
+NO: {    (T) Fallen Weapon} {Keep} ~~ {
+	MatchRx M_Name {Fallen}
+~~ }
+ON: {    (T) Purified Mouryou Weapons} {Keep} ~~ {
+	MatchRx M_Name {Mouryou}
+~~ }
+NO: {} {Keep} ~~ {
+	MatchRx M_Name {blank space}
+~~ }
+NO: {} {Keep} ~~ {
+	MatchRx M_Name {blank space}
+~~ }
+NO: {} {Keep} ~~ {
+	MatchRx M_Name {blank space}
+~~ }
+ON: {***** Melee Weapons *****} {Keep} ~~ {
+	MatchRx M_Name {Do not edit this}
+~~ }
+ON: {(H) T9 Heavy Insane} {Keep} ~~ {
+	LKeyE L_WeaponMasteryCategory 3
+	LKeyE L_WieldReqAttribute 44
+	LKeyBuffedGE L_MaxDamage 112
+	ObjClass C_MeleeWeapon
+	MatchRx M_Name {Silifi|Lugian|War Axe|Battle}
+	LKeyE L_WieldReqValue 575
+	DKeyGE D_AttackBonus 1.24
+	DKeyGE D_MeleeDefenseBonus 1.2
+~~ }
+ON: {(L) T9 Light Insane} {Keep} ~~ {
+	LKeyE L_WeaponMasteryCategory 3
+	LKeyE L_WieldReqAttribute 45
+	LKeyBuffedGE L_MaxDamage 99
+	ObjClass C_MeleeWeapon
+	MatchRx M_Name {Dolabra|Ono|Hand|War Hammer}
+	LKeyE L_WieldReqValue 575
+	DKeyGE D_MeleeDefenseBonus 1.2
+	DKeyGE D_AttackBonus 1.24
+~~ }
+ON: {(F) T9 Finesse Insane} {Keep} ~~ {
+	LKeyE L_WeaponMasteryCategory 3
+	LKeyE L_WieldReqAttribute 46
+	LKeyBuffedGE L_MaxDamage 99
+	ObjClass C_MeleeWeapon
+	MatchRx M_Name {Hatchet|Shou-ono|Tungi|Hammer}
+	LKeyE L_ActivationReqSkillId 575
+	DKeyGE D_AttackBonus 1.24
+	DKeyGE D_MeleeDefenseBonus 1.2
+~~ }
+NO: {} {Keep} ~~ {
+~~ }
+ON: {(H) Axe (575 OD +10)} {Keep} ~~ {
+	LKeyE L_WeaponMasteryCategory 3
+	LKeyE L_WieldReqAttribute 44
+	LKeyBuffedGE L_MaxDamage 112
+	ObjClass C_MeleeWeapon
+	MatchRx M_Name {Silifi|Lugian|War Axe|Battle}
+	LKeyE L_WieldReqValue 575
+~~ }
+ON: {(H) Axe (575 OD +6 550 +10)} {Keep} ~~ {
+	LKeyE L_WeaponMasteryCategory 3
+	LKeyE L_WieldReqAttribute 44
+	LKeyBuffedGE L_MaxDamage 109
+	ObjClass C_MeleeWeapon
+	MatchRx M_Name {Silifi|Lugian|War Axe|Battle}
+	MatchRx M_Name {Frost|Lightning|Flaming|Electric|Acid|Fire}
+~~ }
+NO: {} {Keep} ~~ {
+~~ }
+ON: {(L) Axe (575 OD +10)} {Keep} ~~ {
+	LKeyE L_WeaponMasteryCategory 3
+	LKeyE L_WieldReqAttribute 45
+	LKeyBuffedGE L_MaxDamage 99
+	ObjClass C_MeleeWeapon
+	MatchRx M_Name {Dolabra|Ono|Hand|War Hammer}
+	MatchRx M_Name {Frost|Lightning|Flaming|Electric|Acid|Fire}
+	LKeyE L_WieldReqValue 575
+~~ }
+ON: {(L) Axe (575 OD +6 550 +10)} {Keep} ~~ {
+	LKeyE L_WeaponMasteryCategory 3
+	LKeyE L_WieldReqAttribute 45
+	LKeyBuffedGE L_MaxDamage 95
+	ObjClass C_MeleeWeapon
+	MatchRx M_Name {Frost|Lightning|Flaming|Electric|Acid|Fire}
+	MatchRx M_Name {Dolabra|Ono|Hand|War Hammer}
+~~ }
+NO: {} {Keep} ~~ {
+~~ }
+ON: {(F) Axe (575 OD +10)} {Keep} ~~ {
+	LKeyE L_WeaponMasteryCategory 3
+	LKeyE L_WieldReqAttribute 46
+	LKeyBuffedGE L_MaxDamage 99
+	ObjClass C_MeleeWeapon
+	MatchRx M_Name {Hatchet|Shou-ono|Tungi|Hammer}
+	LKeyE L_ActivationReqSkillId 575
+~~ }
+ON: {(F) Axe (575 OD +7)} {Keep} ~~ {
+	LKeyE L_WeaponMasteryCategory 3
+	LKeyE L_WieldReqAttribute 46
+	LKeyBuffedGE L_MaxDamage 96
+	ObjClass C_MeleeWeapon
+	MatchRx M_Name {Frost|Lightning|Flaming|Electric|Acid|Fire}
+	MatchRx M_Name {Hatchet|Shou-ono|Tungi|Hammer}
+~~ }
+NO: {} {Keep} ~~ {
+~~ }
+ON: {(H) Dagger (575 OD +10)} {Keep} ~~ {
+	LKeyE L_WeaponMasteryCategory 6
+	LKeyE L_WieldReqAttribute 44
+	LKeyBuffedGE L_MaxDamage 109
+	ObjClass C_MeleeWeapon
+	MatchRx M_Name {Dirk}
+	LKeyE L_WieldReqValue 575
+~~ }
+ON: {(H) Dagger (575 OD +6 550 +10)} {Keep} ~~ {
+	LKeyE L_WeaponMasteryCategory 6
+	LKeyE L_WieldReqAttribute 44
+	LKeyBuffedGE L_MaxDamage 105
+	ObjClass C_MeleeWeapon
+	MatchRx M_Name {Dirk}
+	MatchRx M_Name {Frost|Lightning|Flaming|Electric|Acid|Fire}
+~~ }
+NO: {} {Keep} ~~ {
+~~ }
+ON: {(H) Dagger MS (575 OD +10)} {Keep} ~~ {
+	LKeyE L_WeaponMasteryCategory 6
+	LKeyE L_WieldReqAttribute 44
+	LKeyBuffedGE L_MaxDamage 69
+	ObjClass C_MeleeWeapon
+	MatchRx M_Name {Stiletto|Jambiya}
+	LKeyE L_WieldReqValue 575
+~~ }
+ON: {(H) Dagger MS (575 OD +3 550 +5)} {Keep} ~~ {
+	LKeyE L_WeaponMasteryCategory 6
+	LKeyE L_WieldReqAttribute 44
+	LKeyBuffedGE L_MaxDamage 62
+	ObjClass C_MeleeWeapon
+	MatchRx M_Name {Frost|Lightning|Flaming|Electric|Acid|Fire}
+	MatchRx M_Name {Stiletto|Jambiya}
+~~ }
+NO: {} {Keep} ~~ {
+~~ }
+ON: {(L) Dagger (575 OD +10)} {Keep} ~~ {
+	LKeyE L_WeaponMasteryCategory 6
+	LKeyE L_WieldReqAttribute 45
+	LKeyBuffedGE L_MaxDamage 96
+	ObjClass C_MeleeWeapon
+	MatchRx M_Name {Khanjar}
+	LKeyE L_WieldReqValue 575
+~~ }
+ON: {(L) Dagger (575 OD +6 550 +10)} {Keep} ~~ {
+	LKeyE L_WeaponMasteryCategory 6
+	LKeyE L_WieldReqAttribute 45
+	LKeyBuffedGE L_MaxDamage 92
+	ObjClass C_MeleeWeapon
+	MatchRx M_Name {Khanjar}
+	MatchRx M_Name {Frost|Lightning|Flaming|Electric|Acid|Fire}
+	LKeyE L_WieldReqValue 575
+~~ }
+NO: {} {Keep} ~~ {
+~~ }
+ON: {(L) Dagger MS (575 OD +10)} {Keep} ~~ {
+	LKeyE L_WeaponMasteryCategory 6
+	LKeyE L_WieldReqAttribute 45
+	LKeyBuffedGE L_MaxDamage 66
+	ObjClass C_MeleeWeapon
+	MatchRx M_Name {Dagger}
+	LKeyE L_WieldReqValue 575
+~~ }
+ON: {(L) Dagger MS (575 OD +2 550 +6} {Keep} ~~ {
+	LKeyE L_WeaponMasteryCategory 6
+	LKeyE L_WieldReqAttribute 45
+	LKeyBuffedGE L_MaxDamage 58
+	ObjClass C_MeleeWeapon
+	MatchRx M_Name {Dagger}
+	MatchRx M_Name {Frost|Lightning|Flaming|Electric|Acid|Fire}
+~~ }
+NO: {} {Keep} ~~ {
+~~ }
+ON: {(F) Dagger (575 OD +10)} {Keep} ~~ {
+	LKeyE L_WeaponMasteryCategory 6
+	LKeyE L_WieldReqAttribute 46
+	LKeyBuffedGE L_MaxDamage 96
+	ObjClass C_MeleeWeapon
+	MatchRx M_Name {Poniard}
+	MatchRx M_Name {Frost|Lightning|Flaming|Electric|Acid|Fire}
+	LKeyE L_WieldReqValue 575
+~~ }
+ON: {(F) Dagger (575 OD +6 550 +10)} {Keep} ~~ {
+	LKeyE L_WeaponMasteryCategory 6
+	LKeyE L_WieldReqAttribute 46
+	LKeyBuffedGE L_MaxDamage 92
+	ObjClass C_MeleeWeapon
+	MatchRx M_Name {Poniard}
+	MatchRx M_Name {Frost|Lightning|Flaming|Electric|Acid|Fire}
+~~ }
+NO: {} {Keep} ~~ {
+~~ }
+ON: {(F) Dagger MS (575 OD +10)} {Keep} ~~ {
+	LKeyE L_WeaponMasteryCategory 6
+	LKeyE L_WieldReqAttribute 46
+	LKeyBuffedGE L_MaxDamage 66
+	ObjClass C_MeleeWeapon
+	MatchRx M_Name {Knife|Lancet}
+	MatchRx M_Name {Frost|Lightning|Flaming|Electric|Acid|Fire}
+	LKeyE L_WieldReqValue 575
+~~ }
+ON: {(F) Dagger MS (575 OD +6 550+10)} {Keep} ~~ {
+	LKeyE L_WeaponMasteryCategory 6
+	LKeyE L_WieldReqAttribute 46
+	LKeyBuffedGE L_MaxDamage 62
+	ObjClass C_MeleeWeapon
+	MatchRx M_Name {Knife|Lancet}
+	MatchRx M_Name {Frost|Lightning|Flaming|Electric|Acid|Fire}
+~~ }
+ON: {(F) Dagger MS (575 +3 550 +7)} {Keep} ~~ {
+	LKeyE L_WeaponMasteryCategory 6
+	LKeyE L_WieldReqAttribute 46
+	LKeyGE L_MaxDamage 59
+	ObjClass C_MeleeWeapon
+	MatchRx M_Name {Knife|Lancet}
+	MatchRx M_Name {Frost|Lightning|Flaming|Electric|Acid|Fire}
+~~ }
+NO: {} {Keep} ~~ {
+~~ }
+ON: {(H) Mace (575 OD +10)} {Keep} ~~ {
+	LKeyE L_WeaponMasteryCategory 4
+	LKeyE L_WieldReqAttribute 44
+	LKeyBuffedGE L_MaxDamage 105
+	ObjClass C_MeleeWeapon
+	MatchRx M_Name {Mazule|Mace|Morning}
+	MatchRx M_Name {Frost|Lightning|Flaming|Electric|Acid|Fire}
+	LKeyE L_WieldReqValue 575
+~~ }
+ON: {(H) Mace (575 OD +6 550 +10)} {Keep} ~~ {
+	LKeyE L_WeaponMasteryCategory 4
+	LKeyE L_WieldReqAttribute 44
+	LKeyBuffedGE L_MaxDamage 102
+	ObjClass C_MeleeWeapon
+	MatchRx M_Name {Mazule|Mace|Morning}
+	MatchRx M_Name {Frost|Lightning|Flaming|Electric|Acid|Fire}
+~~ }
+NO: {} {Keep} ~~ {
+~~ }
+ON: {(L) Mace (575 OD +10)} {Keep} ~~ {
+	LKeyE L_WeaponMasteryCategory 4
+	LKeyE L_WieldReqAttribute 45
+	LKeyBuffedGE L_MaxDamage 93
+	ObjClass C_MeleeWeapon
+	MatchRx M_Name {Club|Kasrullah}
+	MatchRx M_Name {Frost|Lightning|Flaming|Electric|Acid|Fire}
+	LKeyE L_WieldReqValue 575
+~~ }
+ON: {(L) Mace (575 OD +6 550 +10)} {Keep} ~~ {
+	LKeyE L_WeaponMasteryCategory 4
+	LKeyE L_WieldReqAttribute 45
+	LKeyBuffedGE L_MaxDamage 89
+	ObjClass C_MeleeWeapon
+	MatchRx M_Name {Club|Kasrullah}
+	MatchRx M_Name {Frost|Lightning|Flaming|Electric|Acid|Fire}
+~~ }
+NO: {} {Keep} ~~ {
+~~ }
+ON: {(F) Mace (575 OD +10)} {Keep} ~~ {
+	LKeyE L_WeaponMasteryCategory 4
+	LKeyE L_WieldReqAttribute 46
+	LKeyBuffedGE L_MaxDamage 93
+	ObjClass C_MeleeWeapon
+	MatchRx M_Name {Board|Tofun|Dabus}
+	MatchRx M_Name {Frost|Lightning|Flaming|Electric|Acid|Fire}
+	LKeyE L_WieldReqValue 575
+~~ }
+ON: {(F) Mace (575 OD +6 550 +10)} {Keep} ~~ {
+	LKeyE L_WeaponMasteryCategory 4
+	LKeyE L_WieldReqAttribute 46
+	LKeyBuffedGE L_MaxDamage 89
+	ObjClass C_MeleeWeapon
+	MatchRx M_Name {Board|Tofun|Dabus}
+	MatchRx M_Name {Frost|Lightning|Flaming|Electric|Acid|Fire}
+~~ }
+NO: {} {Keep} ~~ {
+~~ }
+ON: {(F) Mace Jitte (575 OD +10)} {Keep} ~~ {
+	LKeyE L_WeaponMasteryCategory 4
+	LKeyE L_WieldReqAttribute 46
+	LKeyBuffedGE L_MaxDamage 95
+	ObjClass C_MeleeWeapon
+	MatchRx M_Name {Jitte}
+	MatchRx M_Name {Frost|Lightning|Flaming|Electric|Acid|Fire}
+	LKeyE L_WieldReqValue 575
+~~ }
+ON: {(F) Mace Jitte (575 OD +6 550 +10)} {Keep} ~~ {
+	LKeyE L_WeaponMasteryCategory 4
+	LKeyE L_WieldReqAttribute 46
+	LKeyBuffedGE L_MaxDamage 91
+	ObjClass C_MeleeWeapon
+	MatchRx M_Name {Jitte}
+	MatchRx M_Name {Frost|Lightning|Flaming|Electric|Acid|Fire}
+~~ }
+NO: {} {Keep} ~~ {
+~~ }
+ON: {(H) Spear (575 OD +10)} {Keep} ~~ {
+	LKeyE L_WeaponMasteryCategory 5
+	LKeyE L_WieldReqAttribute 44
+	LKeyBuffedGE L_MaxDamage 110
+	ObjClass C_MeleeWeapon
+	MatchRx M_Name {Glaive|Trident|Partizan}
+	MatchRx M_Name {Frost|Lightning|Flaming|Electric|Acid|Fire}
+~~ }
+ON: {(H) Spear (575 OD +6 550 +10)} {Keep} ~~ {
+	LKeyE L_WeaponMasteryCategory 5
+	LKeyE L_WieldReqAttribute 44
+	LKeyBuffedGE L_MaxDamage 106
+	ObjClass C_MeleeWeapon
+	MatchRx M_Name {Glaive|Trident|Partizan}
+	MatchRx M_Name {Frost|Lightning|Flaming|Electric|Acid|Fire}
+~~ }
+NO: {} {Keep} ~~ {
+~~ }
+ON: {(L) Spear (575 OD +10)} {Keep} ~~ {
+	LKeyE L_WeaponMasteryCategory 5
+	LKeyE L_WieldReqAttribute 45
+	LKeyBuffedGE L_MaxDamage 98
+	ObjClass C_MeleeWeapon
+	MatchRx M_Name {Spear|Yari}
+	MatchRx M_Name {Frost|Lightning|Flaming|Electric|Acid|Fire}
+	LKeyE L_WieldReqValue 575
+~~ }
+ON: {(L) Spear (575 OD +6 550 +10)} {Keep} ~~ {
+	LKeyE L_WeaponMasteryCategory 5
+	LKeyE L_WieldReqAttribute 45
+	LKeyBuffedGE L_MaxDamage 94
+	ObjClass C_MeleeWeapon
+	MatchRx M_Name {Spear|Yari}
+	MatchRx M_Name {Frost|Lightning|Flaming|Electric|Acid|Fire}
+~~ }
+NO: {} {Keep} ~~ {
+~~ }
+ON: {(F) Spear (575 OD +10)} {Keep} ~~ {
+	LKeyE L_WeaponMasteryCategory 5
+	LKeyE L_WieldReqAttribute 46
+	LKeyBuffedGE L_MaxDamage 98
+	ObjClass C_MeleeWeapon
+	MatchRx M_Name {Naginata|Budiaq}
+	MatchRx M_Name {Frost|Lightning|Flaming|Electric|Acid|Fire}
+~~ }
+ON: {(F) Spear (575 OD +6 550 +10)} {Keep} ~~ {
+	LKeyE L_WeaponMasteryCategory 5
+	LKeyE L_WieldReqAttribute 46
+	LKeyBuffedGE L_MaxDamage 94
+	ObjClass C_MeleeWeapon
+	MatchRx M_Name {Naginata|Budiaq}
+	MatchRx M_Name {Frost|Lightning|Flaming|Electric|Acid|Fire}
+~~ }
+NO: {} {Keep} ~~ {
+~~ }
+ON: {(H) Staff (575 OD +10)} {Keep} ~~ {
+	LKeyE L_WeaponMasteryCategory 7
+	LKeyE L_WieldReqAttribute 44
+	LKeyBuffedGE L_MaxDamage 96
+	ObjClass C_MeleeWeapon
+	MatchRx M_Name {Nabut|Stick}
+	LKeyE L_WieldReqValue 575
+~~ }
+ON: {(H) Staff (575 OD +7)} {Keep} ~~ {
+	LKeyE L_WeaponMasteryCategory 7
+	LKeyE L_WieldReqAttribute 44
+	LKeyBuffedGE L_MaxDamage 93
+	ObjClass C_MeleeWeapon
+	MatchRx M_Name {Nabut|Stick}
+	LKeyE L_WieldReqValue 575
+~~ }
+ON: {(H) Staff (550 OD +10)} {Keep} ~~ {
+	LKeyE L_WeaponMasteryCategory 7
+	LKeyE L_WieldReqAttribute 44
+	LKeyBuffedGE L_MaxDamage 93
+	ObjClass C_MeleeWeapon
+	MatchRx M_Name {Nabut|Stick}
+	LKeyE L_WieldReqValue 550
+~~ }
+ON: {(H) Staff (550 OD +7)} {Keep} ~~ {
+	LKeyE L_WeaponMasteryCategory 7
+	LKeyE L_WieldReqAttribute 44
+	LKeyBuffedGE L_MaxDamage 90
+	ObjClass C_MeleeWeapon
+	MatchRx M_Name {Nabut|Stick}
+	LKeyE L_WieldReqValue 550
+~~ }
+ON: {(H) Staff (525 OD +10)} {Keep} ~~ {
+	LKeyE L_WeaponMasteryCategory 7
+	LKeyE L_WieldReqAttribute 44
+	LKeyBuffedGE L_MaxDamage 89
+	ObjClass C_MeleeWeapon
+	MatchRx M_Name {Nabut|Stick}
+	LKeyE L_WieldReqValue 525
+~~ }
+ON: {(H) Staff (525 OD +7)} {Keep} ~~ {
+	LKeyE L_WeaponMasteryCategory 7
+	LKeyE L_WieldReqAttribute 44
+	LKeyBuffedGE L_MaxDamage 86
+	ObjClass C_MeleeWeapon
+	MatchRx M_Name {Nabut|Stick}
+	LKeyE L_WieldReqValue 525
+~~ }
+ON: {(H) Staff (500 OD +10)} {Keep} ~~ {
+	LKeyE L_WeaponMasteryCategory 7
+	LKeyE L_WieldReqAttribute 44
+	LKeyBuffedGE L_MaxDamage 85
+	ObjClass C_MeleeWeapon
+	MatchRx M_Name {Nabut|Stick}
+	LKeyE L_WieldReqValue 500
+~~ }
+ON: {(H) Staff (500 OD +7)} {Keep} ~~ {
+	LKeyE L_WeaponMasteryCategory 7
+	LKeyE L_WieldReqAttribute 44
+	LKeyBuffedGE L_MaxDamage 82
+	ObjClass C_MeleeWeapon
+	MatchRx M_Name {Nabut|Stick}
+	LKeyE L_WieldReqValue 500
+~~ }
+NO: {} {Keep} ~~ {
+~~ }
+ON: {(L) Staff (575 OD +10)} {Keep} ~~ {
+	LKeyE L_WeaponMasteryCategory 7
+	LKeyE L_WieldReqAttribute 45
+	LKeyBuffedGE L_MaxDamage 95
+	ObjClass C_MeleeWeapon
+	MatchRx M_Name {Quarter}
+	LKeyE L_WieldReqValue 575
+~~ }
+ON: {(L) Staff (575 OD +7)} {Keep} ~~ {
+	LKeyE L_WeaponMasteryCategory 7
+	LKeyE L_WieldReqAttribute 45
+	LKeyBuffedGE L_MaxDamage 92
+	ObjClass C_MeleeWeapon
+	MatchRx M_Name {Quarter}
+	LKeyE L_WieldReqValue 575
+~~ }
+ON: {(L) Staff (550 OD +10)} {Keep} ~~ {
+	LKeyE L_WeaponMasteryCategory 7
+	LKeyE L_WieldReqAttribute 45
+	LKeyBuffedGE L_MaxDamage 91
+	ObjClass C_MeleeWeapon
+	MatchRx M_Name {Quarter}
+	LKeyE L_WieldReqValue 550
+~~ }
+ON: {(L) Staff (550 OD +7)} {Keep} ~~ {
+	LKeyE L_WeaponMasteryCategory 7
+	LKeyE L_WieldReqAttribute 45
+	LKeyBuffedGE L_MaxDamage 88
+	ObjClass C_MeleeWeapon
+	MatchRx M_Name {Quarter}
+	LKeyE L_WieldReqValue 550
+~~ }
+ON: {(L) Staff (525 OD +10)} {Keep} ~~ {
+	LKeyE L_WeaponMasteryCategory 7
+	LKeyE L_WieldReqAttribute 45
+	LKeyBuffedGE L_MaxDamage 87
+	ObjClass C_MeleeWeapon
+	MatchRx M_Name {Quarter}
+	LKeyE L_WieldReqValue 525
+~~ }
+ON: {(L) Staff (525 OD +7)} {Keep} ~~ {
+	LKeyE L_WeaponMasteryCategory 7
+	LKeyE L_WieldReqAttribute 45
+	LKeyBuffedGE L_MaxDamage 84
+	ObjClass C_MeleeWeapon
+	MatchRx M_Name {Quarter}
+	LKeyE L_WieldReqValue 525
+~~ }
+ON: {(L) Staff (500 OD +10)} {Keep} ~~ {
+	LKeyE L_WeaponMasteryCategory 7
+	LKeyE L_WieldReqAttribute 45
+	LKeyBuffedGE L_MaxDamage 83
+	ObjClass C_MeleeWeapon
+	MatchRx M_Name {Quarter}
+	LKeyE L_WieldReqValue 500
+~~ }
+ON: {(L) Staff (500 OD +7)} {Keep} ~~ {
+	LKeyE L_WeaponMasteryCategory 7
+	LKeyE L_WieldReqAttribute 45
+	LKeyBuffedGE L_MaxDamage 80
+	ObjClass C_MeleeWeapon
+	MatchRx M_Name {Quarter}
+	LKeyE L_WieldReqValue 500
+~~ }
+NO: {} {Keep} ~~ {
+~~ }
+ON: {(F) Staff (575 OD +10)} {Keep} ~~ {
+	LKeyE L_WeaponMasteryCategory 7
+	LKeyE L_WieldReqAttribute 46
+	LKeyBuffedGE L_MaxDamage 95
+	ObjClass C_MeleeWeapon
+	MatchRx M_Name {Jo|Bastone}
+	MatchRx M_Name {Frost|Lightning|Flaming|Electric|Acid|Fire}
+~~ }
+ON: {(F) Staff (575 OD +6 550 +10)} {Keep} ~~ {
+	LKeyE L_WeaponMasteryCategory 7
+	LKeyE L_WieldReqAttribute 46
+	LKeyBuffedGE L_MaxDamage 91
+	ObjClass C_MeleeWeapon
+	MatchRx M_Name {Jo|Bastone}
+	MatchRx M_Name {Frost|Lightning|Flaming|Electric|Acid|Fire}
+~~ }
+NO: {} {Keep} ~~ {
+~~ }
+ON: {(H) Sword (575 OD +10)} {Keep} ~~ {
+	LKeyE L_WeaponMasteryCategory 2
+	LKeyE L_WieldReqAttribute 44
+	LKeyBuffedGE L_MaxDamage 108
+	ObjClass C_MeleeWeapon
+	MatchRx M_Name {Takuba|Flamberge|Ken|Long|Tachi}
+	MatchRx M_Name {Frost|Lightning|Flaming|Electric|Acid|Fire}
+~~ }
+ON: {(H) Sword (575 OD +6 550+10)} {Keep} ~~ {
+	LKeyE L_WeaponMasteryCategory 2
+	LKeyE L_WieldReqAttribute 44
+	LKeyBuffedGE L_MaxDamage 105
+	ObjClass C_MeleeWeapon
+	MatchRx M_Name {Takuba|Flamberge|Ken|Long|Tachi}
+	MatchRx M_Name {Frost|Lightning|Flaming|Electric|Acid|Fire}
+~~ }
+NO: {} {Keep} ~~ {
+~~ }
+ON: {(H) Sword MS (575 OD +10)} {Keep} ~~ {
+	LKeyE L_WeaponMasteryCategory 2
+	LKeyE L_WieldReqAttribute 44
+	LKeyBuffedGE L_MaxDamage 70
+	ObjClass C_MeleeWeapon
+	MatchRx M_Name {Schlager}
+	MatchRx M_Name {Frost|Lightning|Flaming|Electric|Acid|Fire}
+	LKeyE L_WieldReqValue 575
+~~ }
+ON: {(H) Sword MS (575 OD +7)} {Keep} ~~ {
+	LKeyE L_WeaponMasteryCategory 2
+	LKeyE L_WieldReqAttribute 44
+	LKeyBuffedGE L_MaxDamage 67
+	ObjClass C_MeleeWeapon
+	MatchRx M_Name {Schlager}
+	MatchRx M_Name {Frost|Lightning|Flaming|Electric|Acid|Fire}
+	LKeyE L_WieldReqValue 575
+~~ }
+ON: {(H) Sword MS (575 +0 550 OD +2-10)} {Keep} ~~ {
+	LKeyE L_WeaponMasteryCategory 2
+	LKeyE L_WieldReqAttribute 44
+	LKeyBuffedGE L_MaxDamage 60
+	ObjClass C_MeleeWeapon
+	MatchRx M_Name {Schlager}
+	MatchRx M_Name {Frost|Lightning|Flaming|Electric|Acid|Fire}
+~~ }
+NO: {} {Keep} ~~ {
+~~ }
+ON: {(L) Sword (575 OD +10)} {Keep} ~~ {
+	LKeyE L_WeaponMasteryCategory 2
+	LKeyE L_WieldReqAttribute 45
+	LKeyBuffedGE L_MaxDamage 96
+	ObjClass C_MeleeWeapon
+	MatchRx M_Name {Dericost|Broad|Shamshir|Kaskara|Spada}
+	MatchRx M_Name {Frost|Lightning|Flaming|Electric|Acid|Fire}
+	LKeyE L_WieldReqValue 575
+~~ }
+ON: {(L) Sword (575 OD +6 550 +10)} {Keep} ~~ {
+	LKeyE L_WeaponMasteryCategory 2
+	LKeyE L_WieldReqAttribute 45
+	LKeyBuffedGE L_MaxDamage 92
+	ObjClass C_MeleeWeapon
+	MatchRx M_Name {Dericost|Broad|Shamshir|Kaskara|Spada}
+	MatchRx M_Name {Frost|Lightning|Flaming|Electric|Acid|Fire}
+~~ }
+NO: {} {Keep} ~~ {
+~~ }
+ON: {(L) Sword MS (575 OD +10)} {Keep} ~~ {
+	LKeyE L_WeaponMasteryCategory 2
+	LKeyE L_WieldReqAttribute 45
+	LKeyBuffedGE L_MaxDamage 66
+	ObjClass C_MeleeWeapon
+	MatchRx M_Name {Epee}
+	MatchRx M_Name {Frost|Lightning|Flaming|Electric|Acid|Fire}
+	LKeyE L_WieldReqValue 575
+~~ }
+ON: {(L) Sword MS (575 OD +6 550 +10)} {Keep} ~~ {
+	LKeyE L_WeaponMasteryCategory 2
+	LKeyE L_WieldReqAttribute 45
+	LKeyBuffedGE L_MaxDamage 62
+	ObjClass C_MeleeWeapon
+	MatchRx M_Name {Epee}
+	MatchRx M_Name {Frost|Lightning|Flaming|Electric|Acid|Fire}
+~~ }
+ON: {(L) Sword MS (550 OD +6 525 +10)} {Keep} ~~ {
+	LKeyE L_WeaponMasteryCategory 2
+	LKeyE L_WieldReqAttribute 45
+	LKeyBuffedGE L_MaxDamage 58
+	ObjClass C_MeleeWeapon
+	MatchRx M_Name {Epee}
+	MatchRx M_Name {Frost|Lightning|Flaming|Electric|Acid|Fire}
+~~ }
+NO: {} {Keep} ~~ {
+~~ }
+ON: {(F) Sword (575 OD +10)} {Keep} ~~ {
+	LKeyE L_WeaponMasteryCategory 2
+	LKeyE L_WieldReqAttribute 46
+	LKeyBuffedGE L_MaxDamage 96
+	ObjClass C_MeleeWeapon
+	MatchRx M_Name {Scimitar|Yaoji|Short|Sabra|Simi}
+	MatchRx M_Name {Frost|Lightning|Flaming|Electric|Acid|Fire}
+	LKeyE L_WieldReqValue 575
+~~ }
+ON: {(F) Sword (575 OD +7)} {Keep} ~~ {
+	LKeyE L_WeaponMasteryCategory 2
+	LKeyE L_WieldReqAttribute 46
+	LKeyBuffedGE L_MaxDamage 93
+	ObjClass C_MeleeWeapon
+	MatchRx M_Name {Scimitar|Yaoji|Short|Sabra|Simi}
+	MatchRx M_Name {Frost|Lightning|Flaming|Electric|Acid|Fire}
+	LKeyE L_WieldReqValue 575
+~~ }
+ON: {(F) Sword (550 OD +10)} {Keep} ~~ {
+	LKeyE L_WeaponMasteryCategory 2
+	LKeyE L_WieldReqAttribute 46
+	LKeyBuffedGE L_MaxDamage 92
+	ObjClass C_MeleeWeapon
+	MatchRx M_Name {Scimitar|Yaoji|Short|Sabra|Simi}
+	MatchRx M_Name {Frost|Lightning|Flaming|Electric|Acid|Fire}
+	LKeyE L_WieldReqValue 550
+~~ }
+ON: {(F) Sword (550 OD +7)} {Keep} ~~ {
+	LKeyE L_WeaponMasteryCategory 2
+	LKeyE L_WieldReqAttribute 46
+	LKeyBuffedGE L_MaxDamage 89
+	ObjClass C_MeleeWeapon
+	MatchRx M_Name {Scimitar|Yaoji|Short|Sabra|Simi}
+	MatchRx M_Name {Frost|Lightning|Flaming|Electric|Acid|Fire}
+	LKeyE L_WieldReqValue 550
+~~ }
+NO: {} {Keep} ~~ {
+~~ }
+ON: {(F) Sword MS (575 OD +10)} {Keep} ~~ {
+	LKeyE L_WeaponMasteryCategory 2
+	LKeyE L_WieldReqAttribute 46
+	LKeyBuffedGE L_MaxDamage 66
+	ObjClass C_MeleeWeapon
+	MatchRx M_Name {Rapier}
+	MatchRx M_Name {Frost|Lightning|Flaming|Electric|Acid|Fire}
+	LKeyE L_WieldReqValue 575
+~~ }
+ON: {(F) Sword MS (575 OD +6 550 +10)} {Keep} ~~ {
+	LKeyE L_WeaponMasteryCategory 2
+	LKeyE L_WieldReqAttribute 46
+	LKeyBuffedGE L_MaxDamage 62
+	ObjClass C_MeleeWeapon
+	MatchRx M_Name {Rapier}
+	MatchRx M_Name {Frost|Lightning|Flaming|Electric|Acid|Fire}
+~~ }
+NO: {} {Keep} ~~ {
+~~ }
+ON: {(H) UA (575 OD +10)} {Keep} ~~ {
+	LKeyE L_WeaponMasteryCategory 1
+	LKeyE L_WieldReqAttribute 44
+	LKeyBuffedGE L_MaxDamage 93
+	ObjClass C_MeleeWeapon
+	MatchRx M_Name {Nekode|Cestus}
+	MatchRx M_Name {Frost|Lightning|Flaming|Electric|Acid|Fire}
+	LKeyE L_WieldReqValue 575
+~~ }
+ON: {(H) UA (575 OD +7)} {Keep} ~~ {
+	LKeyE L_WeaponMasteryCategory 1
+	LKeyE L_WieldReqAttribute 44
+	LKeyBuffedGE L_MaxDamage 90
+	ObjClass C_MeleeWeapon
+	MatchRx M_Name {Nekode|Cestus}
+	MatchRx M_Name {Frost|Lightning|Flaming|Electric|Acid|Fire}
+~~ }
+NO: {} {Keep} ~~ {
+~~ }
+ON: {(L) UA (575 OD +10)} {Keep} ~~ {
+	LKeyE L_WeaponMasteryCategory 1
+	LKeyE L_WieldReqAttribute 45
+	LKeyBuffedGE L_MaxDamage 86
+	ObjClass C_MeleeWeapon
+	MatchRx M_Name {Katar|Knuckles}
+	MatchRx M_Name {Frost|Lightning|Flaming|Electric|Acid|Fire}
+	LKeyE L_WieldReqValue 575
+~~ }
+ON: {(L) UA (575 OD +6 550 +10)} {Keep} ~~ {
+	LKeyE L_WeaponMasteryCategory 1
+	LKeyE L_WieldReqAttribute 45
+	LKeyBuffedGE L_MaxDamage 82
+	ObjClass C_MeleeWeapon
+	MatchRx M_Name {Katar|Knuckles}
+	MatchRx M_Name {Frost|Lightning|Flaming|Electric|Acid|Fire}
+~~ }
+NO: {} {Keep} ~~ {
+~~ }
+ON: {(F) UA (575 OD +10)} {Keep} ~~ {
+	LKeyE L_WeaponMasteryCategory 1
+	LKeyE L_WieldReqAttribute 46
+	LKeyBuffedGE L_MaxDamage 86
+	ObjClass C_MeleeWeapon
+	MatchRx M_Name {Claw|Wraps}
+	MatchRx M_Name {Frost|Lightning|Flaming|Electric|Acid|Fire}
+	LKeyE L_WieldReqValue 575
+~~ }
+ON: {(F) UA (575 OD +6 550 +10)} {Keep} ~~ {
+	LKeyE L_WeaponMasteryCategory 1
+	LKeyE L_WieldReqAttribute 46
+	LKeyBuffedGE L_MaxDamage 82
+	ObjClass C_MeleeWeapon
+	MatchRx M_Name {Claw|Wraps}
+	MatchRx M_Name {Frost|Lightning|Flaming|Electric|Acid|Fire}
+~~ }
+NO: {} {Keep} ~~ {
+~~ }
+ON: {(2H) Cleaving (575 OD +10)} {Keep} ~~ {
+	ObjClass C_MeleeWeapon
+	LKeyBuffedGE L_MaxDamage 83
+	LKeyE L_WieldReqAttribute 41
+	MatchRx M_Name {Nodachi|Shashqa|Spadone|Greataxe|Quadrelle|Khanda-handled|Tetsubo|Star}
+	MatchRx M_Name {Frost|Lightning|Flaming|Electric|Acid|Fire}
+	LKeyE L_WieldReqValue 575
+~~ }
+ON: {(2H) Cleaving (575 OD +4 550 +8)} {Keep} ~~ {
+	ObjClass C_MeleeWeapon
+	LKeyBuffedGE L_MaxDamage 77
+	LKeyE L_WieldReqAttribute 41
+	MatchRx M_Name {Nodachi|Shashqa|Spadone|Greataxe|Quadrelle|Khanda-handled|Tetsubo|Star}
+	MatchRx M_Name {Frost|Lightning|Flaming|Electric|Acid|Fire}
+~~ }
+NO: {} {Keep} ~~ {
+~~ }
+ON: {(2H) Spear Pierce (575 OD +10)} {Keep} ~~ {
+	ObjClass C_MeleeWeapon
+	LKeyBuffedGE L_MaxDamage 86
+	LKeyE L_WieldReqAttribute 41
+	MatchRx M_Name {Assagai|Pike|Magari|Corsesca}
+	LKeyE L_DamageType 2
+	LKeyE L_WieldReqValue 575
+~~ }
+ON: {(2H) Spear Pierce (575 OD +7)} {Keep} ~~ {
+	ObjClass C_MeleeWeapon
+	LKeyBuffedGE L_MaxDamage 83
+	LKeyE L_WieldReqAttribute 41
+	MatchRx M_Name {Assagai|Pike|Magari|Corsesca}
+	LKeyE L_DamageType 2
+	LKeyE L_WieldReqValue 575
+~~ }
+NO: {} {Keep} ~~ {
+	MatchRx M_Name {blank space}
+~~ }
+NO: {} {Keep} ~~ {
+	MatchRx M_Name {blank space}
+~~ }
+NO: {} {Keep} ~~ {
+	MatchRx M_Name {blank space}
+~~ }
+ON: {***** Missile Weapons *****} {Keep} ~~ {
+	MatchRx M_Name {leave this disabled}
+~~ }
+ON: {(M) Bow (500 OD +10)} {Keep} ~~ {
+	LKeyE L_WeaponMasteryCategory 8
+	ObjClass C_MissileWeapon
+	CalcedBuffedMissileDmgGE 91.6
+	LKeyE L_WieldReqAttribute 47
+	LKeyE L_WieldReqValue 500
+~~ }
+ON: {(M) Bow (500 OD +9)} {Keep} ~~ {
+	LKeyE L_WeaponMasteryCategory 8
+	ObjClass C_MissileWeapon
+	CalcedBuffedMissileDmgGE 90.6
+	LKeyE L_WieldReqAttribute 47
+	LKeyE L_WieldReqValue 500
+~~ }
+ON: {(M) Bow (500 OD +8)} {Keep} ~~ {
+	LKeyE L_WeaponMasteryCategory 8
+	ObjClass C_MissileWeapon
+	CalcedBuffedMissileDmgGE 89.6
+	LKeyE L_WieldReqAttribute 47
+	LKeyE L_WieldReqValue 500
+~~ }
+ON: {(M) Bow (500 OD +7)} {Keep} ~~ {
+	LKeyE L_WeaponMasteryCategory 8
+	ObjClass C_MissileWeapon
+	CalcedBuffedMissileDmgGE 88.6
+	LKeyE L_WieldReqAttribute 47
+	LKeyE L_WieldReqValue 500
+~~ }
+ON: {(M) Bow (475 OD +10)} {Keep} ~~ {
+	LKeyE L_WeaponMasteryCategory 8
+	ObjClass C_MissileWeapon
+	CalcedBuffedMissileDmgGE 90.6
+	LKeyE L_WieldReqAttribute 47
+	LKeyE L_WieldReqValue 475
+~~ }
+ON: {(M) Bow (475 OD +9)} {Keep} ~~ {
+	LKeyE L_WeaponMasteryCategory 8
+	ObjClass C_MissileWeapon
+	CalcedBuffedMissileDmgGE 89.6
+	LKeyE L_WieldReqAttribute 47
+	LKeyE L_WieldReqValue 475
+~~ }
+ON: {(M) Bow (475 OD +8)} {Keep} ~~ {
+	LKeyE L_WeaponMasteryCategory 8
+	ObjClass C_MissileWeapon
+	CalcedBuffedMissileDmgGE 88.6
+	LKeyE L_WieldReqAttribute 47
+	LKeyE L_WieldReqValue 475
+~~ }
+ON: {(M) Bow (475 OD +7)} {Keep} ~~ {
+	LKeyE L_WeaponMasteryCategory 8
+	ObjClass C_MissileWeapon
+	CalcedBuffedMissileDmgGE 87.6
+	LKeyE L_WieldReqAttribute 47
+	LKeyE L_WieldReqValue 475
+~~ }
+ON: {(M) Bow (450 OD +10)} {Keep} ~~ {
+	LKeyE L_WeaponMasteryCategory 8
+	ObjClass C_MissileWeapon
+	CalcedBuffedMissileDmgGE 89.6
+	LKeyE L_WieldReqAttribute 47
+	LKeyE L_WieldReqValue 450
+~~ }
+ON: {(M) Bow (450 OD +9)} {Keep} ~~ {
+	LKeyE L_WeaponMasteryCategory 8
+	ObjClass C_MissileWeapon
+	CalcedBuffedMissileDmgGE 88.6
+	LKeyE L_WieldReqAttribute 47
+	LKeyE L_WieldReqValue 450
+~~ }
+ON: {(M) Bow (450 OD +8)} {Keep} ~~ {
+	LKeyE L_WeaponMasteryCategory 8
+	ObjClass C_MissileWeapon
+	CalcedBuffedMissileDmgGE 87.6
+	LKeyE L_WieldReqAttribute 47
+	LKeyE L_WieldReqValue 450
+~~ }
+ON: {(M) Bow (450 OD +7)} {Keep} ~~ {
+	LKeyE L_WeaponMasteryCategory 8
+	ObjClass C_MissileWeapon
+	CalcedBuffedMissileDmgGE 86.6
+	LKeyE L_WieldReqAttribute 47
+	LKeyE L_WieldReqValue 450
+~~ }
+ON: {(M) Bow (425 OD +10)} {Keep} ~~ {
+	LKeyE L_WeaponMasteryCategory 8
+	ObjClass C_MissileWeapon
+	CalcedBuffedMissileDmgGE 88.6
+	LKeyE L_WieldReqAttribute 47
+	LKeyE L_WieldReqValue 425
+~~ }
+ON: {(M) Bow (425 OD +9)} {Keep} ~~ {
+	LKeyE L_WeaponMasteryCategory 8
+	ObjClass C_MissileWeapon
+	CalcedBuffedMissileDmgGE 87.6
+	LKeyE L_WieldReqAttribute 47
+	LKeyE L_WieldReqValue 425
+~~ }
+ON: {(M) Bow (425 OD +8)} {Keep} ~~ {
+	LKeyE L_WeaponMasteryCategory 8
+	ObjClass C_MissileWeapon
+	CalcedBuffedMissileDmgGE 86.6
+	LKeyE L_WieldReqAttribute 47
+	LKeyE L_WieldReqValue 425
+~~ }
+ON: {(M) Bow (425 OD +7)} {Keep} ~~ {
+	LKeyE L_WeaponMasteryCategory 8
+	ObjClass C_MissileWeapon
+	CalcedBuffedMissileDmgGE 83.6
+	LKeyE L_WieldReqAttribute 47
+	LKeyE L_WieldReqValue 425
+~~ }
+ON: {(M) Bow (T8 OD +10)} {Keep} ~~ {
+	LKeyE L_WeaponMasteryCategory 8
+	ObjClass C_MissileWeapon
+	CalcedBuffedMissileDmgGE 80.6
+	LKeyE L_WieldReqAttribute 47
+	LKeyE L_WieldReqValue 385
+~~ }
+NO: {(M) Bow (T8 OD +7)} {Keep} ~~ {
+	LKeyE L_WeaponMasteryCategory 8
+	ObjClass C_MissileWeapon
+	CalcedBuffedMissileDmgGE 77.6
+	LKeyE L_WieldReqAttribute 47
+	LKeyE L_WieldReqValue 385
+~~ }
+NO: {} {Keep} ~~ {
+~~ }
+ON: {(M) Xbow (500 OD +10)} {Keep} ~~ {
+	LKeyE L_WeaponMasteryCategory 9
+	ObjClass C_MissileWeapon
+	CalcedBuffedMissileDmgGE 99
+	LKeyE L_WieldReqAttribute 47
+	LKeyE L_WieldReqValue 500
+~~ }
+NO: {(M) Xbow (500 OD +7)} {Keep} ~~ {
+	LKeyE L_WeaponMasteryCategory 9
+	ObjClass C_MissileWeapon
+	CalcedBuffedMissileDmgGE 96
+	LKeyE L_WieldReqAttribute 47
+	LKeyE L_WieldReqValue 500
+~~ }
+ON: {(M) Xbow (475 OD +10)} {Keep} ~~ {
+	LKeyE L_WeaponMasteryCategory 9
+	ObjClass C_MissileWeapon
+	CalcedBuffedMissileDmgGE 98
+	LKeyE L_WieldReqAttribute 47
+	LKeyE L_WieldReqValue 475
+~~ }
+NO: {(M) Xbow (475 OD +7)} {Keep} ~~ {
+	LKeyE L_WeaponMasteryCategory 9
+	ObjClass C_MissileWeapon
+	CalcedBuffedMissileDmgGE 95
+	LKeyE L_WieldReqAttribute 47
+	LKeyE L_WieldReqValue 475
+~~ }
+ON: {(M) Xbow (450 OD +10)} {Keep} ~~ {
+	LKeyE L_WeaponMasteryCategory 9
+	ObjClass C_MissileWeapon
+	CalcedBuffedMissileDmgGE 97
+	LKeyE L_WieldReqAttribute 47
+	LKeyE L_WieldReqValue 450
+~~ }
+NO: {(M) Xbow (450 OD +7)} {Keep} ~~ {
+	LKeyE L_WeaponMasteryCategory 9
+	ObjClass C_MissileWeapon
+	CalcedBuffedMissileDmgGE 94
+	LKeyE L_WieldReqAttribute 47
+	LKeyE L_WieldReqValue 450
+~~ }
+ON: {(M) Xbow (425 OD +10)} {Keep} ~~ {
+	LKeyE L_WeaponMasteryCategory 9
+	ObjClass C_MissileWeapon
+	CalcedBuffedMissileDmgGE 96
+	LKeyE L_WieldReqAttribute 47
+	LKeyE L_WieldReqValue 425
+~~ }
+NO: {(M) Xbow (425 OD +7)} {Keep} ~~ {
+	LKeyE L_WeaponMasteryCategory 9
+	ObjClass C_MissileWeapon
+	CalcedBuffedMissileDmgGE 93
+	LKeyE L_WieldReqAttribute 47
+	LKeyE L_WieldReqValue 425
+~~ }
+ON: {(M) Xbow (T8 OD +10)} {Keep} ~~ {
+	LKeyE L_WeaponMasteryCategory 9
+	ObjClass C_MissileWeapon
+	CalcedBuffedMissileDmgGE 87
+	LKeyE L_WieldReqAttribute 47
+	LKeyE L_WieldReqValue 385
+~~ }
+NO: {(M) Xbow (T8 OD +7)} {Keep} ~~ {
+	LKeyE L_WeaponMasteryCategory 9
+	ObjClass C_MissileWeapon
+	CalcedBuffedMissileDmgGE 84
+	LKeyE L_WieldReqAttribute 47
+	LKeyE L_WieldReqValue 385
+~~ }
+NO: {} {Keep} ~~ {
+~~ }
+ON: {(M) TW (500 OD +10)} {Keep} ~~ {
+	LKeyE L_WeaponMasteryCategory 10
+	ObjClass C_MissileWeapon
+	CalcedBuffedMissileDmgGE 96
+	LKeyE L_WieldReqAttribute 47
+	LKeyE L_WieldReqValue 500
+~~ }
+ON: {(M) TW (500 OD +7)} {Keep} ~~ {
+	LKeyE L_WeaponMasteryCategory 10
+	ObjClass C_MissileWeapon
+	CalcedBuffedMissileDmgGE 93
+	LKeyE L_WieldReqAttribute 47
+	LKeyE L_WieldReqValue 500
+~~ }
+ON: {(M) TW (475 OD +10)} {Keep} ~~ {
+	LKeyE L_WeaponMasteryCategory 10
+	ObjClass C_MissileWeapon
+	CalcedBuffedMissileDmgGE 95
+	LKeyE L_WieldReqAttribute 47
+	LKeyE L_WieldReqValue 475
+~~ }
+ON: {(M) TW (475 OD +7)} {Keep} ~~ {
+	LKeyE L_WeaponMasteryCategory 10
+	ObjClass C_MissileWeapon
+	CalcedBuffedMissileDmgGE 92
+	LKeyE L_WieldReqAttribute 47
+	LKeyE L_WieldReqValue 475
+~~ }
+ON: {(M) TW (450 OD +10)} {Keep} ~~ {
+	LKeyE L_WeaponMasteryCategory 10
+	ObjClass C_MissileWeapon
+	CalcedBuffedMissileDmgGE 94
+	LKeyE L_WieldReqAttribute 47
+	LKeyE L_WieldReqValue 450
+~~ }
+ON: {(M) TW (450 OD +7)} {Keep} ~~ {
+	LKeyE L_WeaponMasteryCategory 10
+	ObjClass C_MissileWeapon
+	CalcedBuffedMissileDmgGE 91
+	LKeyE L_WieldReqAttribute 47
+	LKeyE L_WieldReqValue 450
+~~ }
+ON: {(M) TW (425 OD +10)} {Keep} ~~ {
+	LKeyE L_WeaponMasteryCategory 10
+	ObjClass C_MissileWeapon
+	CalcedBuffedMissileDmgGE 93
+	LKeyE L_WieldReqAttribute 47
+	LKeyE L_WieldReqValue 425
+~~ }
+ON: {(M) TW (425 OD +7)} {Keep} ~~ {
+	LKeyE L_WeaponMasteryCategory 10
+	ObjClass C_MissileWeapon
+	CalcedBuffedMissileDmgGE 90
+	LKeyE L_WieldReqAttribute 47
+	LKeyE L_WieldReqValue 425
+~~ }
+ON: {(M) TW (T8 OD +10)} {Keep} ~~ {
+	LKeyE L_WeaponMasteryCategory 10
+	ObjClass C_MissileWeapon
+	CalcedBuffedMissileDmgGE 85.3
+	LKeyE L_WieldReqAttribute 47
+	LKeyE L_WieldReqValue 385
+~~ }
+NO: {(M) TW (T8 OD +7)} {Keep} ~~ {
+	LKeyE L_WeaponMasteryCategory 10
+	ObjClass C_MissileWeapon
+	CalcedBuffedMissileDmgGE 82.3
+	LKeyE L_WieldReqAttribute 47
+	LKeyE L_WieldReqValue 385
+~~ }
+NO: {} {Keep} ~~ {
+	MatchRx M_Name {leave this disabled}
+~~ }
+NO: {} {Keep} ~~ {
+	MatchRx M_Name {leave this disabled}
+~~ }
+NO: {} {Keep} ~~ {
+	MatchRx M_Name {leave this disabled}
+~~ }
+NO: {***** Wands *****} {Keep} ~~ {
+	MatchRx M_Name {do not edit}
+~~ }
+ON: {(W) T9 Melee Caster (37MD)} {Keep} ~~ {
+	ObjClass C_WandStaffOrb
+	DKeyBuffedGE D_MeleeDefenseBonus 1.37
+	MatchRx M_Name {Orb|Wand|Sceptre|Staff}
+	LKeyE L_WieldReqValue 450
+~~ }
+ON: {(W) Melee Caster (29+ MD)} {Keep} ~~ {
+	ObjClass C_WandStaffOrb
+	DKeyBuffedGE D_MeleeDefenseBonus 1.29
+	MatchRx M_Name {Orb|Wand|Sceptre|Staff}
+~~ }
+ON: {(W) Melee Caster (29+ MD Element)} {Keep} ~~ {
+	ObjClass C_WandStaffOrb
+	DKeyBuffedGE D_MeleeDefenseBonus 1.29
+	MatchRx M_Name {Frost|Lightning|Flaming|Electric|Acid|Fire}
+	MatchRx M_Name {Orb|Wand|Sceptre|Staff}
+~~ }
+NO: {} {Keep} ~~ {
+	MatchRx M_Name {leave this disabled}
+~~ }
+ON: {(W) Void (500 OD +7)} {Keep} ~~ {
+	ObjClass C_WandStaffOrb
+	DKeyBuffedGE D_ElementalDamageVersus 1.33
+	MatchRx M_Name {Nether}
+	LKeyE L_WieldReqValue 500
+~~ }
+NO: {(W) Void (500 OD +6)} {Keep} ~~ {
+	ObjClass C_WandStaffOrb
+	DKeyBuffedGE D_ElementalDamageVersus 1.32
+	MatchRx M_Name {Nether}
+	LKeyE L_WieldReqValue 500
+~~ }
+NO: {(W) Void (500 OD +5)} {Keep} ~~ {
+	ObjClass C_WandStaffOrb
+	DKeyBuffedGE D_ElementalDamageVersus 1.31
+	MatchRx M_Name {Nether}
+	LKeyE L_WieldReqValue 500
+~~ }
+NO: {(W) Void (500 OD +4)} {Keep} ~~ {
+	ObjClass C_WandStaffOrb
+	DKeyBuffedGE D_ElementalDamageVersus 1.3
+	MatchRx M_Name {Nether}
+	LKeyE L_WieldReqValue 500
+~~ }
+NO: {(W) Void (500 Melee)} {Keep} ~~ {
+	ObjClass C_WandStaffOrb
+	DKeyBuffedGE D_ElementalDamageVersus 1.25
+	DKeyBuffedGE D_MeleeDefenseBonus 1.29
+	MatchRx M_Name {Nether}
+	LKeyE L_WieldReqValue 500
+~~ }
+NO: {(W) Void (475 OD +7)} {Keep} ~~ {
+	ObjClass C_WandStaffOrb
+	DKeyBuffedGE D_ElementalDamageVersus 1.31
+	MatchRx M_Name {Nether}
+	LKeyE L_WieldReqValue 475
+~~ }
+NO: {(W) Void (475 OD +6)} {Keep} ~~ {
+	ObjClass C_WandStaffOrb
+	DKeyBuffedGE D_ElementalDamageVersus 1.3
+	MatchRx M_Name {Nether}
+	LKeyE L_WieldReqValue 475
+~~ }
+NO: {(W) Void (475 OD +5)} {Keep} ~~ {
+	ObjClass C_WandStaffOrb
+	DKeyBuffedGE D_ElementalDamageVersus 1.29
+	MatchRx M_Name {Nether}
+	LKeyE L_WieldReqValue 475
+~~ }
+NO: {(W) Void (450 OD +7)} {Keep} ~~ {
+	ObjClass C_WandStaffOrb
+	DKeyBuffedGE D_ElementalDamageVersus 1.29
+	MatchRx M_Name {Nether}
+	LKeyE L_WieldReqValue 450
+~~ }
+NO: {(W) Void (450 OD +6)} {Keep} ~~ {
+	ObjClass C_WandStaffOrb
+	DKeyBuffedGE D_ElementalDamageVersus 1.28
+	MatchRx M_Name {Nether}
+	LKeyE L_WieldReqValue 450
+~~ }
+NO: {(W) Void (450 OD +5)} {Keep} ~~ {
+	ObjClass C_WandStaffOrb
+	DKeyBuffedGE D_ElementalDamageVersus 1.27
+	MatchRx M_Name {Nether}
+	LKeyE L_WieldReqValue 450
+~~ }
+NO: {(W) Void (425 OD +7)} {Keep} ~~ {
+	ObjClass C_WandStaffOrb
+	DKeyBuffedGE D_ElementalDamageVersus 1.27
+	MatchRx M_Name {Nether}
+	LKeyE L_WieldReqValue 425
+~~ }
+NO: {(W) Void (425 OD +6)} {Keep} ~~ {
+	ObjClass C_WandStaffOrb
+	DKeyBuffedGE D_ElementalDamageVersus 1.26
+	MatchRx M_Name {Nether}
+	LKeyE L_WieldReqValue 425
+~~ }
+NO: {(W) Void (425 OD +5)} {Keep} ~~ {
+	ObjClass C_WandStaffOrb
+	DKeyBuffedGE D_ElementalDamageVersus 1.25
+	MatchRx M_Name {Nether}
+	LKeyE L_WieldReqValue 425
+~~ }
+NO: {(W) Void (T8 OD +7)} {Keep} ~~ {
+	ObjClass C_WandStaffOrb
+	DKeyBuffedGE D_ElementalDamageVersus 1.25
+	MatchRx M_Name {Nether}
+	LKeyE L_WieldReqValue 385
+~~ }
+NO: {(W) Void (T8 OD +6)} {Keep} ~~ {
+	ObjClass C_WandStaffOrb
+	DKeyBuffedGE D_ElementalDamageVersus 1.24
+	MatchRx M_Name {Nether}
+	LKeyE L_WieldReqValue 385
+~~ }
+NO: {(W) Void (T8 OD +5)} {Keep} ~~ {
+	ObjClass C_WandStaffOrb
+	DKeyBuffedGE D_ElementalDamageVersus 1.23
+	MatchRx M_Name {Nether}
+	LKeyE L_WieldReqValue 385
+~~ }
+NO: {} {Keep} ~~ {
+	MatchRx M_Name {leave this disabled}
+~~ }
+ON: {(W) War (500 OD +7)} {Keep} ~~ {
+	ObjClass C_WandStaffOrb
+	DKeyBuffedGE D_ElementalDamageVersus 1.33
+	MatchRx M_Name {Baton|Sceptre|Staff}
+	LKeyE L_WieldReqValue 500
+~~ }
+ON: {(W) War (500 OD +6)} {Keep} ~~ {
+	ObjClass C_WandStaffOrb
+	DKeyBuffedGE D_ElementalDamageVersus 1.32
+	MatchRx M_Name {Baton|Sceptre|Staff}
+	LKeyE L_WieldReqValue 500
+~~ }
+ON: {(W) War (500 OD +5)} {Keep} ~~ {
+	ObjClass C_WandStaffOrb
+	DKeyBuffedGE D_ElementalDamageVersus 1.31
+	MatchRx M_Name {Baton|Sceptre|Staff}
+	LKeyE L_WieldReqValue 500
+~~ }
+ON: {(W) War (500 OD +4)} {Keep} ~~ {
+	ObjClass C_WandStaffOrb
+	DKeyBuffedGE D_ElementalDamageVersus 1.3
+	MatchRx M_Name {Baton|Sceptre|Staff}
+	LKeyE L_WieldReqValue 500
+~~ }
+ON: {(W) War (500 Melee)} {Keep} ~~ {
+	ObjClass C_WandStaffOrb
+	DKeyBuffedGE D_ElementalDamageVersus 1.25
+	DKeyBuffedGE D_MeleeDefenseBonus 1.29
+	MatchRx M_Name {Baton|Sceptre|Staff}
+	LKeyE L_WieldReqValue 500
+~~ }
+ON: {(W) War (475 OD +7)} {Keep} ~~ {
+	ObjClass C_WandStaffOrb
+	DKeyBuffedGE D_ElementalDamageVersus 1.31
+	MatchRx M_Name {Baton|Sceptre|Staff}
+	LKeyE L_WieldReqValue 475
+~~ }
+ON: {(W) War (475 OD +6)} {Keep} ~~ {
+	ObjClass C_WandStaffOrb
+	DKeyBuffedGE D_ElementalDamageVersus 1.3
+	MatchRx M_Name {Baton|Sceptre|Staff}
+	LKeyE L_WieldReqValue 475
+~~ }
+ON: {(W) War (475 OD +5)} {Keep} ~~ {
+	ObjClass C_WandStaffOrb
+	DKeyBuffedGE D_ElementalDamageVersus 1.29
+	MatchRx M_Name {Baton|Sceptre|Staff}
+	LKeyE L_WieldReqValue 475
+~~ }
+ON: {(W) War (450 OD +7)} {Keep} ~~ {
+	ObjClass C_WandStaffOrb
+	DKeyBuffedGE D_ElementalDamageVersus 1.29
+	MatchRx M_Name {Baton|Sceptre|Staff}
+	LKeyE L_WieldReqValue 450
+~~ }
+ON: {(W) War (450 OD +6)} {Keep} ~~ {
+	ObjClass C_WandStaffOrb
+	DKeyBuffedGE D_ElementalDamageVersus 1.28
+	MatchRx M_Name {Baton|Sceptre|Staff}
+	LKeyE L_WieldReqValue 450
+~~ }
+
+
+NO: {} {Keep} ~~ {
+	MatchRx M_FullDescription {leave this disabled}
+~~ }
+NO: {} {Keep} ~~ {
+	MatchRx M_Name {leave this disabled}
+~~ }
+NO: {} {Keep} ~~ {
+	MatchRx M_Name {leave this disabled}
+~~ }
+NO: {} {Keep} ~~ {
+	MatchRx M_Name {leave this disabled}
+~~ }
+ON: {***** Armor *****} {Keep} ~~ {
+	MatchRx M_Name {do not edit}
+~~ }
+ON: {} {Keep} ~~ {
+	MatchRx M_Name {do not edit}
+~~ }
+ON: {  ** Legendary Sets **} {Keep} ~~ {
+	MatchRx M_Name {do not edit}
+~~ }
+ON: {    (A) T9 Adept's Set + M-Legendary + cd4} {Keep} ~~ {
+	ObjClass C_Armor
+	LKeyE L_ArmorSetID 14 ~~ Adepts
+	NSpellsRxGE 2 {Legendary Str|Legendary End|Legendary Coord|Legendary Quick|Legendary Foc|Legendary Will|Legendary Acid|Legendary Bludg|Legendary Flame|Legendary Frost|Legendary Pierc|Legendary Slash|Legendary Storm|Legendary Invuln|Legendary Magic|Legendary Armor|Legendary Life|Legendary War|Legendary Voi|Legendary Mis|Legendary Impreg|Legendary Two|Legendary Heavy|Legendary Light|Legendary Finesse|Legendary Life|Legendary Creature} {Bane|Tink}
+	LKeyNE L_Unenchantable 9999
+	MatchRx M_Name {Jerkin|Pants|Coat|Cuirass|Sleeves|Shirt|Hauberk|Leggings|Cuirass|Breastplate|Girth|Pauldrons|Bracers|Greaves|Tassets|Vambraces|Shorts|Over-robe|Vest|Kote|Helm|Armet|Basinet|Baigha|Cap|Circlet|Coif|Coronet|Cowl|Crown|Diadem|Heaume|Kabuton|Gauntlets|Boots|Sandals|Sollerets|Shoes|Over-Robe}
+	LKeyGE L_CritDamRating 4
+~~ }
+ON: {    (A) T9 Adept's Set + M-Legendary + cdr4} {Keep} ~~ {
+	ObjClass C_Armor
+	LKeyE L_ArmorSetID 14 ~~ Adepts
+	NSpellsRxGE 2 {Legendary Str|Legendary End|Legendary Coord|Legendary Quick|Legendary Foc|Legendary Will|Legendary Acid|Legendary Bludg|Legendary Flame|Legendary Frost|Legendary Pierc|Legendary Slash|Legendary Storm|Legendary Invuln|Legendary Magic|Legendary Armor|Legendary Life|Legendary War|Legendary Voi|Legendary Mis|Legendary Impreg|Legendary Two|Legendary Heavy|Legendary Light|Legendary Finesse|Legendary Life|Legendary Creature} {Bane|Tink}
+	LKeyNE L_Unenchantable 9999
+	MatchRx M_Name {Jerkin|Pants|Coat|Cuirass|Sleeves|Shirt|Hauberk|Leggings|Cuirass|Breastplate|Girth|Pauldrons|Bracers|Greaves|Tassets|Vambraces|Shorts|Over-robe|Vest|Kote|Helm|Armet|Basinet|Baigha|Cap|Circlet|Coif|Coronet|Cowl|Crown|Diadem|Heaume|Kabuton|Gauntlets|Boots|Sandals|Sollerets|Shoes|Over-Robe}
+	LKeyGE L_CritDamResistRating 4
+~~ }
+ON: {    (A) T9 Adept's Set + Legendary + cdr4} {Keep} ~~ {
+	ObjClass C_Armor
+	LKeyE L_ArmorSetID 14 ~~ Adepts
+	NSpellsRxGE 1 {Legendary Str|Legendary End|Legendary Coord|Legendary Quick|Legendary Foc|Legendary Will|Legendary Acid|Legendary Bludg|Legendary Flame|Legendary Frost|Legendary Pierc|Legendary Slash|Legendary Storm|Legendary Invuln|Legendary Magic|Legendary Armor|Legendary Life|Legendary War|Legendary Voi|Legendary Mis|Legendary Impreg|Legendary Two|Legendary Heavy|Legendary Light|Legendary Finesse|Legendary Life|Legendary Creature} {Bane|Tink}
+	LKeyNE L_Unenchantable 9999
+	MatchRx M_Name {Jerkin|Pants|Coat|Cuirass|Sleeves|Shirt|Hauberk|Leggings|Cuirass|Breastplate|Girth|Pauldrons|Bracers|Greaves|Tassets|Vambraces|Shorts|Over-robe|Vest|Kote|Helm|Armet|Basinet|Baigha|Cap|Circlet|Coif|Coronet|Cowl|Crown|Diadem|Heaume|Kabuton|Gauntlets|Boots|Sandals|Sollerets|Shoes|Over-Robe}
+	LKeyGE L_CritDamResistRating 4
+~~ }
+ON: {    (A) T9 Adept's Set + Legendary + cd4} {Keep} ~~ {
+	ObjClass C_Armor
+	LKeyE L_ArmorSetID 14 ~~ Adepts
+	NSpellsRxGE 1 {Legendary Str|Legendary End|Legendary Coord|Legendary Quick|Legendary Foc|Legendary Will|Legendary Acid|Legendary Bludg|Legendary Flame|Legendary Frost|Legendary Pierc|Legendary Slash|Legendary Storm|Legendary Invuln|Legendary Magic|Legendary Armor|Legendary Life|Legendary War|Legendary Voi|Legendary Mis|Legendary Impreg|Legendary Two|Legendary Heavy|Legendary Light|Legendary Finesse|Legendary Life|Legendary Creature} {Bane|Tink}
+	LKeyNE L_Unenchantable 9999
+	MatchRx M_Name {Jerkin|Pants|Coat|Cuirass|Sleeves|Shirt|Hauberk|Leggings|Cuirass|Breastplate|Girth|Pauldrons|Bracers|Greaves|Tassets|Vambraces|Shorts|Over-robe|Vest|Kote|Helm|Armet|Basinet|Baigha|Cap|Circlet|Coif|Coronet|Cowl|Crown|Diadem|Heaume|Kabuton|Gauntlets|Boots|Sandals|Sollerets|Shoes|Over-Robe}
+	LKeyGE L_CritDamRating 4
+~~ }
+ON: {    (A) T9 Adept's Set + M-Legendary + cd3} {Keep} ~~ {
+	ObjClass C_Armor
+	LKeyE L_ArmorSetID 14 ~~ Adepts
+	NSpellsRxGE 2 {Legendary Str|Legendary End|Legendary Coord|Legendary Quick|Legendary Foc|Legendary Will|Legendary Acid|Legendary Bludg|Legendary Flame|Legendary Frost|Legendary Pierc|Legendary Slash|Legendary Storm|Legendary Invuln|Legendary Magic|Legendary Armor|Legendary Life|Legendary War|Legendary Voi|Legendary Mis|Legendary Impreg|Legendary Two|Legendary Heavy|Legendary Light|Legendary Finesse|Legendary Life|Legendary Creature} {Bane|Tink}
+	LKeyNE L_Unenchantable 9999
+	MatchRx M_Name {Jerkin|Pants|Coat|Cuirass|Sleeves|Shirt|Hauberk|Leggings|Cuirass|Breastplate|Girth|Pauldrons|Bracers|Greaves|Tassets|Vambraces|Shorts|Over-robe|Vest|Kote|Helm|Armet|Basinet|Baigha|Cap|Circlet|Coif|Coronet|Cowl|Crown|Diadem|Heaume|Kabuton|Gauntlets|Boots|Sandals|Sollerets|Shoes|Over-Robe}
+	LKeyGE L_CritDamRating 3
+~~ }
+ON: {    (A) T9 Adept's Set + M-Legendary + cdr3} {Keep} ~~ {
+	ObjClass C_Armor
+	LKeyE L_ArmorSetID 14 ~~ Adepts
+	NSpellsRxGE 2 {Legendary Str|Legendary End|Legendary Coord|Legendary Quick|Legendary Foc|Legendary Will|Legendary Acid|Legendary Bludg|Legendary Flame|Legendary Frost|Legendary Pierc|Legendary Slash|Legendary Storm|Legendary Invuln|Legendary Magic|Legendary Armor|Legendary Life|Legendary War|Legendary Voi|Legendary Mis|Legendary Impreg|Legendary Two|Legendary Heavy|Legendary Light|Legendary Finesse|Legendary Life|Legendary Creature} {Bane|Tink}
+	LKeyNE L_Unenchantable 9999
+	MatchRx M_Name {Jerkin|Pants|Coat|Cuirass|Sleeves|Shirt|Hauberk|Leggings|Cuirass|Breastplate|Girth|Pauldrons|Bracers|Greaves|Tassets|Vambraces|Shorts|Over-robe|Vest|Kote|Helm|Armet|Basinet|Baigha|Cap|Circlet|Coif|Coronet|Cowl|Crown|Diadem|Heaume|Kabuton|Gauntlets|Boots|Sandals|Sollerets|Shoes|Over-Robe}
+	LKeyGE L_CritDamResistRating 3
+~~ }
+ON: {    (A) T8 Adept's Set + M-Legendary + cd2} {Keep} ~~ {
+	ObjClass C_Armor
+	LKeyE L_ArmorSetID 14 ~~ Adepts
+	NSpellsRxGE 2 {Legendary Str|Legendary End|Legendary Coord|Legendary Quick|Legendary Foc|Legendary Will|Legendary Acid|Legendary Bludg|Legendary Flame|Legendary Frost|Legendary Pierc|Legendary Slash|Legendary Storm|Legendary Invuln|Legendary Magic|Legendary Armor|Legendary Life|Legendary War|Legendary Voi|Legendary Mis|Legendary Impreg|Legendary Two|Legendary Heavy|Legendary Light|Legendary Finesse|Legendary Life|Legendary Creature} {Bane|Tink}
+	LKeyNE L_Unenchantable 9999
+	MatchRx M_Name {Jerkin|Pants|Coat|Cuirass|Sleeves|Shirt|Hauberk|Leggings|Cuirass|Breastplate|Girth|Pauldrons|Bracers|Greaves|Tassets|Vambraces|Shorts|Over-robe|Vest|Kote|Helm|Armet|Basinet|Baigha|Cap|Circlet|Coif|Coronet|Cowl|Crown|Diadem|Heaume|Kabuton|Gauntlets|Boots|Sandals|Sollerets|Shoes|Over-Robe}
+	LKeyGE L_CritDamRating 2
+	LKeyE L_WieldReqValue 180
+~~ }
+ON: {    (A) T8 Adept's Set + M-Legendary + cdr2} {Keep} ~~ {
+	ObjClass C_Armor
+	LKeyE L_ArmorSetID 14 ~~ Adepts
+	NSpellsRxGE 2 {Legendary Str|Legendary End|Legendary Coord|Legendary Quick|Legendary Foc|Legendary Will|Legendary Acid|Legendary Bludg|Legendary Flame|Legendary Frost|Legendary Pierc|Legendary Slash|Legendary Storm|Legendary Invuln|Legendary Magic|Legendary Armor|Legendary Life|Legendary War|Legendary Voi|Legendary Mis|Legendary Impreg|Legendary Two|Legendary Heavy|Legendary Light|Legendary Finesse|Legendary Life|Legendary Creature} {Bane|Tink}
+	LKeyNE L_Unenchantable 9999
+	MatchRx M_Name {Jerkin|Pants|Coat|Cuirass|Sleeves|Shirt|Hauberk|Leggings|Cuirass|Breastplate|Girth|Pauldrons|Bracers|Greaves|Tassets|Vambraces|Shorts|Over-robe|Vest|Kote|Helm|Armet|Basinet|Baigha|Cap|Circlet|Coif|Coronet|Cowl|Crown|Diadem|Heaume|Kabuton|Gauntlets|Boots|Sandals|Sollerets|Shoes|Over-Robe}
+	LKeyGE L_CritDamResistRating 2
+	LKeyE L_WieldReqValue 180
+~~ }
+ON: {} {Keep} ~~ {
+	MatchRx M_Name {do not edit}
+~~ }
+ON: {    (A) T9 Defender's Set + M-Legendary + cd4} {Keep} ~~ {
+	ObjClass C_Armor
+	LKeyE L_ArmorSetID 16 ~~ Defenders
+	NSpellsRxGE 2 {Legendary Str|Legendary End|Legendary Coord|Legendary Quick|Legendary Foc|Legendary Will|Legendary Acid|Legendary Bludg|Legendary Flame|Legendary Frost|Legendary Pierc|Legendary Slash|Legendary Storm|Legendary Invuln|Legendary Magic|Legendary Armor|Legendary Life|Legendary War|Legendary Voi|Legendary Mis|Legendary Impreg|Legendary Two|Legendary Heavy|Legendary Light|Legendary Finesse|Legendary Life|Legendary Creature} {Bane|Tink}
+	LKeyNE L_Unenchantable 9999
+	MatchRx M_Name {Jerkin|Pants|Coat|Cuirass|Sleeves|Shirt|Hauberk|Leggings|Cuirass|Breastplate|Girth|Pauldrons|Bracers|Greaves|Tassets|Vambraces|Shorts|Over-robe|Vest|Kote|Helm|Armet|Basinet|Baigha|Cap|Circlet|Coif|Coronet|Cowl|Crown|Diadem|Heaume|Kabuton|Gauntlets|Boots|Sandals|Sollerets|Shoes|Over-Robe}
+	LKeyGE L_CritDamRating 4
+~~ }
+ON: {    (A) T9 Defender's Set + M-Legendary + cdr4} {Keep} ~~ {
+	ObjClass C_Armor
+	LKeyE L_ArmorSetID 16 ~~ Defenders
+	NSpellsRxGE 2 {Legendary Str|Legendary End|Legendary Coord|Legendary Quick|Legendary Foc|Legendary Will|Legendary Acid|Legendary Bludg|Legendary Flame|Legendary Frost|Legendary Pierc|Legendary Slash|Legendary Storm|Legendary Invuln|Legendary Magic|Legendary Armor|Legendary Life|Legendary War|Legendary Voi|Legendary Mis|Legendary Impreg|Legendary Two|Legendary Heavy|Legendary Light|Legendary Finesse|Legendary Life|Legendary Creature} {Bane|Tink}
+	LKeyNE L_Unenchantable 9999
+	MatchRx M_Name {Jerkin|Pants|Coat|Cuirass|Sleeves|Shirt|Hauberk|Leggings|Cuirass|Breastplate|Girth|Pauldrons|Bracers|Greaves|Tassets|Vambraces|Shorts|Over-robe|Vest|Kote|Helm|Armet|Basinet|Baigha|Cap|Circlet|Coif|Coronet|Cowl|Crown|Diadem|Heaume|Kabuton|Gauntlets|Boots|Sandals|Sollerets|Shoes|Over-Robe}
+	LKeyGE L_CritDamResistRating 4
+~~ }
+ON: {    (A) T9 Defender's Set + Legendary + cdr4} {Keep} ~~ {
+	ObjClass C_Armor
+	LKeyE L_ArmorSetID 16 ~~ Defenders
+	NSpellsRxGE 1 {Legendary Str|Legendary End|Legendary Coord|Legendary Quick|Legendary Foc|Legendary Will|Legendary Acid|Legendary Bludg|Legendary Flame|Legendary Frost|Legendary Pierc|Legendary Slash|Legendary Storm|Legendary Invuln|Legendary Magic|Legendary Armor|Legendary Life|Legendary War|Legendary Voi|Legendary Mis|Legendary Impreg|Legendary Two|Legendary Heavy|Legendary Light|Legendary Finesse|Legendary Life|Legendary Creature} {Bane|Tink}
+	LKeyNE L_Unenchantable 9999
+	MatchRx M_Name {Jerkin|Pants|Coat|Cuirass|Sleeves|Shirt|Hauberk|Leggings|Cuirass|Breastplate|Girth|Pauldrons|Bracers|Greaves|Tassets|Vambraces|Shorts|Over-robe|Vest|Kote|Helm|Armet|Basinet|Baigha|Cap|Circlet|Coif|Coronet|Cowl|Crown|Diadem|Heaume|Kabuton|Gauntlets|Boots|Sandals|Sollerets|Shoes|Over-Robe}
+	LKeyGE L_CritDamResistRating 4
+~~ }
+ON: {    (A) T9 Defender's Set + Legendary + cd4} {Keep} ~~ {
+	ObjClass C_Armor
+	LKeyE L_ArmorSetID 16 ~~ Defenders
+	NSpellsRxGE 1 {Legendary Str|Legendary End|Legendary Coord|Legendary Quick|Legendary Foc|Legendary Will|Legendary Acid|Legendary Bludg|Legendary Flame|Legendary Frost|Legendary Pierc|Legendary Slash|Legendary Storm|Legendary Invuln|Legendary Magic|Legendary Armor|Legendary Life|Legendary War|Legendary Voi|Legendary Mis|Legendary Impreg|Legendary Two|Legendary Heavy|Legendary Light|Legendary Finesse|Legendary Life|Legendary Creature} {Bane|Tink}
+	LKeyNE L_Unenchantable 9999
+	MatchRx M_Name {Jerkin|Pants|Coat|Cuirass|Sleeves|Shirt|Hauberk|Leggings|Cuirass|Breastplate|Girth|Pauldrons|Bracers|Greaves|Tassets|Vambraces|Shorts|Over-robe|Vest|Kote|Helm|Armet|Basinet|Baigha|Cap|Circlet|Coif|Coronet|Cowl|Crown|Diadem|Heaume|Kabuton|Gauntlets|Boots|Sandals|Sollerets|Shoes|Over-Robe}
+	LKeyGE L_CritDamRating 4
+~~ }
+ON: {    (A) T9 Defender's Set + M-Legendary + cd3} {Keep} ~~ {
+	ObjClass C_Armor
+	LKeyE L_ArmorSetID 16 ~~ Defenders
+	NSpellsRxGE 2 {Legendary Str|Legendary End|Legendary Coord|Legendary Quick|Legendary Foc|Legendary Will|Legendary Acid|Legendary Bludg|Legendary Flame|Legendary Frost|Legendary Pierc|Legendary Slash|Legendary Storm|Legendary Invuln|Legendary Magic|Legendary Armor|Legendary Life|Legendary War|Legendary Voi|Legendary Mis|Legendary Impreg|Legendary Two|Legendary Heavy|Legendary Light|Legendary Finesse|Legendary Life|Legendary Creature} {Bane|Tink}
+	LKeyNE L_Unenchantable 9999
+	MatchRx M_Name {Jerkin|Pants|Coat|Cuirass|Sleeves|Shirt|Hauberk|Leggings|Cuirass|Breastplate|Girth|Pauldrons|Bracers|Greaves|Tassets|Vambraces|Shorts|Over-robe|Vest|Kote|Helm|Armet|Basinet|Baigha|Cap|Circlet|Coif|Coronet|Cowl|Crown|Diadem|Heaume|Kabuton|Gauntlets|Boots|Sandals|Sollerets|Shoes|Over-Robe}
+	LKeyGE L_CritDamRating 3
+~~ }
+ON: {    (A) T9 Defender's Set + M-Legendary + cdr3} {Keep} ~~ {
+	ObjClass C_Armor
+	LKeyE L_ArmorSetID 16 ~~ Defenders
+	NSpellsRxGE 2 {Legendary Str|Legendary End|Legendary Coord|Legendary Quick|Legendary Foc|Legendary Will|Legendary Acid|Legendary Bludg|Legendary Flame|Legendary Frost|Legendary Pierc|Legendary Slash|Legendary Storm|Legendary Invuln|Legendary Magic|Legendary Armor|Legendary Life|Legendary War|Legendary Voi|Legendary Mis|Legendary Impreg|Legendary Two|Legendary Heavy|Legendary Light|Legendary Finesse|Legendary Life|Legendary Creature} {Bane|Tink}
+	LKeyNE L_Unenchantable 9999
+	MatchRx M_Name {Jerkin|Pants|Coat|Cuirass|Sleeves|Shirt|Hauberk|Leggings|Cuirass|Breastplate|Girth|Pauldrons|Bracers|Greaves|Tassets|Vambraces|Shorts|Over-robe|Vest|Kote|Helm|Armet|Basinet|Baigha|Cap|Circlet|Coif|Coronet|Cowl|Crown|Diadem|Heaume|Kabuton|Gauntlets|Boots|Sandals|Sollerets|Shoes|Over-Robe}
+	LKeyGE L_CritDamResistRating 3
+~~ }
+ON: {    (A) T8 Defender's Set + M-Legendary + cd2} {Keep} ~~ {
+	ObjClass C_Armor
+	LKeyE L_ArmorSetID 16 ~~ Defenders
+	NSpellsRxGE 2 {Legendary Str|Legendary End|Legendary Coord|Legendary Quick|Legendary Foc|Legendary Will|Legendary Acid|Legendary Bludg|Legendary Flame|Legendary Frost|Legendary Pierc|Legendary Slash|Legendary Storm|Legendary Invuln|Legendary Magic|Legendary Armor|Legendary Life|Legendary War|Legendary Voi|Legendary Mis|Legendary Impreg|Legendary Two|Legendary Heavy|Legendary Light|Legendary Finesse|Legendary Life|Legendary Creature} {Bane|Tink}
+	LKeyNE L_Unenchantable 9999
+	MatchRx M_Name {Jerkin|Pants|Coat|Cuirass|Sleeves|Shirt|Hauberk|Leggings|Cuirass|Breastplate|Girth|Pauldrons|Bracers|Greaves|Tassets|Vambraces|Shorts|Over-robe|Vest|Kote|Helm|Armet|Basinet|Baigha|Cap|Circlet|Coif|Coronet|Cowl|Crown|Diadem|Heaume|Kabuton|Gauntlets|Boots|Sandals|Sollerets|Shoes|Over-Robe}
+	LKeyGE L_CritDamRating 2
+	LKeyE L_WieldReqValue 180
+~~ }
+ON: {    (A) T8 Defender's Set + M-Legendary + cdr2} {Keep} ~~ {
+	ObjClass C_Armor
+	LKeyE L_ArmorSetID 16 ~~ Defenders
+	NSpellsRxGE 2 {Legendary Str|Legendary End|Legendary Coord|Legendary Quick|Legendary Foc|Legendary Will|Legendary Acid|Legendary Bludg|Legendary Flame|Legendary Frost|Legendary Pierc|Legendary Slash|Legendary Storm|Legendary Invuln|Legendary Magic|Legendary Armor|Legendary Life|Legendary War|Legendary Voi|Legendary Mis|Legendary Impreg|Legendary Two|Legendary Heavy|Legendary Light|Legendary Finesse|Legendary Life|Legendary Creature} {Bane|Tink}
+	LKeyNE L_Unenchantable 9999
+	MatchRx M_Name {Jerkin|Pants|Coat|Cuirass|Sleeves|Shirt|Hauberk|Leggings|Cuirass|Breastplate|Girth|Pauldrons|Bracers|Greaves|Tassets|Vambraces|Shorts|Over-robe|Vest|Kote|Helm|Armet|Basinet|Baigha|Cap|Circlet|Coif|Coronet|Cowl|Crown|Diadem|Heaume|Kabuton|Gauntlets|Boots|Sandals|Sollerets|Shoes|Over-Robe}
+	LKeyGE L_CritDamResistRating 2
+	LKeyE L_WieldReqValue 180
+~~ }
+ON: {} {Keep} ~~ {
+	MatchRx M_Name {do not edit}
+~~ }
+ON: {    (A) T9 Bludg Prot Set + M-Legendary + cd4} {Keep} ~~ {
+	ObjClass C_Armor
+	LKeyE L_ArmorSetID 24 ~~ Reinforced
+	NSpellsRxGE 2 {Legendary Str|Legendary End|Legendary Coord|Legendary Quick|Legendary Foc|Legendary Will|Legendary Acid|Legendary Bludg|Legendary Flame|Legendary Frost|Legendary Pierc|Legendary Slash|Legendary Storm|Legendary Invuln|Legendary Magic|Legendary Armor|Legendary Life|Legendary War|Legendary Voi|Legendary Mis|Legendary Impreg|Legendary Two|Legendary Heavy|Legendary Light|Legendary Finesse|Legendary Life|Legendary Creature} {Bane|Tink}
+	LKeyNE L_Unenchantable 9999
+	MatchRx M_Name {Jerkin|Pants|Coat|Cuirass|Sleeves|Shirt|Hauberk|Leggings|Cuirass|Breastplate|Girth|Pauldrons|Bracers|Greaves|Tassets|Vambraces|Shorts|Over-robe|Vest|Kote|Helm|Armet|Basinet|Baigha|Cap|Circlet|Coif|Coronet|Cowl|Crown|Diadem|Heaume|Kabuton|Gauntlets|Boots|Sandals|Sollerets|Shoes|Over-Robe}
+	LKeyGE L_CritDamRating 4
+~~ }
+ON: {    (A) T9 Bludg Prot Set + M-Legendary + cdr4} {Keep} ~~ {
+	ObjClass C_Armor
+	LKeyE L_ArmorSetID 24 ~~ Reinforced
+	NSpellsRxGE 2 {Legendary Str|Legendary End|Legendary Coord|Legendary Quick|Legendary Foc|Legendary Will|Legendary Acid|Legendary Bludg|Legendary Flame|Legendary Frost|Legendary Pierc|Legendary Slash|Legendary Storm|Legendary Invuln|Legendary Magic|Legendary Armor|Legendary Life|Legendary War|Legendary Voi|Legendary Mis|Legendary Impreg|Legendary Two|Legendary Heavy|Legendary Light|Legendary Finesse|Legendary Life|Legendary Creature} {Bane|Tink}
+	LKeyNE L_Unenchantable 9999
+	MatchRx M_Name {Jerkin|Pants|Coat|Cuirass|Sleeves|Shirt|Hauberk|Leggings|Cuirass|Breastplate|Girth|Pauldrons|Bracers|Greaves|Tassets|Vambraces|Shorts|Over-robe|Vest|Kote|Helm|Armet|Basinet|Baigha|Cap|Circlet|Coif|Coronet|Cowl|Crown|Diadem|Heaume|Kabuton|Gauntlets|Boots|Sandals|Sollerets|Shoes|Over-Robe}
+	LKeyGE L_CritDamResistRating 4
+~~ }
+ON: {    (A) T9 Bludg Prot Set + Legendary + cdr4} {Keep} ~~ {
+	ObjClass C_Armor
+	LKeyE L_ArmorSetID 24 ~~ Reinforced
+	NSpellsRxGE 1 {Legendary Str|Legendary End|Legendary Coord|Legendary Quick|Legendary Foc|Legendary Will|Legendary Acid|Legendary Bludg|Legendary Flame|Legendary Frost|Legendary Pierc|Legendary Slash|Legendary Storm|Legendary Invuln|Legendary Magic|Legendary Armor|Legendary Life|Legendary War|Legendary Voi|Legendary Mis|Legendary Impreg|Legendary Two|Legendary Heavy|Legendary Light|Legendary Finesse|Legendary Life|Legendary Creature} {Bane|Tink}
+	LKeyNE L_Unenchantable 9999
+	MatchRx M_Name {Jerkin|Pants|Coat|Cuirass|Sleeves|Shirt|Hauberk|Leggings|Cuirass|Breastplate|Girth|Pauldrons|Bracers|Greaves|Tassets|Vambraces|Shorts|Over-robe|Vest|Kote|Helm|Armet|Basinet|Baigha|Cap|Circlet|Coif|Coronet|Cowl|Crown|Diadem|Heaume|Kabuton|Gauntlets|Boots|Sandals|Sollerets|Shoes|Over-Robe}
+	LKeyGE L_CritDamResistRating 4
+~~ }
+ON: {    (A) T9 Bludg Prot Set + Legendary + cd4} {Keep} ~~ {
+	ObjClass C_Armor
+	LKeyE L_ArmorSetID 24 ~~ Reinforced
+	NSpellsRxGE 1 {Legendary Str|Legendary End|Legendary Coord|Legendary Quick|Legendary Foc|Legendary Will|Legendary Acid|Legendary Bludg|Legendary Flame|Legendary Frost|Legendary Pierc|Legendary Slash|Legendary Storm|Legendary Invuln|Legendary Magic|Legendary Armor|Legendary Life|Legendary War|Legendary Voi|Legendary Mis|Legendary Impreg|Legendary Two|Legendary Heavy|Legendary Light|Legendary Finesse|Legendary Life|Legendary Creature} {Bane|Tink}
+	LKeyNE L_Unenchantable 9999
+	MatchRx M_Name {Jerkin|Pants|Coat|Cuirass|Sleeves|Shirt|Hauberk|Leggings|Cuirass|Breastplate|Girth|Pauldrons|Bracers|Greaves|Tassets|Vambraces|Shorts|Over-robe|Vest|Kote|Helm|Armet|Basinet|Baigha|Cap|Circlet|Coif|Coronet|Cowl|Crown|Diadem|Heaume|Kabuton|Gauntlets|Boots|Sandals|Sollerets|Shoes|Over-Robe}
+	LKeyGE L_CritDamRating 4
+~~ }
+ON: {    (A) T9 Bludg Prot Set + M-Legendary + cd3} {Keep} ~~ {
+	ObjClass C_Armor
+	LKeyE L_ArmorSetID 24 ~~ Reinforced
+	NSpellsRxGE 2 {Legendary Str|Legendary End|Legendary Coord|Legendary Quick|Legendary Foc|Legendary Will|Legendary Acid|Legendary Bludg|Legendary Flame|Legendary Frost|Legendary Pierc|Legendary Slash|Legendary Storm|Legendary Invuln|Legendary Magic|Legendary Armor|Legendary Life|Legendary War|Legendary Voi|Legendary Mis|Legendary Impreg|Legendary Two|Legendary Heavy|Legendary Light|Legendary Finesse|Legendary Life|Legendary Creature} {Bane|Tink}
+	LKeyNE L_Unenchantable 9999
+	MatchRx M_Name {Jerkin|Pants|Coat|Cuirass|Sleeves|Shirt|Hauberk|Leggings|Cuirass|Breastplate|Girth|Pauldrons|Bracers|Greaves|Tassets|Vambraces|Shorts|Over-robe|Vest|Kote|Helm|Armet|Basinet|Baigha|Cap|Circlet|Coif|Coronet|Cowl|Crown|Diadem|Heaume|Kabuton|Gauntlets|Boots|Sandals|Sollerets|Shoes|Over-Robe}
+	LKeyGE L_CritDamRating 3
+~~ }
+ON: {    (A) T9 Bludg Prot Set + M-Legendary + cdr3} {Keep} ~~ {
+	ObjClass C_Armor
+	LKeyE L_ArmorSetID 24 ~~ Reinforced
+	NSpellsRxGE 2 {Legendary Str|Legendary End|Legendary Coord|Legendary Quick|Legendary Foc|Legendary Will|Legendary Acid|Legendary Bludg|Legendary Flame|Legendary Frost|Legendary Pierc|Legendary Slash|Legendary Storm|Legendary Invuln|Legendary Magic|Legendary Armor|Legendary Life|Legendary War|Legendary Voi|Legendary Mis|Legendary Impreg|Legendary Two|Legendary Heavy|Legendary Light|Legendary Finesse|Legendary Life|Legendary Creature} {Bane|Tink}
+	LKeyNE L_Unenchantable 9999
+	MatchRx M_Name {Jerkin|Pants|Coat|Cuirass|Sleeves|Shirt|Hauberk|Leggings|Cuirass|Breastplate|Girth|Pauldrons|Bracers|Greaves|Tassets|Vambraces|Shorts|Over-robe|Vest|Kote|Helm|Armet|Basinet|Baigha|Cap|Circlet|Coif|Coronet|Cowl|Crown|Diadem|Heaume|Kabuton|Gauntlets|Boots|Sandals|Sollerets|Shoes|Over-Robe}
+	LKeyGE L_CritDamResistRating 3
+~~ }
+ON: {} {Keep} ~~ {
+	MatchRx M_Name {do not edit}
+~~ }
+ON: {} {Keep} ~~ {
+	MatchRx M_Name {do not edit}
+~~ }
+ON: {  ** Other Sets **} {Keep} ~~ {
+	MatchRx M_Name {do not edit}
+~~ }
+ON: {} {Keep} ~~ {
+	MatchRx M_Name {do not edit}
+~~ }
+ON: {  ** Ward/Impen **} {Keep} ~~ {
+	MatchRx M_Name {do not edit}
+~~ }
+ON: {} {Keep} ~~ {
+	MatchRx M_Name {do not edit}
+~~ }
+ON: {  ** Epic **} {Keep} ~~ {
+	MatchRx M_Name {do not edit}
+~~ }
+ON: {} {Keep} ~~ {
+	MatchRx M_Name {do not edit}
+~~ }
+ON: {  ** Major Sets **} {Keep} ~~ {
+	MatchRx M_Name {do not edit}
+~~ }
+ON: {} {Keep} ~~ {
+	MatchRx M_Name {do not edit}
+~~ }
+ON: {  ** Major **} {Keep} ~~ {
+	MatchRx M_Name {do not edit}
+~~ }
+ON: {} {Keep} ~~ {
+	MatchRx M_Name {do not edit}
+~~ }
+NO: {} {Keep} ~~ {
+	MatchRx M_Name {leave this disabled}
+~~ }
+NO: {} {Keep} ~~ {
+	MatchRx M_Name {leave this disabled}
+~~ }
+NO: {} {Keep} ~~ {
+	MatchRx M_Name {leave this disabled}
+~~ }
+ON: {***** Cloth Armor *****} {Keep} ~~ {
+	MatchRx M_Name {do not edit}
+~~ }
+ON: {} {Keep} ~~ {
+	MatchRx M_Name {do not edit}
+~~ }
+ON: {  ** Legendary Sets **} {Keep} ~~ {
+	MatchRx M_Name {do not edit}
+~~ }
+ON: {    (A) T9 Adept's Set + M-Legendary + cd4} {Keep} ~~ {
+	ObjClass C_Clothing
+	LKeyE L_ArmorSetID 14 ~~ Adepts
+	NSpellsRxGE 2 {Legendary Str|Legendary End|Legendary Coord|Legendary Quick|Legendary Foc|Legendary Will|Legendary Acid|Legendary Bludg|Legendary Flame|Legendary Frost|Legendary Pierc|Legendary Slash|Legendary Storm|Legendary Invuln|Legendary Magic|Legendary Armor|Legendary Life|Legendary War|Legendary Voi|Legendary Mis|Legendary Impreg|Legendary Two|Legendary Heavy|Legendary Light|Legendary Finesse|Legendary Life|Legendary Creature} {Bane|Tink}
+	MatchRx M_Name {Qafiya|Beret|Cap|Fez|Cowl|Turban|Hood|Bandana|Gloves|Loafers|Slippers|Sandals|Shoes|Kasa|Boots}
+	LKeyGE L_CritDamRating 4
+	LKeyLE L_ArmorSetID 22 ~~ Swift
+~~ }
+ON: {    (A) T9 Adept's Set + M-Legendary + cdr4} {Keep} ~~ {
+	ObjClass C_Clothing
+	LKeyE L_ArmorSetID 14 ~~ Adepts
+	NSpellsRxGE 2 {Legendary Str|Legendary End|Legendary Coord|Legendary Quick|Legendary Foc|Legendary Will|Legendary Acid|Legendary Bludg|Legendary Flame|Legendary Frost|Legendary Pierc|Legendary Slash|Legendary Storm|Legendary Invuln|Legendary Magic|Legendary Armor|Legendary Life|Legendary War|Legendary Voi|Legendary Mis|Legendary Impreg|Legendary Two|Legendary Heavy|Legendary Light|Legendary Finesse|Legendary Life|Legendary Creature} {Bane|Tink}
+	MatchRx M_Name {Qafiya|Beret|Cap|Fez|Cowl|Turban|Hood|Bandana|Gloves|Loafers|Slippers|Sandals|Shoes|Kasa|Boots}
+	LKeyGE L_CritDamResistRating 4
+	LKeyLE L_ArmorSetID 22 ~~ Swift
+~~ }
+ON: {    (A) T9 Adept's Set + Legendary + cdr4} {Keep} ~~ {
+	ObjClass C_Clothing
+	LKeyE L_ArmorSetID 14 ~~ Adepts
+	NSpellsRxGE 1 {Legendary Str|Legendary End|Legendary Coord|Legendary Quick|Legendary Foc|Legendary Will|Legendary Acid|Legendary Bludg|Legendary Flame|Legendary Frost|Legendary Pierc|Legendary Slash|Legendary Storm|Legendary Invuln|Legendary Magic|Legendary Armor|Legendary Life|Legendary War|Legendary Voi|Legendary Mis|Legendary Impreg|Legendary Two|Legendary Heavy|Legendary Light|Legendary Finesse|Legendary Life|Legendary Creature} {Bane|Tink}
+	MatchRx M_Name {Qafiya|Beret|Cap|Fez|Cowl|Turban|Hood|Bandana|Gloves|Loafers|Slippers|Sandals|Shoes|Kasa|Boots}
+	LKeyGE L_CritDamResistRating 4
+	LKeyLE L_ArmorSetID 22 ~~ Swift
+~~ }
+ON: {    (A) T9 Adept's Set + Legendary + cd4} {Keep} ~~ {
+	ObjClass C_Clothing
+	LKeyE L_ArmorSetID 14 ~~ Adepts
+	NSpellsRxGE 1 {Legendary Str|Legendary End|Legendary Coord|Legendary Quick|Legendary Foc|Legendary Will|Legendary Acid|Legendary Bludg|Legendary Flame|Legendary Frost|Legendary Pierc|Legendary Slash|Legendary Storm|Legendary Invuln|Legendary Magic|Legendary Armor|Legendary Life|Legendary War|Legendary Voi|Legendary Mis|Legendary Impreg|Legendary Two|Legendary Heavy|Legendary Light|Legendary Finesse|Legendary Life|Legendary Creature} {Bane|Tink}
+	MatchRx M_Name {Qafiya|Beret|Cap|Fez|Cowl|Turban|Hood|Bandana|Gloves|Loafers|Slippers|Sandals|Shoes|Kasa|Boots}
+	LKeyGE L_CritDamRating 4
+	LKeyLE L_ArmorSetID 22 ~~ Swift
+~~ }
+ON: {    (A) T9 Adept's Set + M-Legendary + cd3} {Keep} ~~ {
+	ObjClass C_Clothing
+	LKeyE L_ArmorSetID 14 ~~ Adepts
+	NSpellsRxGE 2 {Legendary Str|Legendary End|Legendary Coord|Legendary Quick|Legendary Foc|Legendary Will|Legendary Acid|Legendary Bludg|Legendary Flame|Legendary Frost|Legendary Pierc|Legendary Slash|Legendary Storm|Legendary Invuln|Legendary Magic|Legendary Armor|Legendary Life|Legendary War|Legendary Voi|Legendary Mis|Legendary Impreg|Legendary Two|Legendary Heavy|Legendary Light|Legendary Finesse|Legendary Life|Legendary Creature} {Bane|Tink}
+	MatchRx M_Name {Qafiya|Beret|Cap|Fez|Cowl|Turban|Hood|Bandana|Gloves|Loafers|Slippers|Sandals|Shoes|Kasa|Boots}
+	LKeyGE L_CritDamRating 3
+	LKeyLE L_ArmorSetID 22 ~~ Swift
+~~ }
+ON: {    (A) T9 Adept's Set + M-Legendary + cdr3} {Keep} ~~ {
+	ObjClass C_Clothing
+	LKeyE L_ArmorSetID 14 ~~ Adepts
+	NSpellsRxGE 2 {Legendary Str|Legendary End|Legendary Coord|Legendary Quick|Legendary Foc|Legendary Will|Legendary Acid|Legendary Bludg|Legendary Flame|Legendary Frost|Legendary Pierc|Legendary Slash|Legendary Storm|Legendary Invuln|Legendary Magic|Legendary Armor|Legendary Life|Legendary War|Legendary Voi|Legendary Mis|Legendary Impreg|Legendary Two|Legendary Heavy|Legendary Light|Legendary Finesse|Legendary Life|Legendary Creature} {Bane|Tink}
+	MatchRx M_Name {Qafiya|Beret|Cap|Fez|Cowl|Turban|Hood|Bandana|Gloves|Loafers|Slippers|Sandals|Shoes|Kasa|Boots}
+	LKeyGE L_CritDamResistRating 3
+	LKeyLE L_ArmorSetID 22 ~~ Swift
+~~ }
+ON: {} {Keep} ~~ {
+	MatchRx M_Name {do not edit}
+~~ }
+ON: {} {Keep} ~~ {
+	MatchRx M_Name {do not edit}
+~~ }
+ON: {    (A) T9 Defender's Set + M-Legendary + cd4} {Keep} ~~ {
+	ObjClass C_Clothing
+	LKeyE L_ArmorSetID 16 ~~ Defenders
+	NSpellsRxGE 2 {Legendary Str|Legendary End|Legendary Coord|Legendary Quick|Legendary Foc|Legendary Will|Legendary Acid|Legendary Bludg|Legendary Flame|Legendary Frost|Legendary Pierc|Legendary Slash|Legendary Storm|Legendary Invuln|Legendary Magic|Legendary Armor|Legendary Life|Legendary War|Legendary Voi|Legendary Mis|Legendary Impreg|Legendary Two|Legendary Heavy|Legendary Light|Legendary Finesse|Legendary Life|Legendary Creature} {Bane|Tink}
+	MatchRx M_Name {Qafiya|Beret|Cap|Fez|Cowl|Turban|Hood|Bandana|Gloves|Loafers|Slippers|Sandals|Shoes|Kasa|Boots}
+	LKeyGE L_CritDamRating 4
+~~ }
+ON: {    (A) T9 Defender's Set + M-Legendary + cdr4} {Keep} ~~ {
+	ObjClass C_Armor
+	LKeyE L_ArmorSetID 16 ~~ Defenders
+	NSpellsRxGE 2 {Legendary Str|Legendary End|Legendary Coord|Legendary Quick|Legendary Foc|Legendary Will|Legendary Acid|Legendary Bludg|Legendary Flame|Legendary Frost|Legendary Pierc|Legendary Slash|Legendary Storm|Legendary Invuln|Legendary Magic|Legendary Armor|Legendary Life|Legendary War|Legendary Voi|Legendary Mis|Legendary Impreg|Legendary Two|Legendary Heavy|Legendary Light|Legendary Finesse|Legendary Life|Legendary Creature} {Bane|Tink}
+	LKeyNE L_Unenchantable 9999
+	MatchRx M_Name {Jerkin|Pants|Coat|Cuirass|Sleeves|Shirt|Hauberk|Leggings|Cuirass|Breastplate|Girth|Pauldrons|Bracers|Greaves|Tassets|Vambraces|Shorts|Over-robe|Vest|Kote|Helm|Armet|Basinet|Baigha|Cap|Circlet|Coif|Coronet|Cowl|Crown|Diadem|Heaume|Kabuton|Gauntlets|Boots|Sandals|Sollerets|Shoes|Over-Robe}
+	LKeyGE L_CritDamResistRating 4
+~~ }
+ON: {    (A) T9 Defender's Set + Legendary + cdr4} {Keep} ~~ {
+	ObjClass C_Clothing
+	LKeyE L_ArmorSetID 16 ~~ Defenders
+	NSpellsRxGE 1 {Legendary Str|Legendary End|Legendary Coord|Legendary Quick|Legendary Foc|Legendary Will|Legendary Acid|Legendary Bludg|Legendary Flame|Legendary Frost|Legendary Pierc|Legendary Slash|Legendary Storm|Legendary Invuln|Legendary Magic|Legendary Armor|Legendary Life|Legendary War|Legendary Voi|Legendary Mis|Legendary Impreg|Legendary Two|Legendary Heavy|Legendary Light|Legendary Finesse|Legendary Life|Legendary Creature} {Bane|Tink}
+	MatchRx M_Name {Qafiya|Beret|Cap|Fez|Cowl|Turban|Hood|Bandana|Gloves|Loafers|Slippers|Sandals|Shoes|Kasa|Boots}
+	LKeyGE L_CritDamResistRating 4
+	LKeyLE L_ArmorSetID 22 ~~ Swift
+~~ }
+ON: {    (A) T9 Defender's Set + Legendary + cd4} {Keep} ~~ {
+	ObjClass C_Clothing
+	LKeyE L_ArmorSetID 16 ~~ Defenders
+	NSpellsRxGE 1 {Legendary Str|Legendary End|Legendary Coord|Legendary Quick|Legendary Foc|Legendary Will|Legendary Acid|Legendary Bludg|Legendary Flame|Legendary Frost|Legendary Pierc|Legendary Slash|Legendary Storm|Legendary Invuln|Legendary Magic|Legendary Armor|Legendary Life|Legendary War|Legendary Voi|Legendary Mis|Legendary Impreg|Legendary Two|Legendary Heavy|Legendary Light|Legendary Finesse|Legendary Life|Legendary Creature} {Bane|Tink}
+	MatchRx M_Name {Qafiya|Beret|Cap|Fez|Cowl|Turban|Hood|Bandana|Gloves|Loafers|Slippers|Sandals|Shoes|Kasa|Boots}
+	LKeyGE L_CritDamRating 4
+	LKeyLE L_ArmorSetID 22 ~~ Swift
+~~ }
+ON: {    (A) T9 Defender's Set + M-Legendary + cd3} {Keep} ~~ {
+	ObjClass C_Clothing
+	LKeyE L_ArmorSetID 16 ~~ Defenders
+	NSpellsRxGE 2 {Legendary Str|Legendary End|Legendary Coord|Legendary Quick|Legendary Foc|Legendary Will|Legendary Acid|Legendary Bludg|Legendary Flame|Legendary Frost|Legendary Pierc|Legendary Slash|Legendary Storm|Legendary Invuln|Legendary Magic|Legendary Armor|Legendary Life|Legendary War|Legendary Voi|Legendary Mis|Legendary Impreg|Legendary Two|Legendary Heavy|Legendary Light|Legendary Finesse|Legendary Life|Legendary Creature} {Bane|Tink}
+	MatchRx M_Name {Qafiya|Beret|Cap|Fez|Cowl|Turban|Hood|Bandana|Gloves|Loafers|Slippers|Sandals|Shoes|Kasa|Boots}
+	LKeyGE L_CritDamRating 3
+	LKeyLE L_ArmorSetID 22 ~~ Swift
+~~ }
+ON: {    (A) T9 Defender's Set + M-Legendary + cdr3} {Keep} ~~ {
+	ObjClass C_Clothing
+	LKeyE L_ArmorSetID 16 ~~ Defenders
+	NSpellsRxGE 2 {Legendary Str|Legendary End|Legendary Coord|Legendary Quick|Legendary Foc|Legendary Will|Legendary Acid|Legendary Bludg|Legendary Flame|Legendary Frost|Legendary Pierc|Legendary Slash|Legendary Storm|Legendary Invuln|Legendary Magic|Legendary Armor|Legendary Life|Legendary War|Legendary Voi|Legendary Mis|Legendary Impreg|Legendary Two|Legendary Heavy|Legendary Light|Legendary Finesse|Legendary Life|Legendary Creature} {Bane|Tink}
+	MatchRx M_Name {Qafiya|Beret|Cap|Fez|Cowl|Turban|Hood|Bandana|Gloves|Loafers|Slippers|Sandals|Shoes|Kasa|Boots}
+	LKeyGE L_CritDamResistRating 3
+	LKeyLE L_ArmorSetID 22 ~~ Swift
+~~ }
+ON: {} {Keep} ~~ {
+	MatchRx M_Name {do not edit}
+~~ }
+ON: {    (A) T9 Bludg Prot Set + M-Legendary + cd4} {Keep} ~~ {
+	ObjClass C_Clothing
+	LKeyE L_ArmorSetID 24 ~~ Reinforced
+	NSpellsRxGE 2 {Legendary Str|Legendary End|Legendary Coord|Legendary Quick|Legendary Foc|Legendary Will|Legendary Acid|Legendary Bludg|Legendary Flame|Legendary Frost|Legendary Pierc|Legendary Slash|Legendary Storm|Legendary Invuln|Legendary Magic|Legendary Armor|Legendary Life|Legendary War|Legendary Voi|Legendary Mis|Legendary Impreg|Legendary Two|Legendary Heavy|Legendary Light|Legendary Finesse|Legendary Life|Legendary Creature} {Bane|Tink}
+	MatchRx M_Name {Qafiya|Beret|Cap|Fez|Cowl|Turban|Hood|Bandana|Gloves|Loafers|Slippers|Sandals|Shoes|Kasa|Boots}
+	LKeyGE L_CritDamRating 4
+~~ }
+ON: {    (A) T9 Bludg Prot Set + M-Legendary + cdr4} {Keep} ~~ {
+	ObjClass C_Armor
+	LKeyE L_ArmorSetID 24 ~~ Reinforced
+	NSpellsRxGE 2 {Legendary Str|Legendary End|Legendary Coord|Legendary Quick|Legendary Foc|Legendary Will|Legendary Acid|Legendary Bludg|Legendary Flame|Legendary Frost|Legendary Pierc|Legendary Slash|Legendary Storm|Legendary Invuln|Legendary Magic|Legendary Armor|Legendary Life|Legendary War|Legendary Voi|Legendary Mis|Legendary Impreg|Legendary Two|Legendary Heavy|Legendary Light|Legendary Finesse|Legendary Life|Legendary Creature} {Bane|Tink}
+	LKeyNE L_Unenchantable 9999
+	MatchRx M_Name {Jerkin|Pants|Coat|Cuirass|Sleeves|Shirt|Hauberk|Leggings|Cuirass|Breastplate|Girth|Pauldrons|Bracers|Greaves|Tassets|Vambraces|Shorts|Over-robe|Vest|Kote|Helm|Armet|Basinet|Baigha|Cap|Circlet|Coif|Coronet|Cowl|Crown|Diadem|Heaume|Kabuton|Gauntlets|Boots|Sandals|Sollerets|Shoes|Over-Robe}
+	LKeyGE L_CritDamResistRating 4
+~~ }
+ON: {    (A) T9 Bludg Prot Set + Legendary + cdr4} {Keep} ~~ {
+	ObjClass C_Clothing
+	LKeyE L_ArmorSetID 24 ~~ Reinforced
+	NSpellsRxGE 1 {Legendary Str|Legendary End|Legendary Coord|Legendary Quick|Legendary Foc|Legendary Will|Legendary Acid|Legendary Bludg|Legendary Flame|Legendary Frost|Legendary Pierc|Legendary Slash|Legendary Storm|Legendary Invuln|Legendary Magic|Legendary Armor|Legendary Life|Legendary War|Legendary Voi|Legendary Mis|Legendary Impreg|Legendary Two|Legendary Heavy|Legendary Light|Legendary Finesse|Legendary Life|Legendary Creature} {Bane|Tink}
+	MatchRx M_Name {Qafiya|Beret|Cap|Fez|Cowl|Turban|Hood|Bandana|Gloves|Loafers|Slippers|Sandals|Shoes|Kasa|Boots}
+	LKeyGE L_CritDamResistRating 4
+	LKeyLE L_ArmorSetID 22 ~~ Swift
+~~ }
+ON: {    (A) T9 Bludg Prot Set + Legendary + cd4} {Keep} ~~ {
+	ObjClass C_Clothing
+	LKeyE L_ArmorSetID 24 ~~ Reinforced
+	NSpellsRxGE 1 {Legendary Str|Legendary End|Legendary Coord|Legendary Quick|Legendary Foc|Legendary Will|Legendary Acid|Legendary Bludg|Legendary Flame|Legendary Frost|Legendary Pierc|Legendary Slash|Legendary Storm|Legendary Invuln|Legendary Magic|Legendary Armor|Legendary Life|Legendary War|Legendary Voi|Legendary Mis|Legendary Impreg|Legendary Two|Legendary Heavy|Legendary Light|Legendary Finesse|Legendary Life|Legendary Creature} {Bane|Tink}
+	MatchRx M_Name {Qafiya|Beret|Cap|Fez|Cowl|Turban|Hood|Bandana|Gloves|Loafers|Slippers|Sandals|Shoes|Kasa|Boots}
+	LKeyGE L_CritDamRating 4
+	LKeyLE L_ArmorSetID 22 ~~ Swift
+~~ }
+ON: {    (A) T9 Bludg Prot Set + M-Legendary + cd3} {Keep} ~~ {
+	ObjClass C_Clothing
+	LKeyE L_ArmorSetID 24 ~~ Reinforced
+	NSpellsRxGE 2 {Legendary Str|Legendary End|Legendary Coord|Legendary Quick|Legendary Foc|Legendary Will|Legendary Acid|Legendary Bludg|Legendary Flame|Legendary Frost|Legendary Pierc|Legendary Slash|Legendary Storm|Legendary Invuln|Legendary Magic|Legendary Armor|Legendary Life|Legendary War|Legendary Voi|Legendary Mis|Legendary Impreg|Legendary Two|Legendary Heavy|Legendary Light|Legendary Finesse|Legendary Life|Legendary Creature} {Bane|Tink}
+	MatchRx M_Name {Qafiya|Beret|Cap|Fez|Cowl|Turban|Hood|Bandana|Gloves|Loafers|Slippers|Sandals|Shoes|Kasa|Boots}
+	LKeyGE L_CritDamRating 3
+	LKeyLE L_ArmorSetID 22 ~~ Swift
+~~ }
+ON: {    (A) T9 Bludg Prot Set + M-Legendary + cdr3} {Keep} ~~ {
+	ObjClass C_Clothing
+	LKeyE L_ArmorSetID 24 ~~ Reinforced
+	NSpellsRxGE 2 {Legendary Str|Legendary End|Legendary Coord|Legendary Quick|Legendary Foc|Legendary Will|Legendary Acid|Legendary Bludg|Legendary Flame|Legendary Frost|Legendary Pierc|Legendary Slash|Legendary Storm|Legendary Invuln|Legendary Magic|Legendary Armor|Legendary Life|Legendary War|Legendary Voi|Legendary Mis|Legendary Impreg|Legendary Two|Legendary Heavy|Legendary Light|Legendary Finesse|Legendary Life|Legendary Creature} {Bane|Tink}
+	MatchRx M_Name {Qafiya|Beret|Cap|Fez|Cowl|Turban|Hood|Bandana|Gloves|Loafers|Slippers|Sandals|Shoes|Kasa|Boots}
+	LKeyGE L_CritDamResistRating 3
+	LKeyLE L_ArmorSetID 22 ~~ Swift
+~~ }
+ON: {} {Keep} ~~ {
+	MatchRx M_Name {do not edit}
+~~ }
+ON: {} {Keep} ~~ {
+	MatchRx M_Name {do not edit}
+~~ }
+ON: {  ** Legendary **} {Keep} ~~ {
+	MatchRx M_Name {do not edit}
+~~ }
+ON: {} {Keep} ~~ {
+	MatchRx M_Name {do not edit}
+~~ }
+ON: {  ** Epic Sets **} {Keep} ~~ {
+	MatchRx M_Name {do not edit}
+~~ }
+ON: {} {Keep} ~~ {
+	MatchRx M_Name {do not edit}
+~~ }
+ON: {  ** Other Sets **} {Keep} ~~ {
+	MatchRx M_Name {do not edit}
+~~ }
+ON: {} {Keep} ~~ {
+	MatchRx M_Name {do not edit}
+~~ }
+ON: {  ** Ward/Impen **} {Keep} ~~ {
+	MatchRx M_Name {do not edit}
+~~ }
+ON: {} {Keep} ~~ {
+	MatchRx M_Name {do not edit}
+~~ }
+ON: {  ** Epic **} {Keep} ~~ {
+	MatchRx M_Name {do not edit}
+~~ }
+ON: {} {Keep} ~~ {
+	MatchRx M_Name {do not edit}
+~~ }
+ON: {  ** Major Sets **} {Keep} ~~ {
+	MatchRx M_Name {do not edit}
+~~ }
+ON: {} {Keep} ~~ {
+	MatchRx M_Name {do not edit}
+~~ }
+ON: {  ** Major **} {Keep} ~~ {
+	MatchRx M_Name {do not edit}
+~~ }
+NO: {} {Keep} ~~ {
+~~ }
+NO: {} {Keep} ~~ {
+~~ }
+NO: {} {Keep} ~~ {
+~~ }
+ON: {***** Clothing *****} {Keep} ~~ {
+	MatchRx M_Name {do not edit}
+~~ }
+ON: {} {Keep} ~~ {
+	MatchRx M_Name {do not edit}
+~~ }
+ON: {  ** Legendary **} {Keep} ~~ {
+	MatchRx M_Name {do not edit}
+~~ }
+ON: {} {Keep} ~~ {
+	MatchRx M_Name {do not edit}
+~~ }
+ON: {} {Keep} ~~ {
+	MatchRx M_Name {do not edit}
+~~ }
+ON: {} {Keep} ~~ {
+	MatchRx M_Name {do not edit}
+~~ }
+ON: {  ** Ward/Impen **} {Keep} ~~ {
+	MatchRx M_Name {do not edit}
+~~ }
+ON: {} {Keep} ~~ {
+	MatchRx M_Name {do not edit}
+~~ }
+ON: {  ** Epic **} {Keep} ~~ {
+	MatchRx M_Name {do not edit}
+~~ }
+ON: {} {Keep} ~~ {
+	MatchRx M_Name {do not edit}
+~~ }
+ON: {  ** Major **} {Keep} ~~ {
+	MatchRx M_Name {do not edit}
+~~ }
+NO: {} {Keep} ~~ {
+	MatchRx M_Name {leave this disabled}
+~~ }
+NO: {} {Keep} ~~ {
+	MatchRx M_Name {leave this disabled}
+~~ }
+NO: {} {Keep} ~~ {
+	MatchRx M_Name {leave this disabled}
+~~ }
+ON: {***** Jewelry *****} {Keep} ~~ {
+	MatchRx M_Name {do not edit}
+~~ }
+ON: {} {Keep} ~~ {
+	MatchRx M_Name {do not edit}
+~~ }
+ON: {  ** Legendary **} {Keep} ~~ {
+	MatchRx M_Name {do not edit}
+~~ }
+ON: {    (J) T9 Multi-Legendary + v5} {Keep} ~~ {
+	ObjClass C_Jewelry
+	NSpellsRxGE 2 {Legendary Acid|Legendary Bludg|Legendary Flame|Legendary Frost|Legendary Pierc|Legendary Slash|Legendary Storm|Legendary Invuln|Legendary Magic|Legendary Armor|Legendary Life|Legendary War|Legendary Voi|Legendary Mis|Legendary Impreg|Legendary Two|Legendary Heavy|Legendary Light|Legendary Finesse|Legendary Life|Legendary Creature} {Tink}
+	LKeyGE L_VitalityRating 5
+~~ }
+ON: {    (J) T9 Legendary + v5} {Keep} ~~ {
+	ObjClass C_Jewelry
+	NSpellsRxGE 1 {Legendary Acid|Legendary Bludg|Legendary Flame|Legendary Frost|Legendary Pierc|Legendary Slash|Legendary Storm|Legendary Invuln|Legendary Magic|Legendary Armor|Legendary Life|Legendary War|Legendary Voi|Legendary Mis|Legendary Impreg|Legendary Two|Legendary Heavy|Legendary Light|Legendary Finesse|Legendary Life|Legendary Creature} {Tink}
+	LKeyGE L_VitalityRating 5
+~~ }
+NO: {    (J) T9 Multi-Legendary + v4} {Keep} ~~ {
+	ObjClass C_Jewelry
+	NSpellsRxGE 2 {Legendary Acid|Legendary Bludg|Legendary Flame|Legendary Frost|Legendary Pierc|Legendary Slash|Legendary Storm|Legendary Invuln|Legendary Magic|Legendary Armor|Legendary Life|Legendary War|Legendary Voi|Legendary Mis|Legendary Impreg|Legendary Two|Legendary Heavy|Legendary Light|Legendary Finesse|Legendary Life|Legendary Creature} {Tink}
+	LKeyGE L_VitalityRating 4
+~~ }
+NO: {    (J) T9 Legendary + v4} {Keep} ~~ {
+	ObjClass C_Jewelry
+	NSpellsRxGE 1 {Legendary Acid|Legendary Bludg|Legendary Flame|Legendary Frost|Legendary Pierc|Legendary Slash|Legendary Storm|Legendary Invuln|Legendary Magic|Legendary Armor|Legendary Life|Legendary War|Legendary Voi|Legendary Mis|Legendary Impreg|Legendary Two|Legendary Heavy|Legendary Light|Legendary Finesse|Legendary Life|Legendary Creature} {Tink}
+	LKeyGE L_VitalityRating 4
+~~ }
+ON: {} {Keep} ~~ {
+	MatchRx M_Name {do not edit}
+~~ }
+ON: {} {Keep} ~~ {
+	MatchRx M_Name {do not edit}
+~~ }
+ON: {} {Keep} ~~ {
+	MatchRx M_Name {do not edit}
+~~ }
+ON: {  ** Ward **} {Keep} ~~ {
+	MatchRx M_Name {do not edit}
+~~ }
+ON: {} {Keep} ~~ {
+	MatchRx M_Name {do not edit}
+~~ }
+ON: {  ** Epic **} {Keep} ~~ {
+	MatchRx M_Name {do not edit}
+~~ }
+ON: {} {Keep} ~~ {
+	MatchRx M_Name {do not edit}
+~~ }
+ON: {  ** Major **} {Keep} ~~ {
+	MatchRx M_Name {do not edit}
+~~ }
+ON: {} {Keep} ~~ {
+	MatchRx M_Name {do not edit}
+~~ }
+ON: {  ** Other **} {Keep} ~~ {
+	MatchRx M_Name {do not edit}
+~~ }
+ON: {    (J) Colo Ring} {Keep} ~~ {
+	ObjClass C_Jewelry
+	MatchRx M_Name {Empyrean Ring}
+~~ }
+NO: {} {Keep} ~~ {
+	MatchRx M_Name {leave this disabled}
+~~ }
+NO: {} {Keep} ~~ {
+	MatchRx M_Name {leave this disabled}
+~~ }
+NO: {} {Keep} ~~ {
+	MatchRx M_Name {leave this disabled}
+~~ }
+ON: {***** Cloaks *****} {Keep} ~~ {
+	MatchRx M_Name {do not edit}
+~~ }
+NO: {} {Keep} ~~ {
+	MatchRx M_Name {leave this disabled}
+~~ }
+NO: {} {Keep} ~~ {
+	MatchRx M_Name {leave this disabled}
+~~ }
+NO: {(CL) T9 Cloak (4+ CIS + d4)} {Keep} ~~ {
+	MatchRx M_Name {Cloak}
+	LKeyGE L_IconOverlay 27703
+	ObjClass C_Clothing
+	SpellRx {Shroud of Darkness}
+	LKeyGE L_DamRating 4
+~~ }
+ON: {(CL) T9 Cloak (5+ CIS + d4+)} {Keep} ~~ {
+	MatchRx M_Name {Cloak}
+	LKeyGE L_IconOverlay 27704
+	ObjClass C_Clothing
+	SpellRx {Magic}
+	SpellRx {Shroud of Darkness}
+	LKeyGE L_DamRating 4
+~~ }
+NO: {(CL) T9 Cloak (4+ CIS + dr4)} {Keep} ~~ {
+	MatchRx M_Name {Cloak}
+	ObjClass C_Clothing
+	LKeyGE L_IconOverlay 27703
+	SpellRx {Cloaked in Skill}
+	LKeyGE L_DamResistRating 4
+~~ }
+NO: {} {Keep} ~~ {
+	MatchRx M_Name {leave this disabled}
+~~ }
+ON: {(CL) Cloak - Rynthid} {Keep} ~~ {
+	MatchRx M_Name {Rynthid}
+	ObjClass C_Clothing
+~~ }
+NO: {(CL) Cloak - House Mhoire} {Keep} ~~ {
+	MatchRx M_Name {House Mhoire Cloak}
+~~ }
+NO: {(CL) Cloak - Future Tailorable Cloak General Rule} {Keep} ~~ {
+	MatchRx M_Name {Cloak}
+	LKeyE L_WieldReqValue 1
+~~ }
+NO: {(CL) Cloak - Creeping Blight} {Keep} ~~ {
+	MatchRx M_Name {Creeping Blight Cloak}
+~~ }
+NO: {} {Keep} ~~ {
+	MatchRx M_Name {leave this disabled}
+~~ }
+NO: {} {Keep} ~~ {
+	MatchRx M_Name {leave this disabled}
+~~ }
+ON: {***** Shields *****} {Keep} ~~ {
+	MatchRx M_Name {do not edit}
+~~ }
+NO: {(S) Cov/Olthoi (Fully Unp)} {Keep} ~~ {
+	MatchRx M_Name {Covenant Shield|Olthoi Shield}
+	LKeyBuffedGE L_ArmorLevel 480
+	NSpellsRxGE 4 {Bane} {Minor|Major}
+	ObjClass C_Armor
+~~ }
+NO: {} {Keep} ~~ {
+	ObjClass C_MissileWeapon
+	LKeyGE L_Value 40000
+	LKeyLE L_Burden 300
+~~ }
+NO: {} {Keep} ~~ {
+	ObjClass C_MissileWeapon
+	LKeyGE L_Value 40000
+	LKeyLE L_Burden 300
+~~ }
+NO: {} {Keep} ~~ {
+	ObjClass C_MissileWeapon
+	LKeyGE L_Value 40000
+	LKeyLE L_Burden 300
+~~ }
+ON: {****** Death Items ******} {Keep} ~~ {
+	MatchRx M_Name {do not edit}
+~~ }
+NO: {(ME) 40k (DI)} {Keep} ~~ {
+	ObjClass C_MeleeWeapon
+	LKeyGE L_Value 40000
+	LKeyLE L_Burden 350
+~~ }
+NO: {(MI) 40k (DI)} {Keep} ~~ {
+	ObjClass C_MissileWeapon
+	LKeyGE L_Value 40000
+	LKeyLE L_Burden 300
+~~ }
+NO: {(A) 120k (DI)} {Keep} ~~ {
+	LKeyGE L_Value 120000
+	MatchRx M_Name {Jerkin|Pants|Coat|Cuirass|Sleeves|Shirt|Hauberk|Leggings|Cuirass|Breastplate|Girth|Pauldrons|Bracers|Greaves|Tassets|Vambraces|Shorts|Over-robe|Vest|Kote|Helm|Armet|Basinet|Baigha|Cap|Circlet|Coif|Coronet|Cowl|Crown|Diadem|Heaume|Kabuton|Gauntlets|Boots|Sandals|Sollerets|Shoes|Over-Robe}
+	ObjClass C_Armor
+	LKeyLE L_Burden 400
+~~ }
+NO: {(A) 70k (DI)} {Keep} ~~ {
+	LKeyGE L_Value 70000
+	MatchRx M_Name {Qafiya|Beret|Cap|Fez|Cowl|Turban|Hood|Bandana|Gloves|Loafers|Slippers|Sandals|Shoes|Kasa|Boots}
+	ObjClass C_Clothing
+	LKeyLE L_Burden 350
+~~ }
+NO: {} {Keep} ~~ {
+	ObjClass C_MissileWeapon
+	LKeyGE L_Value 40000
+	LKeyLE L_Burden 300
+~~ }
+NO: {} {Keep} ~~ {
+	ObjClass C_MissileWeapon
+	LKeyGE L_Value 40000
+	LKeyLE L_Burden 300
+~~ }
+NO: {} {Keep} ~~ {
+	ObjClass C_MissileWeapon
+	LKeyGE L_Value 40000
+	LKeyLE L_Burden 300
+~~ }
+ON: {****** Value ******} {Keep} ~~ {
+	MatchRx M_Name {do not edit}
+~~ }
+NO: {(ME) 40k} {Keep} ~~ {
+	ObjClass C_MeleeWeapon
+	LKeyGE L_Value 40000
+~~ }
+NO: {(MI) 40k} {Keep} ~~ {
+	ObjClass C_MissileWeapon
+	LKeyGE L_Value 40000
+~~ }
+NO: {(W) 40k} {Keep} ~~ {
+	ObjClass C_WandStaffOrb
+	LKeyGE L_Value 40000
+~~ }
+NO: {(A) 90k} {Keep} ~~ {
+	LKeyGE L_Value 90000
+	MatchRx M_Name {Jerkin|Pants|Coat|Cuirass|Sleeves|Shirt|Hauberk|Leggings|Cuirass|Breastplate|Girth|Pauldrons|Bracers|Greaves|Tassets|Vambraces|Shorts|Over-robe|Vest|Kote|Helm|Armet|Basinet|Baigha|Cap|Circlet|Coif|Coronet|Cowl|Crown|Diadem|Heaume|Kabuton|Gauntlets|Boots|Sandals|Sollerets|Shoes|Over-Robe}
+	ObjClass C_Armor
+~~ }
+NO: {(A) 70k} {Keep} ~~ {
+	LKeyGE L_Value 70000
+	MatchRx M_Name {Qafiya|Beret|Cap|Fez|Cowl|Turban|Hood|Bandana|Gloves|Loafers|Slippers|Sandals|Shoes|Kasa|Boots}
+	ObjClass C_Clothing
+~~ }
+NO: {(J) 40k} {Keep} ~~ {
+	ObjClass C_Jewelry
+	LKeyGE L_Value 40000
+~~ }
+NO: {} {Keep} ~~ {
+	MatchRx M_Name {leave this disabled}
+~~ }
+NO: {AmuliCoat Trim (AssaultOrange)} {Keep} ~~ {
+	ObjClass C_Armor
+	SlotPalette 1 1682
+	MatchRx M_Name {Amuli Coat}
+	MatchRx M_Name {^((?!Olthoi).)*$}
+~~ }
+NO: {AmuliCoat Trim (BrickRed)} {Keep} ~~ {
+	ObjClass C_Armor
+	SlotPalette 1 1473
+	MatchRx M_Name {Amuli Coat}
+	MatchRx M_Name {^((?!Olthoi).)*$}
+~~ }
+NO: {AmuliCoat Trim (CobaltBlue)} {Keep} ~~ {
+	ObjClass C_Armor
+	SlotPalette 1 1508
+	MatchRx M_Name {Amuli Coat}
+	MatchRx M_Name {^((?!Olthoi).)*$}
+~~ }
+NO: {AmuliCoat Trim (DeepPurple)} {Keep} ~~ {
+	ObjClass C_Armor
+	SlotPalette 1 1476
+	MatchRx M_Name {Amuli Coat}
+	MatchRx M_Name {^((?!Olthoi).)*$}
+~~ }
+NO: {AmuliCoat Trim (OnyxBlack)} {Keep} ~~ {
+	ObjClass C_Armor
+	SlotPalette 1 1485
+	MatchRx M_Name {Amuli Coat}
+	MatchRx M_Name {^((?!Olthoi).)*$}
+~~ }
+NO: {AmuliCoat Trim (PromiseGreen)} {Keep} ~~ {
+	ObjClass C_Armor
+	SlotPalette 1 1498
+	MatchRx M_Name {Amuli Coat}
+	MatchRx M_Name {^((?!Olthoi).)*$}
+~~ }
+NO: {AmuliCoat (BurntRed/Blood/DesertBrass)} {Keep} ~~ {
+	ObjClass C_Armor
+	SlotPalette 1 1505
+	SlotPalette 2 1145
+	SlotPalette 3 1103
+	SlotPalette 4 1103
+	SlotPalette 5 1103
+	SlotPalette 6 1103
+	SlotPalette 7 1103
+	MatchRx M_Name {Amuli Coat}
+	MatchRx M_Name {^((?!Olthoi).)*$}
+~~ }
+NO: {AmuliLegs Trim (AssaultOrange)} {Keep} ~~ {
+	ObjClass C_Armor
+	SlotPalette 2 1682
+	MatchRx M_Name {Amuli Leggings}
+	MatchRx M_Name {^((?!Olthoi).)*$}
+~~ }
+NO: {AmuliLegs Trim (BrickRed)} {Keep} ~~ {
+	ObjClass C_Armor
+	SlotPalette 2 1473
+	MatchRx M_Name {Amuli Leggings}
+	MatchRx M_Name {^((?!Olthoi).)*$}
+~~ }
+NO: {AmuliLegs Trim (CobaltBlue)} {Keep} ~~ {
+	ObjClass C_Armor
+	SlotPalette 2 1508
+	MatchRx M_Name {Amuli Leggings}
+	MatchRx M_Name {^((?!Olthoi).)*$}
+~~ }
+NO: {AmuliLegs Trim (DeepPurple)} {Keep} ~~ {
+	ObjClass C_Armor
+	SlotPalette 2 1476
+	MatchRx M_Name {Amuli Leggings}
+	MatchRx M_Name {^((?!Olthoi).)*$}
+~~ }
+NO: {AmuliLegs Trim (OnyxBlack)} {Keep} ~~ {
+	ObjClass C_Armor
+	SlotPalette 2 1485
+	MatchRx M_Name {Amuli Leggings}
+	MatchRx M_Name {^((?!Olthoi).)*$}
+~~ }
+NO: {AmuliLegs Trim (PromiseGreen)} {Keep} ~~ {
+	ObjClass C_Armor
+	SlotPalette 2 1498
+	MatchRx M_Name {Amuli Leggings}
+	MatchRx M_Name {^((?!Olthoi).)*$}
+~~ }
+NO: {AmuliLegs Trim (DesertBrass)} {Keep} ~~ {
+	ObjClass C_Armor
+	SlotPalette 2 1103
+	MatchRx M_Name {Amuli Leggings}
+	MatchRx M_Name {^((?!Olthoi).)*$}
+~~ }
+NO: {Celdon Veins (AbyssBlack)} {Keep} ~~ {
+	ObjClass C_Armor
+	SlotPalette 1 1158
+	MatchRx M_Name {Celdon}
+	MatchRx M_Name {^((?!Olthoi).)*$}
+~~ }
+NO: {Celdon Veins -sleeves (AbyssBlack)} {Keep} ~~ {
+	ObjClass C_Armor
+	SlotPalette 2 1158
+	MatchRx M_Name {Celdon}
+	MatchRx M_Name {^((?!Olthoi).)*$}
+~~ }
+NO: {Celdon Veins (AssaultOrange)} {Keep} ~~ {
+	ObjClass C_Armor
+	SlotPalette 1 1682
+	MatchRx M_Name {Celdon}
+	MatchRx M_Name {^((?!Olthoi).)*$}
+~~ }
+NO: {Celdon Veins -sleeves (AssaultOrange)} {Keep} ~~ {
+	ObjClass C_Armor
+	SlotPalette 2 1682
+	MatchRx M_Name {Celdon}
+	MatchRx M_Name {^((?!Olthoi).)*$}
+~~ }
+NO: {Celdon Veins (Iron)} {Keep} ~~ {
+	ObjClass C_Armor
+	SlotPalette 1 1162
+	MatchRx M_Name {Celdon}
+	MatchRx M_Name {^((?!Olthoi).)*$}
+~~ }
+NO: {Celdon Veins -sleeves (Iron)} {Keep} ~~ {
+	ObjClass C_Armor
+	SlotPalette 2 1162
+	MatchRx M_Name {Celdon}
+	MatchRx M_Name {^((?!Olthoi).)*$}
+~~ }
+NO: {Celdon Veins (MorningSun)} {Keep} ~~ {
+	ObjClass C_Armor
+	SlotPalette 1 1105
+	MatchRx M_Name {Celdon}
+	MatchRx M_Name {^((?!Olthoi).)*$}
+~~ }
+NO: {Celdon Veins -sleeves (MorningSun)} {Keep} ~~ {
+	ObjClass C_Armor
+	SlotPalette 2 1105
+	MatchRx M_Name {Celdon}
+	MatchRx M_Name {^((?!Olthoi).)*$}
+~~ }
+NO: {Celdon Veins (ReefBlue)} {Keep} ~~ {
+	ObjClass C_Armor
+	SlotPalette 1 1081
+	MatchRx M_Name {Celdon}
+	MatchRx M_Name {^((?!Olthoi).)*$}
+~~ }
+NO: {Celdon Veins -sleeves (ReefBlue)} {Keep} ~~ {
+	ObjClass C_Armor
+	SlotPalette 2 1081
+	MatchRx M_Name {Celdon}
+	MatchRx M_Name {^((?!Olthoi).)*$}
+~~ }
+NO: {Celdon Veins (ShockPurple)} {Keep} ~~ {
+	ObjClass C_Armor
+	SlotPalette 1 1141
+	MatchRx M_Name {Celdon}
+	MatchRx M_Name {^((?!Olthoi).)*$}
+~~ }
+NO: {Celdon Veins -sleeves (ShockPurple)} {Keep} ~~ {
+	ObjClass C_Armor
+	SlotPalette 2 1141
+	MatchRx M_Name {Celdon}
+	MatchRx M_Name {^((?!Olthoi).)*$}
+~~ }
+NO: {Celdon Veins (SolidRed)} {Keep} ~~ {
+	ObjClass C_Armor
+	SlotPalette 1 1149
+	MatchRx M_Name {Celdon}
+	MatchRx M_Name {^((?!Olthoi).)*$}
+~~ }
+NO: {Celdon Veins -sleeves (SolidRed)} {Keep} ~~ {
+	ObjClass C_Armor
+	SlotPalette 2 1149
+	MatchRx M_Name {Celdon}
+	MatchRx M_Name {^((?!Olthoi).)*$}
+~~ }
+NO: {Covenant (BeanBrown)} {Keep} ~~ {
+	ObjClass C_Armor
+	SlotPalette 0 5108
+	MatchRx M_Name {Covenant}
+~~ }
+NO: {Covenant (DarkestNight)} {Keep} ~~ {
+	ObjClass C_Armor
+	SlotPalette 0 5027
+	MatchRx M_Name {Covenant}
+~~ }
+NO: {Covenant (DevilMouseRed)} {Keep} ~~ {
+	ObjClass C_Armor
+	SlotPalette 0 5089
+	MatchRx M_Name {Covenant}
+~~ }
+NO: {Covenant (GroveGreen)} {Keep} ~~ {
+	ObjClass C_Armor
+	SlotPalette 0 5070
+	MatchRx M_Name {Covenant}
+~~ }
+NO: {Covenant (LunaGold)} {Keep} ~~ {
+	ObjClass C_Armor
+	SlotPalette 0 5064
+	MatchRx M_Name {Covenant}
+~~ }
+NO: {Covenant (OwnuzOrange)} {Keep} ~~ {
+	ObjClass C_Armor
+	SlotPalette 0 5044
+	MatchRx M_Name {Covenant}
+~~ }
+NO: {Covenant (SoulShakerBlue)} {Keep} ~~ {
+	ObjClass C_Armor
+	SlotPalette 0 5033
+	MatchRx M_Name {Covenant}
+~~ }
+NO: {Covenant (SultressPurple)} {Keep} ~~ {
+	ObjClass C_Armor
+	SlotPalette 0 5078
+	MatchRx M_Name {Covenant}
+~~ }
+NO: {Covenant (TevaWhite)} {Keep} ~~ {
+	ObjClass C_Armor
+	SlotPalette 0 5096
+	MatchRx M_Name {Covenant}
+~~ }
+NO: {Olthoi (OwnedOrange/OnyxBlack)} {Keep} ~~ {
+	ObjClass C_Armor
+	SlotPalette 0 5593
+	SlotPalette 1 7729
+	MatchRx M_Name {Olthoi Breastplate|Olthoi Pauldrons|Olthoi Bracers}
+~~ }
+NO: {Olthoi Amuli (OwnedOrange/OnyxBlack)} {Keep} ~~ {
+	ObjClass C_Armor
+	SlotPalette 3 5593
+	SlotPalette 0 7729
+	MatchRx M_Name {Olthoi Amuli Leggings}
+~~ }
+NO: {Olthoi Koujia (Grey/Red)} {Keep} ~~ {
+	ObjClass C_Armor
+	SlotPalette 1 7743
+	SlotPalette 0 7726
+	MatchRx M_Name {Olthoi Koujia Breastplate|Olthoi Koujia Sleeves|Olthoi Koujia Kabuton}
+~~ }
+NO: {Olthoi Koujia (Purple/Pink)} {Keep} ~~ {
+	ObjClass C_Armor
+	SlotPalette 1 5598
+	SlotPalette 0 7690
+	MatchRx M_Name {Olthoi Koujia Breastplate|Olthoi Koujia Sleeves|Olthoi Koujia Kabuton}
+~~ }
+NO: {Olthoi Koujia (Black)} {Keep} ~~ {
+	ObjClass C_Armor
+	SlotPalette 0 7728
+	MatchRx M_Name {Olthoi Koujia Breastplate|Olthoi Koujia Sleeves|Olthoi Koujia Kabuton}
+~~ }
+NO: {Olthoi Koujia Kabuton (Red Trim)} {Keep} ~~ {
+	ObjClass C_Armor
+	MatchRx M_Name {Olthoi Koujia Kabuton}
+	SlotPalette 1 7743
+	SlotPalette 0 7726
+~~ }
+NO: {Olthoi Amuli Leggings (Black)} {Keep} ~~ {
+	ObjClass C_Armor
+	SlotPalette 3 5599
+	MatchRx M_Name {Olthoi Amuli Leggings}
+~~ }
+NO: {Olthoi Koujia Kabuton (Any)} {Keep} ~~ {
+	ObjClass C_Armor
+	MatchRx M_Name {Olthoi Koujia Kabuton}
+~~ }
+NO: {Platemail (AbyssBlack)} {Keep} ~~ {
+	ObjClass C_Armor
+	SlotPalette 0 1158
+	MatchRx M_Name {Platemail|Sollerets|Heaume}
+~~ }
+NO: {Platemail (AssaultOrange)} {Keep} ~~ {
+	ObjClass C_Armor
+	SlotPalette 0 1682
+	MatchRx M_Name {Platemail|Sollerets|Heaume}
+~~ }
+NO: {Platemail (MorningSun)} {Keep} ~~ {
+	ObjClass C_Armor
+	SlotPalette 0 1105
+	MatchRx M_Name {Platemail|Sollerets|Heaume}
+~~ }
+NO: {Platemail (PortalPurple)} {Keep} ~~ {
+	ObjClass C_Armor
+	SlotPalette 0 3658
+	MatchRx M_Name {Platemail|Sollerets|Heaume}
+~~ }
+NO: {Platemail (ReefBlue)} {Keep} ~~ {
+	ObjClass C_Armor
+	SlotPalette 0 1081
+	MatchRx M_Name {Platemail|Sollerets|Heaume}
+~~ }
+NO: {Platemail (SolidRed)} {Keep} ~~ {
+	ObjClass C_Armor
+	SlotPalette 0 1149
+	MatchRx M_Name {Platemail|Sollerets|Heaume}
+~~ }
+NO: {Platemail (TreeFrog)} {Keep} ~~ {
+	ObjClass C_Armor
+	SlotPalette 0 1111
+	MatchRx M_Name {Platemail|Sollerets|Heaume}
+~~ }
+NO: {Platemail Sollerets/Gaunts(Black)} {Keep} ~~ {
+	ObjClass C_Armor
+	SlotPalette 0 1158
+	MatchRx M_Name {Sollerets|Platemail Gauntlets}
+~~ }
+NO: {Platemail Sollerets/Gaunts(Grey)} {Keep} ~~ {
+	ObjClass C_Armor
+	SlotPalette 1 8033
+	MatchRx M_Name {Sollerets|Platemail Gauntlets}
+~~ }
+NO: {Platemail Sollerets/Gaunts(All)} {Keep} ~~ {
+	ObjClass C_Armor
+	MatchRx M_Name {Sollerets|Platemail Gauntlets}
+	MatchRx M_Name {^((?!Olthoi).)*$}
+	MatchRx M_Name {^((?!Covenant).)*$}
+	SlotPalette 0 4433
+~~ }
+NO: {Scalemail (AbyssBlack)} {Keep} ~~ {
+	ObjClass C_Armor
+	SlotPalette 0 1158
+	MatchRx M_Name {Scalemail}
+~~ }
+NO: {Scalemail (AssaultOrange)} {Keep} ~~ {
+	ObjClass C_Armor
+	SlotPalette 0 1682
+	MatchRx M_Name {Scalemail}
+~~ }
+NO: {Scalemail (MorningSun)} {Keep} ~~ {
+	ObjClass C_Armor
+	SlotPalette 0 1105
+	MatchRx M_Name {Scalemail}
+~~ }
+NO: {Scalemail (PortalPurple)} {Keep} ~~ {
+	ObjClass C_Armor
+	SlotPalette 0 3658
+	MatchRx M_Name {Scalemail}
+~~ }
+NO: {Scalemail (ReefBlue)} {Keep} ~~ {
+	ObjClass C_Armor
+	SlotPalette 0 1081
+	MatchRx M_Name {Scalemail}
+~~ }
+NO: {Scalemail (SolidRed)} {Keep} ~~ {
+	ObjClass C_Armor
+	SlotPalette 0 1149
+	MatchRx M_Name {Scalemail}
+~~ }
+NO: {Scalemail (TreeFrog)} {Keep} ~~ {
+	ObjClass C_Armor
+	SlotPalette 0 1111
+	MatchRx M_Name {Scalemail}
+~~ }
+NO: {Sedgemail Trim (AlertRed)} {Keep} ~~ {
+	ObjClass C_Armor
+	SlotPalette 1 8001
+	MatchRx M_Name {Sedgemail}
+~~ }
+NO: {Sedgemail Trim (FreshGreen)} {Keep} ~~ {
+	ObjClass C_Armor
+	SlotPalette 1 8031
+	MatchRx M_Name {Sedgemail}
+~~ }
+NO: {Sedgemail Trim (IvoryWhite)} {Keep} ~~ {
+	ObjClass C_Armor
+	SlotPalette 1 8027
+	MatchRx M_Name {Sedgemail}
+~~ }
+NO: {Sedgemail Trim (PeelOrange)} {Keep} ~~ {
+	ObjClass C_Armor
+	SlotPalette 1 8016
+	MatchRx M_Name {Sedgemail}
+~~ }
+NO: {Sedgemail Trim (SeaBlue)} {Keep} ~~ {
+	ObjClass C_Armor
+	SlotPalette 1 8044
+	MatchRx M_Name {Sedgemail}
+~~ }
+NO: {Sedgemail Trim (SmokeGrey)} {Keep} ~~ {
+	ObjClass C_Armor
+	SlotPalette 1 8033
+	MatchRx M_Name {Sedgemail}
+~~ }
+NO: {Yoroi (AbyssBlack)} {Keep} ~~ {
+	ObjClass C_Armor
+	SlotPalette 0 1158
+	MatchRx M_Name {Yoroi|Kote|Kabuton}
+~~ }
+NO: {Yoroi (Any)} {Keep} ~~ {
+	ObjClass C_Armor
+	MatchRx M_Name {Yoroi}
+~~ }
+NO: {Yoroi (AssaultOrange)} {Keep} ~~ {
+	ObjClass C_Armor
+	SlotPalette 0 1682
+	MatchRx M_Name {Yoroi|Kote|Kabuton}
+~~ }
+NO: {Yoroi (MorningSun)} {Keep} ~~ {
+	ObjClass C_Armor
+	SlotPalette 0 1105
+	MatchRx M_Name {Yoroi|Kote|Kabuton}
+~~ }
+NO: {Yoroi (PortalPurple)} {Keep} ~~ {
+	ObjClass C_Armor
+	SlotPalette 0 3658
+	MatchRx M_Name {Yoroi|Kote|Kabuton}
+~~ }
+NO: {Yoroi (ReefBlue)} {Keep} ~~ {
+	ObjClass C_Armor
+	SlotPalette 0 1081
+	MatchRx M_Name {Yoroi|Kote|Kabuton}
+~~ }
+NO: {Yoroi (SolidRed)} {Keep} ~~ {
+	ObjClass C_Armor
+	SlotPalette 0 1149
+	MatchRx M_Name {Yoroi|Kote|Kabuton}
+~~ }
+NO: {Yoroi (TreeFrog)} {Keep} ~~ {
+	ObjClass C_Armor
+	SlotPalette 0 1111
+	MatchRx M_Name {Yoroi|Kote|Kabuton}
+~~ }
+NO: {Purple Electric Bow} {Keep} ~~ {
+	MatchRx M_Name {Electric Bow}
+	ObjClass C_MissileWeapon
+	LKeyE L_Material 12
+~~ }
+NO: {White Electric Bow} {Keep} ~~ {
+	MatchRx M_Name {Electric Bow}
+	ObjClass C_MissileWeapon
+	LKeyE L_Material 51
+~~ }
+NO: {White Frost Bow} {Keep} ~~ {
+	MatchRx M_Name {Frost Bow}
+	ObjClass C_MissileWeapon
+	LKeyE L_Material 51
+~~ }
+NO: {Blue Frost Bow} {Keep} ~~ {
+	MatchRx M_Name {Frost Bow}
+	ObjClass C_MissileWeapon
+	LKeyE L_Material 39
+~~ }
+NO: {White Fire Bow} {Keep} ~~ {
+	MatchRx M_Name {Fire Bow}
+	ObjClass C_MissileWeapon
+	LKeyE L_Material 51
+~~ }
+NO: {White Slash Bow} {Keep} ~~ {
+	MatchRx M_Name {Slashing Bow}
+	ObjClass C_MissileWeapon
+	LKeyE L_Material 51
+~~ }
+NO: {Yellow Slash Bow} {Keep} ~~ {
+	MatchRx M_Name {Slashing Bow}
+	ObjClass C_MissileWeapon
+	LKeyE L_Material 58
+~~ }
+NO: {White Pierce Bow} {Keep} ~~ {
+	MatchRx M_Name {Piercing Bow}
+	ObjClass C_MissileWeapon
+	LKeyE L_Material 51
+~~ }
+NO: {White Blunt Bow} {Keep} ~~ {
+	MatchRx M_Name {Blunt Bow}
+	ObjClass C_MissileWeapon
+	LKeyE L_Material 51
+~~ }
+NO: {White Acid Bow} {Keep} ~~ {
+	MatchRx M_Name {Acid Bow}
+	ObjClass C_MissileWeapon
+	LKeyE L_Material 51
+~~ }
+NO: {Green Acid Bow} {Keep} ~~ {
+	MatchRx M_Name {Acid Bow}
+	ObjClass C_MissileWeapon
+	LKeyE L_Material 21
+~~ }
+NO: {Black Electric Bow} {Keep} ~~ {
+	MatchRx M_Name {Electric Bow}
+	ObjClass C_MissileWeapon
+	LKeyE L_Material 73
+~~ }
+NO: {Black Slash Bow} {Keep} ~~ {
+	MatchRx M_Name {Slashing Bow}
+	ObjClass C_MissileWeapon
+	LKeyE L_Material 73
+~~ }
+NO: {} {Keep} ~~ {
+	MatchRx M_Name {leave this disabled}
+~~ }
+NO: {} {Keep} ~~ {
+	MatchRx M_Name {leave this disabled}
+~~ }
+NO: {} {Keep} ~~ {
+	MatchRx M_Name {leave this disabled}
+~~ }
+ON: {****** Tailoring (Special) ******} {Keep} ~~ {
+	MatchRx M_Name {do not edit}
+~~ }
+NO: {Aerfalle's Pallium Exact} {Keep} ~~ {
+	ObjClass C_Armor
+	SlotPalette 0 4090
+	SlotPalette 1 1081
+	SlotPalette 2 1521
+	MatchRx M_Name {Faran Over-robe}
+~~ }
+NO: {Blackmoor Plate Helm Exact} {Keep} ~~ {
+	ObjClass C_Armor
+	SlotPalette 0 5588
+	SlotPalette 1 5588
+	MatchRx M_Name {Olthoi Celdon Helm}
+~~ }
+NO: {Canescent Mattekar Robe (Blue) Exact} {Keep} ~~ {
+	ObjClass C_Armor
+	SlotPalette 0 3809
+	SlotPalette 1 1456
+	SlotPalette 2 1162
+	MatchRx M_Name {Faran Over-robe}
+~~ }
+NO: {Canescent Mattekar Robe (Red) Exact} {Keep} ~~ {
+	ObjClass C_Armor
+	SlotPalette 0 3879
+	SlotPalette 1 1456
+	SlotPalette 2 1162
+	MatchRx M_Name {Faran Over-robe}
+~~ }
+NO: {Galvanic BP Exact} {Keep} ~~ {
+	ObjClass C_Armor
+	SlotPalette 0 3658
+	SlotPalette 1 1162
+	MatchRx M_Name {Celdon Breastplate}
+	MatchRx M_Name {^((?!Olthoi).)*$}
+~~ }
+NO: {Galvanic Sleeves Exact} {Keep} ~~ {
+	ObjClass C_Armor
+	SlotPalette 0 3658
+	SlotPalette 2 1162
+	MatchRx M_Name {Celdon Sleeves}
+	MatchRx M_Name {^((?!Olthoi).)*$}
+~~ }
+NO: {Galvanic Gaunts Exact} {Keep} ~~ {
+	ObjClass C_Armor
+	SlotPalette 0 3658
+	MatchRx M_Name {Platemail Gauntlets}
+~~ }
+NO: {Galvanic Girth Exact} {Keep} ~~ {
+	ObjClass C_Armor
+	SlotPalette 0 3658
+	SlotPalette 1 1162
+	MatchRx M_Name {Celdon Girth}
+	MatchRx M_Name {^((?!Olthoi).)*$}
+~~ }
+NO: {Galvanic Legs Exact} {Keep} ~~ {
+	ObjClass C_Armor
+	SlotPalette 0 3658
+	SlotPalette 1 1162
+	MatchRx M_Name {Celdon Leggings}
+	MatchRx M_Name {^((?!Olthoi).)*$}
+~~ }
+NO: {Galvanic Boots Exact} {Keep} ~~ {
+	ObjClass C_Armor
+	SlotPalette 0 3658
+	MatchRx M_Name {Sollerets}
+	MatchRx M_Name {^((?!Diforsa).)*$}
+	MatchRx M_Name {^((?!Covenant).)*$}
+	MatchRx M_Name {^((?!Olthoit).)*$}
+~~ }
+NO: {Gelidite Robe (Prepatch) Exact} {Keep} ~~ {
+	ObjClass C_Armor
+	SlotPalette 0 3805
+	SlotPalette 1 1521
+	SlotPalette 2 1081
+	MatchRx M_Name {Faran Over-robe}
+~~ }
+NO: {Gelidite Robe Hood (Prepatch) Exact} {Keep} ~~ {
+	ObjClass C_Armor
+	SlotPalette 0 3805
+	MatchRx M_Name {Hood}
+~~ }
+NO: {Hoory Robe (Prepatch) Exact} {Keep} ~~ {
+	ObjClass C_Armor
+	SlotPalette 0 4171
+	MatchRx M_Name {Faran Over-robe}
+	SlotPalette 1 4171
+	SlotPalette 2 4171
+	SlotPalette 3 4171
+~~ }
+NO: {Lei Wan-tzu's Helm Exact} {Keep} ~~ {
+	ObjClass C_Armor
+	SlotPalette 0 6152
+	SlotPalette 1 6122
+	MatchRx M_Name {Chiran Helm}
+~~ }
+NO: {Lei Wan-tzu's Coat Exact} {Keep} ~~ {
+	ObjClass C_Armor
+	SlotPalette 0 6152
+	SlotPalette 1 6141
+	SlotPalette 2 6122
+	SlotPalette 3 6122
+	SlotPalette 4 6122
+	MatchRx M_Name {Chiran Coat}
+~~ }
+NO: {Lei Wan-tzu's Leggings Exact} {Keep} ~~ {
+	ObjClass C_Armor
+	SlotPalette 0 6152
+	SlotPalette 1 6122
+	SlotPalette 2 6122
+	SlotPalette 3 6122
+	MatchRx M_Name {Chiran Leggings}
+~~ }
+NO: {Lei Wan-tzu's Gaunts Exact} {Keep} ~~ {
+	ObjClass C_Armor
+	SlotPalette 0 6122
+	MatchRx M_Name {Chiran Gauntlets}
+~~ }
+NO: {Lei Wan-tzu's Sandals Exact} {Keep} ~~ {
+	ObjClass C_Armor
+	SlotPalette 0 6122
+	MatchRx M_Name {Chiran Sandals}
+~~ }
+NO: {Nexus Celdon BP Exact} {Keep} ~~ {
+	ObjClass C_Armor
+	SlotPalette 0 1675
+	SlotPalette 1 1081
+	SlotPalette 2 1081
+	MatchRx M_Name {Celdon Breastplate}
+	MatchRx M_Name {^((?!Olthoi).)*$}
+~~ }
+NO: {Nexus Celdon Sleeves Exact} {Keep} ~~ {
+	ObjClass C_Armor
+	SlotPalette 0 1675
+	SlotPalette 1 1675
+	SlotPalette 2 1081
+	SlotPalette 3 1081
+	MatchRx M_Name {Celdon Sleeves}
+	MatchRx M_Name {^((?!Olthoi).)*$}
+~~ }
+NO: {Celdon Sleeves (Any)} {Keep} ~~ {
+	ObjClass C_Armor
+	MatchRx M_Name {Celdon Sleeves}
+	MatchRx M_Name {^((?!Olthoi).)*$}
+~~ }
+NO: {Nexus Celdon Girth Exact} {Keep} ~~ {
+	ObjClass C_Armor
+	SlotPalette 0 1675
+	SlotPalette 1 1081
+	SlotPalette 2 1081
+	MatchRx M_Name {Celdon Girth}
+	MatchRx M_Name {^((?!Olthoi).)*$}
+~~ }
+NO: {Nexus Celdon Legs Exact} {Keep} ~~ {
+	ObjClass C_Armor
+	SlotPalette 0 1675
+	SlotPalette 1 1081
+	MatchRx M_Name {Celdon Leggings}
+	MatchRx M_Name {^((?!Olthoi).)*$}
+~~ }
+NO: {PPGSA Coat Exact} {Keep} ~~ {
+	ObjClass C_Armor
+	SlotPalette 0 1684
+	SlotPalette 1 1504
+	SlotPalette 2 1504
+	SlotPalette 3 1104
+	SlotPalette 4 1104
+	SlotPalette 5 1104
+	SlotPalette 6 1104
+	SlotPalette 7 1104
+	MatchRx M_Name {Amuli Coat}
+	MatchRx M_Name {^((?!Olthoi).)*$}
+~~ }
+NO: {PPGSA Legs Exact} {Keep} ~~ {
+	ObjClass C_Armor
+	SlotPalette 0 1454
+	SlotPalette 1 1454
+	SlotPalette 2 1104
+	SlotPalette 3 1104
+	MatchRx M_Name {Amuli Leggings}
+	MatchRx M_Name {^((?!Olthoi).)*$}
+~~ }
+NO: {PPGSC BP Exact} {Keep} ~~ {
+	ObjClass C_Armor
+	SlotPalette 0 1101
+	SlotPalette 1 1680
+	SlotPalette 2 1680
+	MatchRx M_Name {Celdon Breastplate}
+	MatchRx M_Name {^((?!Olthoi).)*$}
+~~ }
+NO: {PPGSC Sleeves Exact} {Keep} ~~ {
+	ObjClass C_Armor
+	SlotPalette 0 1101
+	SlotPalette 1 1101
+	SlotPalette 2 1680
+	SlotPalette 3 1680
+	MatchRx M_Name {Celdon Sleeves}
+	MatchRx M_Name {^((?!Olthoi).)*$}
+~~ }
+NO: {PPGSC Girth Exact} {Keep} ~~ {
+	ObjClass C_Armor
+	SlotPalette 0 1101
+	SlotPalette 1 1680
+	SlotPalette 2 1680
+	MatchRx M_Name {Celdon Girth}
+	MatchRx M_Name {^((?!Olthoi).)*$}
+~~ }
+NO: {PPGSC Legs Exact} {Keep} ~~ {
+	ObjClass C_Armor
+	SlotPalette 0 1101
+	SlotPalette 1 1680
+	MatchRx M_Name {Celdon Leggings}
+	MatchRx M_Name {^((?!Olthoi).)*$}
+~~ }
+NO: {PPGSK BP Exact} {Keep} ~~ {
+	ObjClass C_Armor
+	SlotPalette 0 1105
+	SlotPalette 1 1162
+	SlotPalette 2 1162
+	SlotPalette 3 1456
+	MatchRx M_Name {Koujia Breastplate}
+	MatchRx M_Name {^((?!Olthoi).)*$}
+~~ }
+NO: {PPGSK Sleeves Exact} {Keep} ~~ {
+	ObjClass C_Armor
+	SlotPalette 0 1456
+	SlotPalette 1 1456
+	SlotPalette 2 1162
+	MatchRx M_Name {Koujia Sleeves}
+	MatchRx M_Name {^((?!Olthoi).)*$}
+~~ }
+NO: {PPGSK Legs Exact} {Keep} ~~ {
+	ObjClass C_Armor
+	SlotPalette 0 1105
+	SlotPalette 1 1105
+	SlotPalette 2 1162
+	SlotPalette 3 1456
+	MatchRx M_Name {Koujia Leggings}
+	MatchRx M_Name {^((?!Olthoi).)*$}
+~~ }
+NO: {PP Olthoi Helm} {Keep} ~~ {
+	ObjClass C_Armor
+	SlotPalette 0 3665
+	MatchRx M_Name {Helmet}
+~~ }
+NO: {} {Keep} ~~ {
+	MatchRx M_Name {leave this disabled}
+~~ }
+NO: {} {Keep} ~~ {
+	MatchRx M_Name {leave this disabled}
+~~ }
+NO: {} {Keep} ~~ {
+	MatchRx M_Name {leave this disabled}
+~~ }
+ON: {***** Salvage *****} {Keep} ~~ {
+	MatchRx M_Name {do not edit}
+~~ }
+ON: {(Salv) Foolproof} {Keep} ~~ {
+	MatchRx M_Name {Foolproof}
+~~ }
+NO: {} {Keep} ~~ {
+	MatchRx M_Name {leave this disabled}
+~~ }
+ON: {**AT**} {Keep} ~~ {
+	MatchRx M_Name {do not edit}
+~~ }
+NO: {(Salv) Alabaster} {Salvage} ~~ {
+	LKeyE L_Material 66
+	LKeyGE L_Workmanship 4
+	EmptyMainPackSlotsGE 7
+~~ }
+NO: {(Salv) Armoredillo Hide} {Salvage} ~~ {
+	LKeyE L_Material 53
+	LKeyGE L_Workmanship 4
+	EmptyMainPackSlotsGE 7
+~~ }
+NO: {(Salv) Bronze} {Salvage} ~~ {
+	LKeyE L_Material 58
+	LKeyGE L_Workmanship 4
+	EmptyMainPackSlotsGE 7
+~~ }
+NO: {(Salv) Ceramic} {Salvage} ~~ {
+	LKeyE L_Material 1
+	LKeyGE L_Workmanship 4
+	EmptyMainPackSlotsGE 7
+~~ }
+NO: {(Salv) Marble} {Salvage} ~~ {
+	LKeyE L_Material 68
+	LKeyGE L_Workmanship 4
+	EmptyMainPackSlotsGE 7
+~~ }
+NO: {(Salv) Peridot} {Salvage} ~~ {
+	LKeyE L_Material 34
+	EmptyMainPackSlotsGE 7
+~~ }
+NO: {(Salv) Reed Shark Hide} {Salvage} ~~ {
+	LKeyE L_Material 55
+	LKeyGE L_Workmanship 4
+	EmptyMainPackSlotsGE 7
+~~ }
+NO: {(Salv) Steel} {Salvage} ~~ {
+	LKeyE L_Material 64
+	LKeyGE L_Workmanship 5
+	EmptyMainPackSlotsGE 7
+~~ }
+NO: {(Salv) Wool} {Salvage} ~~ {
+	LKeyE L_Material 8
+	LKeyGE L_Workmanship 4
+	EmptyMainPackSlotsGE 7
+~~ }
+NO: {(Salv) Yellow Topaz} {Salvage} ~~ {
+	LKeyE L_Material 49
+	EmptyMainPackSlotsGE 7
+~~ }
+NO: {(Salv) Zircon} {Salvage} ~~ {
+	LKeyE L_Material 50
+	EmptyMainPackSlotsGE 7
+~~ }
+NO: {} {Keep} ~~ {
+	MatchRx M_Name {leave this disabled}
+~~ }
+ON: {**IT**} {Keep} ~~ {
+	MatchRx M_Name {do not edit}
+~~ }
+NO: {(Salv) Amber} {Salvage} ~~ {
+	LKeyE L_Material 11
+	EmptyMainPackSlotsGE 7
+~~ }
+NO: {(Salv) Copper} {Salvage} ~~ {
+	LKeyE L_Material 59
+	LKeyGE L_Workmanship 4
+	EmptyMainPackSlotsGE 7
+~~ }
+NO: {(Salv) Diamond} {Salvage} ~~ {
+	LKeyE L_Material 20
+	EmptyMainPackSlotsGE 7
+~~ }
+NO: {(Salv) Ebony} {Salvage} ~~ {
+	LKeyE L_Material 73
+	EmptyMainPackSlotsGE 7
+~~ }
+NO: {(Salv) Gold} {Salvage} ~~ {
+	LKeyE L_Material 60
+	LKeyGE L_Workmanship 3
+	EmptyMainPackSlotsGE 7
+~~ }
+NO: {(Salv) Gromnie Hide} {Salvage} ~~ {
+	LKeyE L_Material 54
+	LKeyGE L_Workmanship 4
+	EmptyMainPackSlotsGE 7
+~~ }
+NO: {(Salv) Linen} {Salvage} ~~ {
+	LKeyE L_Material 4
+	LKeyGE L_Workmanship 4
+	EmptyMainPackSlotsGE 7
+~~ }
+NO: {(Salv) Moonstone} {Salvage} ~~ {
+	LKeyE L_Material 31
+	LKeyGE L_Workmanship 4
+	EmptyMainPackSlotsGE 7
+~~ }
+NO: {(Salv) Pine} {Salvage} ~~ {
+	LKeyE L_Material 76
+	LKeyGE L_Workmanship 1
+	EmptyMainPackSlotsGE 7
+~~ }
+NO: {(Salv) Porcelain} {Salvage} ~~ {
+	LKeyE L_Material 2
+	EmptyMainPackSlotsGE 7
+~~ }
+NO: {(Salv) Pyreal} {Salvage} ~~ {
+	LKeyE L_Material 62
+	LKeyGE L_Workmanship 4
+	EmptyMainPackSlotsGE 7
+~~ }
+NO: {(Salv) Ruby} {Salvage} ~~ {
+	LKeyE L_Material 38
+	EmptyMainPackSlotsGE 7
+~~ }
+NO: {(Salv) Sapphire} {Salvage} ~~ {
+	LKeyE L_Material 39
+	EmptyMainPackSlotsGE 7
+~~ }
+NO: {(Salv) Satin} {Salvage} ~~ {
+	LKeyE L_Material 5
+	EmptyMainPackSlotsGE 7
+~~ }
+NO: {(Salv) Silver} {Salvage} ~~ {
+	LKeyE L_Material 63
+	LKeyGE L_Workmanship 5
+	EmptyMainPackSlotsGE 7
+~~ }
+NO: {(Salv) Teak} {Salvage} ~~ {
+	LKeyE L_Material 77
+	EmptyMainPackSlotsGE 7
+~~ }
+NO: {} {Keep} ~~ {
+	MatchRx M_Name {leave this disabled}
+~~ }
+ON: {**MIT**} {Keep} ~~ {
+	MatchRx M_Name {do not edit}
+~~ }
+NO: {(Salv) Agate} {Salvage} ~~ {
+	LKeyE L_Material 10
+	EmptyMainPackSlotsGE 7
+~~ }
+NO: {(Salv) Azurite} {Salvage} ~~ {
+	LKeyE L_Material 14
+	EmptyMainPackSlotsGE 7
+~~ }
+NO: {(Salv) Black Opal} {Salvage} ~~ {
+	LKeyE L_Material 16
+	EmptyMainPackSlotsGE 7
+~~ }
+NO: {(Salv) Bloodstone} {Salvage} ~~ {
+	LKeyE L_Material 17
+	EmptyMainPackSlotsGE 7
+~~ }
+NO: {(Salv) Carnelian} {Salvage} ~~ {
+	LKeyE L_Material 18
+	EmptyMainPackSlotsGE 7
+~~ }
+NO: {(Salv) Citrine} {Salvage} ~~ {
+	LKeyE L_Material 19
+	EmptyMainPackSlotsGE 7
+~~ }
+NO: {(Salv) Fire Opal} {Salvage} ~~ {
+	LKeyE L_Material 22
+	EmptyMainPackSlotsGE 7
+~~ }
+NO: {(Salv) Green Garnet} {Keep} ~~ {
+	LKeyE L_Material 23
+	EmptyMainPackSlotsGE 7
+~~ }
+NO: {(Salv) Mahogany} {Keep} ~~ {
+	LKeyE L_Material 74
+	EmptyMainPackSlotsGE 7
+~~ }
+NO: {(Salv) Hematite} {Salvage} ~~ {
+	LKeyE L_Material 25
+	EmptyMainPackSlotsGE 7
+~~ }
+NO: {(Salv) Lapis Lazuli} {Salvage} ~~ {
+	LKeyE L_Material 28
+	EmptyMainPackSlotsGE 7
+~~ }
+NO: {(Salv) Lavender Jade} {Salvage} ~~ {
+	LKeyE L_Material 29
+	EmptyMainPackSlotsGE 7
+~~ }
+NO: {(Salv) Malachite} {Salvage} ~~ {
+	LKeyE L_Material 30
+	EmptyMainPackSlotsGE 7
+~~ }
+NO: {(Salv) Opal} {Salvage} ~~ {
+	LKeyE L_Material 33
+	LKeyGE L_Workmanship 9
+	EmptyMainPackSlotsGE 7
+~~ }
+NO: {(Salv) Red Jade} {Salvage} ~~ {
+	LKeyE L_Material 36
+	EmptyMainPackSlotsGE 7
+~~ }
+NO: {(Salv) Rose Quartz} {Salvage} ~~ {
+	LKeyE L_Material 37
+	EmptyMainPackSlotsGE 7
+~~ }
+NO: {(Salv) Smokey Quartz} {Salvage} ~~ {
+	LKeyE L_Material 40
+	EmptyMainPackSlotsGE 7
+~~ }
+NO: {(Salv) Sunstone} {Salvage} ~~ {
+	LKeyE L_Material 41
+	EmptyMainPackSlotsGE 7
+~~ }
+NO: {} {Keep} ~~ {
+	MatchRx M_Name {leave this disabled}
+~~ }
+ON: {**WT**} {Keep} ~~ {
+	MatchRx M_Name {do not edit}
+~~ }
+NO: {(Salv) Aquamarine} {Salvage} ~~ {
+	LKeyE L_Material 13
+	EmptyMainPackSlotsGE 7
+~~ }
+NO: {(Salv) Black Garnet} {Salvage} ~~ {
+	LKeyE L_Material 15
+	EmptyMainPackSlotsGE 7
+~~ }
+NO: {(Salv) Brass} {Salvage} ~~ {
+	LKeyE L_Material 57
+	LKeyGE L_Workmanship 3
+	EmptyMainPackSlotsGE 7
+~~ }
+NO: {(Salv) Emerald} {Salvage} ~~ {
+	LKeyE L_Material 21
+	EmptyMainPackSlotsGE 7
+~~ }
+NO: {(Salv) Granite} {Salvage} ~~ {
+	LKeyE L_Material 67
+	LKeyGE L_Workmanship 1
+~~ }
+NO: {(Salv) Imperial Topaz} {Salvage} ~~ {
+	LKeyE L_Material 26
+	EmptyMainPackSlotsGE 7
+~~ }
+NO: {(Salv) Iron} {Salvage} ~~ {
+	LKeyE L_Material 61
+	LKeyGE L_Workmanship 4
+~~ }6
+NO: {(Salv) Jet} {Salvage} ~~ {
+	LKeyE L_Material 27
+	EmptyMainPackSlotsGE 7
+~~ }
+NO: {(Salv) Oak} {Salvage} ~~ {
+	LKeyE L_Material 75
+	EmptyMainPackSlotsGE 7
+~~ }
+NO: {(Salv) Onyx} {Salvage} ~~ {
+	LKeyE L_Material 32
+	EmptyMainPackSlotsGE 7
+~~ }
+NO: {(Salv) Red Garnet} {Salvage} ~~ {
+	LKeyE L_Material 35
+	EmptyMainPackSlotsGE 7
+~~ }
+NO: {(Salv) Velvet} {Salvage} ~~ {
+	LKeyE L_Material 7
+	LKeyGE L_Workmanship 4
+	EmptyMainPackSlotsGE 7
+~~ }
+NO: {(Salv) White Sapphire} {Salvage} ~~ {
+	LKeyE L_Material 47
+	EmptyMainPackSlotsGE 7
+~~ }
+NO: {} {Keep} ~~ {
+	MatchRx M_Name {leave this disabled}
+~~ }
+ON: {**Misc**} {Keep} ~~ {
+	MatchRx M_Name {do not edit}
+~~ }
+NO: {(Salv) Ivory} {Salvage} ~~ {
+	LKeyE L_Material 51
+	EmptyMainPackSlotsGE 7
+~~ }
+NO: {(Salv) Leather} {Salvage} ~~ {
+	LKeyE L_Material 52
+	EmptyMainPackSlotsGE 7
+~~ }
+NO: {(Salv) Sandstone} {Salvage} ~~ {
+	LKeyE L_Material 70
+	EmptyMainPackSlotsGE 7
+~~ }
+NO: {(Salv) Silk} {Salvage} ~~ {
+	LKeyE L_Material 6
+	EmptyMainPackSlotsGE 7
+~~ }
+NO: {} {Keep} ~~ {
+	MatchRx M_Name {leave this disabled}
+~~ }
+ON: {**Useless**} {Keep} ~~ {
+	MatchRx M_Name {do not edit}
+~~ }
+NO: {(Salv) Amethyst} {Salvage} ~~ {
+	LKeyE L_Material 12
+	EmptyMainPackSlotsGE 7
+~~ }
+NO: {(Salv) Green Jade} {Salvage} ~~ {
+	LKeyE L_Material 24
+	EmptyMainPackSlotsGE 7
+~~ }
+NO: {(Salv) Obsidian} {Salvage} ~~ {
+	LKeyE L_Material 69
+	EmptyMainPackSlotsGE 7
+~~ }
+NO: {(Salv) Serpentine} {Salvage} ~~ {
+	LKeyE L_Material 71
+	EmptyMainPackSlotsGE 7
+~~ }
+NO: {(Salv) Tiger Eye} {Salvage} ~~ {
+	LKeyE L_Material 42
+	EmptyMainPackSlotsGE 7
+~~ }
+NO: {(Salv) Tourmaline} {Salvage} ~~ {
+	LKeyE L_Material 43
+	EmptyMainPackSlotsGE 7
+~~ }
+ON: {(Salv) Turquoise} {Keep} ~~ {
+	LKeyE L_Material 44
+	EmptyMainPackSlotsGE 7
+~~ }
+NO: {(Salv) White Jade} {Salvage} ~~ {
+	LKeyE L_Material 45
+	EmptyMainPackSlotsGE 7
+~~ }
+ON: {(Salv) White Quartz} {Keep} ~~ {
+	LKeyE L_Material 46
+	EmptyMainPackSlotsGE 7
+~~ }
+ON: {(Salv) Yellow Garnet} {Keep} ~~ {
+	LKeyE L_Material 48
+	EmptyMainPackSlotsGE 7
+~~ }
+NO: {(Salv) Brass} {Keep} ~~ {
+	LKeyE L_Material 57
+	EmptyMainPackSlotsGE 7
+~~ }
+NO: {(Salv) $$$$} {Salvage} ~~ {
+	LKeyGE L_Value 50000
+	EmptyMainPackSlotsGE 7
+	LKeyGE L_Material 1
+~~ }
+ON: {    (T) Small Shadow Statue of the Hopeslayer} {Keep} ~~ {
+	MatchRx M_Name {Small Shadow Statue of the Hopeslayer}
+~~ }
+ON: {    (T) Viridian Rise Deru Portal Sending Gem} {Keep} ~~ {
+	MatchRx M_Name {Viridian Rise Deru Portal Sending Gem}
+~~ }
+NO: {    (T) Essence of Norshuntyr} {Keep 1} ~~ {
+	MatchRx M_Name {Essence of Norshuntyr}
+~~ }
+NO: {    (T) Essence of Zerzelikyr} {Keep 1} ~~ {
+	MatchRx M_Name {Essence of Zerzelikyr}
+~~ }
+NO: {    (T) Essence of Wind Fury} {Keep 1} ~~ {
+	MatchRx M_Name {Essence of Wind Fury}
+~~ }
+NO: {    (T) Essence of Night Brier} {Keep 1} ~~ {
+	MatchRx M_Name {Essence of Night Brier}
+~~ }
+NO: {    (T) Lower Bow Limb} {Keep} ~~ {
+	MatchRx M_Name {Lower Bow Limb}
+~~ }
+NO: {    (T) Bow Grip} {Keep} ~~ {
+	MatchRx M_Name {Bow Grip}
+~~ }
+NO: {    (T) Upper Bow Limb} {Keep} ~~ {
+	MatchRx M_Name {Upper Bow Limb}
+~~ }
+NO: {    (T) Rigid Bow String} {Keep} ~~ {
+	MatchRx M_Name {Rigid Bow String}
+~~ }
+ON: {    (T) Drudge Head River} {Keep} ~~ {
+	MatchRx M_Name {River Drudge Head}
+~~ }
+ON: {    (T) Glittering Key} {Keep 5} ~~ {
+	MatchRx M_Name {Glittering Key}
+~~ }
+ON: {    (T) Bone Key} {Keep 5} ~~ {
+	MatchRx M_Name {Bone Key}
+~~ }
+NO: {    (T) Twisted Dark Key} {Keep} ~~ {
+	MatchRx M_Name {Twisted Dark Key}
+~~ }
+NO: {    (T) Mangled Dark Key} {Keep} ~~ {
+	MatchRx M_Name {Mangled Dark Key}
+~~ }
+ON: {    (T) Sturdy Steel Key} {Keep} ~~ {
+	MatchRx M_Name {Sturdy Steel Key|Virindi Singularity Key|Sturdy Iron Key}
+~~ }
+NO: {(H) Dagger MS low end} {Keep} ~~ {
+	LKeyE L_WeaponMasteryCategory 6
+	LKeyE L_WieldReqAttribute 44
+	LKeyBuffedGE L_MaxDamage 58
+	ObjClass C_MeleeWeapon
+	MatchRx M_Name {Frost|Lightning|Flaming|Electric|Acid|Fire}
+	MatchRx M_Name {Stiletto|Jambiya}
+~~ }
+NO: {(L) Dagger MS low end} {Keep} ~~ {
+	LKeyE L_WeaponMasteryCategory 6
+	LKeyE L_WieldReqAttribute 45
+	LKeyBuffedGE L_MaxDamage 55
+	ObjClass C_MeleeWeapon
+	MatchRx M_Name {Frost|Lightning|Flaming|Electric|Acid|Fire}
+	MatchRx M_Name {Dagger}
+~~ }
+NO: {(H) Sword MS low end} {Keep} ~~ {
+	LKeyE L_WeaponMasteryCategory 2
+	LKeyE L_WieldReqAttribute 44
+	LKeyBuffedGE L_MaxDamage 58
+	ObjClass C_MeleeWeapon
+	MatchRx M_Name {Schlager}
+	MatchRx M_Name {Frost|Lightning|Flaming|Electric|Acid|Fire}
+~~ }
+NO: {(L) Sword MS low end} {Keep} ~~ {
+	LKeyE L_WeaponMasteryCategory 2
+	LKeyE L_WieldReqAttribute 45
+	LKeyBuffedGE L_MaxDamage 51
+	ObjClass C_MeleeWeapon
+	MatchRx M_Name {Epee}
+	MatchRx M_Name {Frost|Lightning|Flaming|Electric|Acid|Fire}
+~~ }
+ON: {(W) War 127 plus} {Keep} ~~ {
+	ObjClass C_WandStaffOrb
+	DKeyBuffedGE D_ElementalDamageVersus 1.27
+	MatchRx M_Name {Baton|Sceptre|Staff}
+~~ }
+ON: {(W) War 127 plus} {Keep} ~~ {
+	ObjClass C_WandStaffOrb
+	DKeyBuffedGE D_ElementalDamageVersus 1.27
+	MatchRx M_Name {Baton|Sceptre|Staff}
+~~ }
+NO: {(M) Bow (low end)} {Keep} ~~ {
+	LKeyE L_WeaponMasteryCategory 8
+	ObjClass C_MissileWeapon
+	CalcedBuffedMissileDmgGE 86.6
+	MatchRx M_Name {Blunt}
+	LKeyE L_WieldReqAttribute 47
+~~ }
+ON: {    (T) Alternate Currency} {Keep} ~~ {
+	MatchRx M_Name {Trophy|Colosseum Coin|A'nekshay Token|Small Olthoi Venom Sac|Ornate Gear Marker|Ancient Mhoire Coin|Mutated OIthoi Gland}
+~~ }
+ON: {    (T) Misc} {Keep} ~~ {
+	MatchRx M_Name {Shadowy Essence|Volcanic Ember|Lucky Gold Letter}
+~~ }
+ON: {    (T) Society} {Keep} ~~ {
+	MatchRx M_Name {Phyntos Honey|Hive Splinter|Phyntos Queen's Abdomen|Aetherium-infused}
+~~ }
+ON: {(Masks) Burun Guruk Head} {Keep} ~~ {
+	MatchRx M_Name {Burun Guruk Head}
+~~ }
+ON: {(Masks) Burun Ruuk Head} {Keep} ~~ {
+	MatchRx M_Name {Burun Ruuk Head}
+~~ }
+ON: {(Masks) Chittick Head} {Keep} ~~ {
+	MatchRx M_Name {Chittick Head}
+~~ }
+ON: {(Masks) Cow Head} {Keep} ~~ {
+	MatchRx M_Name {Cow Head}
+~~ }
+NO: {(Masks) Doll Mask} {Keep} ~~ {
+	MatchRx M_Name {Doll Mask}
+~~ }
+ON: {(Masks) Drudge Head} {Keep} ~~ {
+	MatchRx M_Name {Drudge Head}
+~~ }
+ON: {(Masks) Drudge Mask} {Keep} ~~ {
+	MatchRx M_Name {Drudge Mask}
+~~ }
+ON: {(Masks) Falatacot Abbess Head} {Keep} ~~ {
+	MatchRx M_Name {Falatacot Abbess Head}
+~~ }
+ON: {(Masks) Fiun Head} {Keep} ~~ {
+	MatchRx M_Name {Fiun Head}
+~~ }
+ON: {(Masks) Giant Snowman Head} {Keep} ~~ {
+	MatchRx M_Name {Giant Snowman Head}
+~~ }
+ON: {(Masks) Head of the Homunculus} {Keep} ~~ {
+	MatchRx M_Name {Head of the Homunculus}
+~~ }
+ON: {(Masks) Knath Husk} {Keep} ~~ {
+	MatchRx M_Name {Knath Husk}
+~~ }
+ON: {(Masks) Left Eye Patch} {Keep} ~~ {
+	MatchRx M_Name {Left Eye Patch}
+~~ }
+ON: {(Masks) Minor Essence of the Hopeslayer} {Keep} ~~ {
+	MatchRx M_Name {Minor Essence of the Hopeslayer}
+~~ }
+ON: {(Masks) Mite Head} {Keep} ~~ {
+	MatchRx M_Name {Mite Head}
+~~ }
+ON: {(Masks) Moarsman Head} {Keep} ~~ {
+	MatchRx M_Name {Moarsman Head}
+~~ }
+ON: {(Masks) Mosswart Head} {Keep} ~~ {
+	MatchRx M_Name {Mosswart Head}
+~~ }
+ON: {(Masks) Mosswart Mask} {Keep} ~~ {
+	MatchRx M_Name {Mosswart Mask}
+~~ }
+ON: {(Masks) Mukkir Head} {Keep} ~~ {
+	MatchRx M_Name {Mukkir Head}
+~~ }
+ON: {(Masks) Penguin Head} {Keep} ~~ {
+	MatchRx M_Name {Penguin Head}
+~~ }
+ON: {(Masks) Pumpkin Head} {Keep} ~~ {
+	MatchRx M_Name {Pumpkin Head}
+~~ }
+ON: {(Masks) Hollow Minion Mask ( Pumpkin Head)} {Keep} ~~ {
+	MatchRx M_Name {Hollow Minion Mask ( Pumpkin Head)}
+~~ }
+ON: {(Masks) Ruschk Head} {Keep} ~~ {
+	MatchRx M_Name {Ruschk Head}
+~~ }
+ON: {(Masks) Sclavus Head} {Keep} ~~ {
+	MatchRx M_Name {Sclavus Head}
+~~ }
+ON: {(Masks) Shadow Fragment} {Keep} ~~ {
+	MatchRx M_Name {Shadow Fragment}
+~~ }
+ON: {(Masks) Shadow Head} {Keep} ~~ {
+	MatchRx M_Name {Shadow Head}
+~~ }
+ON: {(Masks) Skeleton's Skull} {Keep} ~~ {
+	MatchRx M_Name {Skeleton's Skull}
+~~ }
+ON: {(Masks) Skull Mask} {Keep} ~~ {
+	MatchRx M_Name {Skull Mask}
+~~ }
+ON: {(Masks) Snowman Head} {Keep} ~~ {
+	MatchRx M_Name {Snowman Head}
+~~ }
+ON: {(Masks) Snowman Mask ( Fez)} {Keep} ~~ {
+	MatchRx M_Name {Snowman Mask ( Fez)}
+~~ }
+ON: {(Masks) Snowman Mask ( Trade Note (10,000))} {Keep} ~~ {
+	MatchRx M_Name {Snowman Mask ( Trade Note (10,000))}
+~~ }
+ON: {(Masks) Tusker Head} {Keep} ~~ {
+	MatchRx M_Name {Tusker Head}
+~~ }
+ON: {(Masks) Tusker Mask} {Keep} ~~ {
+	MatchRx M_Name {Tusker Mask}
+~~ }
+ON: {(Masks) Two Headed Snowman Head} {Keep} ~~ {
+	MatchRx M_Name {Two Headed Snowman Head}
+~~ }
+ON: {(Masks) Uber Penguin Head} {Keep} ~~ {
+	MatchRx M_Name {Uber Penguin Head}
+~~ }
+ON: {(Masks) Undead Captain's Head} {Keep} ~~ {
+	MatchRx M_Name {Undead Captain's Head}
+~~ }
+ON: {(Masks) Undead Captain Mask} {Keep} ~~ {
+	MatchRx M_Name {Undead Captain Mask}
+~~ }
+ON: {(Masks) Undead Sailor's Head} {Keep} ~~ {
+	MatchRx M_Name {Undead Sailor's Head}
+~~ }
+ON: {(Masks) Undead Sailor Mask} {Keep} ~~ {
+	MatchRx M_Name {Undead Sailor Mask}
+~~ }
+ON: {(Masks) Ursuin Head} {Keep} ~~ {
+	MatchRx M_Name {Ursuin Head}
+~~ }
+ON: {(Masks) White Rabbit Carcass} {Keep} ~~ {
+	MatchRx M_Name {White Rabbit Carcass}
+~~ }
+ON: {(Masks) Whole Chicken} {Keep} ~~ {
+	MatchRx M_Name {Whole Chicken}
+~~ }
+NO: {(Masks) Zombie Head} {Keep} ~~ {
+	MatchRx M_Name {Zombie Head}
+~~ }
+ON: {(Guises) Armored Undead} {Keep} ~~ {
+	MatchRx M_Name {Armored Undead}
+~~ }
+ON: {(Guises) Armored Skeleton} {Keep} ~~ {
+	MatchRx M_Name {Armored Skeleton}
+~~ }
+ON: {(Guises) Ghostly Shroud}  {Keep} ~~ {
+	MatchRx M_Name {Ghostly Shroud}
+~~ }
+ON: {(Guises) Gurog} {Keep} ~~ {
+	MatchRx M_Name {Gurog}
+~~ }
+ON: {(Guises) Mu-miyah} {Keep} ~~ {
+	MatchRx M_Name {Mu-miyah Leg|Mu-miyah Arm}
+~~ }
+ON: {(Guises) Scarecrow} {Keep} ~~ {
+	MatchRx M_Name {Scarecrow}
+~~ }
+ON: {(Guises) Sclavus} {Keep} ~~ {
+	MatchRx M_Name {Sclavus}
+~~ }
+ON: {(Guises) Skeletal} {Keep} ~~ {
+	MatchRx M_Name {Skeletal}
+~~ }
+ON: {(Guises) Undead Arm} {Keep} ~~ {
+	MatchRx M_Name {Undead Arm}
+~~ }
+ON: {(Guises) Undead Torso} {Keep} ~~ {
+	MatchRx M_Name {Undead Torso}
+~~ }
+ON: {(Guises) Ursuin Leg} {Keep} ~~ {
+	MatchRx M_Name {Ursuin Leg}
+~~ }
+ON: {(Guises) Ursuin Torso} {Keep} ~~ {
+	MatchRx M_Name {Ursuin Torso}
+~~ }
+ON: {(Collector) Blue Phyntos Wasp Wing} {Keep} ~~ {
+	MatchRx M_Name {Blue Phyntos Wasp Wing}
+~~ }
+ON: {(Collector) Gold Phyntos Wasp Wing} {Keep} ~~ {
+	MatchRx M_Name {Gold Phyntos Wasp Wing}
+~~ }
+ON: {(Collector) Green Phyntos Wasp Wing} {Keep} ~~ {
+	MatchRx M_Name {Green Phyntos Wasp Wing}
+~~ }
+ON: {(Collector) Jungle Phyntos Wasp Wing} {Keep} ~~ {
+	MatchRx M_Name {Jungle Phyntos Wasp Wing}
+~~ }
+ON: {(Collector) Mire Phyntos Wasp Wing} {Keep} ~~ {
+	MatchRx M_Name {Mire Phyntos Wasp Wing}
+~~ }
+ON: {(Collector) White Phyntos Wasp Wing} {Keep} ~~ {
+	MatchRx M_Name {White Phyntos Wasp Wing}
+~~ }
+ON: {(Collector) Red Phyntos Wasp Wing} {Keep} ~~ {
+	MatchRx M_Name {Red Phyntos Wasp Wing}
+~~ }
+ON: {(Collector) Drudge Cabalist Charm} {Keep} ~~ {
+	MatchRx M_Name {Drudge Cabalist Charm}
+~~ }
+ON: {(Collector) Mystic Drudge Charm} {Keep} ~~ {
+	MatchRx M_Name {Mystic Drudge Charm}
+~~ }
+ON: {(Collector) Drudge Sage Charm} {Keep} ~~ {
+	MatchRx M_Name {Drudge Sage Charm}
+~~ }
+ON: {(Collector) Gloom Drudge Charm} {Keep} ~~ {
+	MatchRx M_Name {Gloom Drudge Charm}
+~~ }
+ON: {(Collector) Murk Drudge Charm} {Keep} ~~ {
+	MatchRx M_Name {Murk Drudge Charm}
+~~ }
+ON: {(Collector) Peerless Drudge Charm} {Keep} ~~ {
+	MatchRx M_Name {Peerless Drudge Charm}
+~~ }
+ON: {(Collector) Small Lugian Sinew} {Keep} ~~ {
+	MatchRx M_Name {Small Lugian Sinew}
+~~ }
+ON: {(Collector) Large Lugian Sinew} {Keep} ~~ {
+	MatchRx M_Name {Large Lugian Sinew}
+~~ }
+ON: {(Collector) Banderling Aggressor Scalp} {Keep} ~~ {
+	MatchRx M_Name {Banderling Aggressor Scalp}
+~~ }
+ON: {(Collector) Banderling Antagonist Scalp} {Keep} ~~ {
+	MatchRx M_Name {Banderling Antagonist Scalp}
+~~ }
+ON: {(Collector) Banderling Predator Scalp} {Keep} ~~ {
+	MatchRx M_Name {Banderling Predator Scalp}
+~~ }
+ON: {(Collector) Banderling Slayer Scalp} {Keep} ~~ {
+	MatchRx M_Name {Banderling Slayer Scalp}
+~~ }
+ON: {(Collector) Banderling Savage Arm} {Keep} ~~ {
+	MatchRx M_Name {Banderling Savage Arm}
+~~ }
+ON: {(Collector) Red Rat Tail} {Keep} ~~ {
+	MatchRx M_Name {Red Rat Tail}
+~~ }
+ON: {(Collector) Brown Rat Tail} {Keep} ~~ {
+	MatchRx M_Name {Brown Rat Tail}
+~~ }
+ON: {(Collector) Grey Rat Tail} {Keep} ~~ {
+	MatchRx M_Name {Grey Rat Tail}
+~~ }
+ON: {(Collector) Russet Rat Tail} {Keep} ~~ {
+	MatchRx M_Name {Russet Rat Tail}
+~~ }
+ON: {(Collector) Tan Rat Tail} {Keep} ~~ {
+	MatchRx M_Name {Tan Rat Tail}
+~~ }
+ON: {(Collector) White Rat Tail} {Keep} ~~ {
+	MatchRx M_Name {White Rat Tail}
+~~ }
+ON: {(Collector) Bronze Armoredillo Spine} {Keep} ~~ {
+	MatchRx M_Name {Bronze Armoredillo Spine}
+~~ }
+ON: {(Collector) Grey Spine} {Keep} ~~ {
+	MatchRx M_Name {Grey Spine}
+~~ }
+ON: {(Collector) Hoary Armoredillo Spine} {Keep} ~~ {
+	MatchRx M_Name {Hoary Armoredillo Spine}
+~~ }
+ON: {(Collector) Island Armoredillo Spine} {Keep} ~~ {
+	MatchRx M_Name {Island Armoredillo Spine}
+~~ }
+ON: {(Collector) Plate Armoredillo Spine} {Keep} ~~ {
+	MatchRx M_Name {Plate Armoredillo Spine}
+~~ }
+ON: {(Collector) Sandy Armoredillo Spine} {Keep} ~~ {
+	MatchRx M_Name {Sandy Armoredillo Spine}
+~~ }
+ON: {(Collector) Shore Armoredillo Spine} {Keep} ~~ {
+	MatchRx M_Name {Shore Armoredillo Spine}
+~~ }
+ON: {(Collector) Muddy Towel} {Keep} ~~ {
+	MatchRx M_Name {Muddy Towel}
+~~ }
+ON: {(Collector) Wet Towel} {Keep} ~~ {
+	MatchRx M_Name {Wet Towel}
+~~ }
+ON: {(Collector) Lucky Gold Letter} {Keep} ~~ {
+	MatchRx M_Name {Lucky Gold Letter}
+~~ }
+NO: {(Collector) Scarlet Red Letter} {Keep} ~~ {
+	MatchRx M_Name {Scarlet Red Letter}
+~~ }
+NO: {(Collector) Seal} {Keep} ~~ {
+	MatchRx M_Name {Seal}
+~~ }
+ON: {(Collector) Telumiat Hollow Minion Essence} {Keep} ~~ {
+	MatchRx M_Name {Telumiat Hollow Minion Essence}
+~~ }
+ON: {(Collector) Essence of a Phantasm} {Keep} ~~ {
+	MatchRx M_Name {Essence of a Phantasm}
+~~ }
+ON: {(Collector) Fenmalain Key} {Keep} ~~ {
+	MatchRx M_Name {Fenmalain Key}
+~~ }
+ON: {(Collector) Caulnalain Key} {Keep} ~~ {
+	MatchRx M_Name {Caulnalain Key}
+~~ }
+ON: {(Collector) Shendolain Key} {Keep} ~~ {
+	MatchRx M_Name {Shendolain Key}
+~~ }
+ON: {(Collector) Spiny Grievver Leg (Burrowing Grievver)} {Keep} ~~ {
+	MatchRx M_Name {Spiny Grievver Leg (Burrowing Grievver)}
+~~ }
+ON: {(Collector) Spiny Grievver Leg (Grievver Violator)} {Keep} ~~ {
+	MatchRx M_Name {Spiny Grievver Leg (Grievver Violator)}
+~~ }
+ON: {(Collector) Phyntos Stinger} {Keep} ~~ {
+	MatchRx M_Name {Phyntos Stinger}
+~~ }
+ON: {(Collector) Giant Jungle Phyntos Wasp Stinger} {Keep} ~~ {
+	MatchRx M_Name {Giant Jungle Phyntos Wasp Stinger}
+~~ }
+ON: {(Collector) Kirit Zefir Wing} {Keep} ~~ {
+	MatchRx M_Name {Kirit Zefir Wing}
+~~ }
+ON: {(Collector) Penguin Beak} {Keep} ~~ {
+	MatchRx M_Name {Penguin Beak}
+~~ }
+ON: {(Collector) Arrogant Penguin Beak} {Keep} ~~ {
+	MatchRx M_Name {Arrogant Penguin Beak}
+~~ }
+ON: {(Collector) Rebellious Penguin Beak} {Keep} ~~ {
+	MatchRx M_Name {Rebellious Penguin Beak}
+~~ }
+ON: {(Collector) Sycophantic Penguin Beak} {Keep} ~~ {
+	MatchRx M_Name {Sycophantic Penguin Beak}
+~~ }
+ON: {(Collector) Imperfect Ice Shard} {Keep} ~~ {
+	MatchRx M_Name {Imperfect Ice Shard}
+~~ }
+ON: {(Collector) Ice Shard} {Keep} ~~ {
+	MatchRx M_Name {Ice Shard}
+~~ }
+ON: {(Collector) Hardened Ice Shard} {Keep} ~~ {
+	MatchRx M_Name {Hardened Ice Shard}
+~~ }
+ON: {(Collector) Augmented Ice Shard} {Keep} ~~ {
+	MatchRx M_Name {Augmented Ice Shard}
+~~ }
+ON: {(Collector) Perfect Ice Shard} {Keep} ~~ {
+	MatchRx M_Name {Perfect Ice Shard}
+~~ }
+ON: {(Collector) Reinforced Ice Shard} {Keep}~~ {
+	MatchRx M_Name {Reinforced Ice Shard}
+~~ }
+ON: {(Collector) Brains in Skull with Spoon} {Keep} ~~ {
+	MatchRx M_Name {Brains in Skull with Spoon}
+~~ }
+ON: {(Collector) Aluvian Leg} {Keep} ~~ {
+	MatchRx M_Name {Aluvian Leg}
+~~ }
+ON: {(Collector) Half-Digested Virindi Mask} {Keep} ~~ {
+	MatchRx M_Name {Half-Digested Virindi Mask}
+~~ }
+NO: {(Collector) Identification Plate} {Keep} ~~ {
+	MatchRx M_Name {Identification Plate}
+~~ }
+ON: {(Collector) Penguin Wing} {Keep} ~~ {
+	MatchRx M_Name {Penguin Wing}
+~~ }
+ON: {(Collector) Sho Brain} {Keep} ~~ {
+	MatchRx M_Name {Sho Brain}
+~~ }
+ON: {(Collector) Viamontian Torso} {Keep} ~~ {
+	MatchRx M_Name {Viamontian Torso}
+~~ }
+ON: {(Collector) Olthoi Larvae Steak} {Keep} ~~ {
+	MatchRx M_Name {Olthoi Larvae Steak}
+~~ }
+ON: {(Quest) Bandit Hilt Quest} {Keep 1} ~~ {
+	MatchRx M_Name {Bandit Chest Key|Finely Cured Leather Strip|Finely Cured Leather Strap}
+~~ }
+NO: {(Quest) Tunnel of Love Quest} {Keep} ~~ {
+	MatchRx M_Name {Butterscotch Suckling}
+~~ }
+ON: {(Quest) Halaetan} {Keep} ~~ {
+	MatchRx M_Name {Halaetan Magic Page}
+~~ }
+ON: {(QB) Tessera} {Keep} ~~ {
+	MatchRx M_Name {Tessera}
+~~ }
+ON: {(Quest) Harbinger} {Keep} ~~ {
+	MatchRx M_Name {Peerless Drudge Charm|Banderling Antagonist Scalp|Banderling Predator Scalp|Banderling Bone Ring|Banderling Slayer Scalp}
+~~ }
+ON: {(QB) Large Aetherium Power Core} {Keep} ~~ {
+	MatchRx M_Name {Large Aetherium Power Core}
+~~ }
+SALVAGE: {} ~~ {
+	V_Agate {1-10}
+	V_Azurite {1-10}
+	V_BlackOpal {1-10}
+	V_Bloodstone {1-10}
+	V_Carnelian {1-10}
+	V_Citrine {1-10}
+	V_FireOpal {1-10}
+	V_Hematite {1-10}
+	V_LavenderJade {1-10}
+	V_Malachite {1-10}
+	V_RedJade {1-10}
+	V_RoseQuartz {1-10}
+	V_Sunstone {1-10}
+	V_WhiteSapphire {1-10}
+	V_RedGarnet {1-10}
+	V_Jet {1-10}
+	V_ImperialTopaz {1-10}
+	V_Emerald {1-10}
+	V_BlackGarnet {1-10}
+	V_Aquamarine {1-10}
+	V_Zircon {1-10}
+	V_YellowTopaz {1-10}
+	V_Peridot {1-10}
+	V_Leather {1-10}
+	V_Ivory {1-10}
+	V_Gold {1-10}
+	V_Steel {1-6, 7-8, 9, 10}
+	V_Pyreal {1-10}
+	V_Diamond {1-10}
+	V_Sandstone {1-10}
+	V_Brass {1-10}
+	V_GreenGarnet {1-8, 9, 10}
+	V_Iron {1-7,8,9,10}
+	V_Granite {1-7,8,9,10}
+	V_GromnieHide {1-10}
+	V_ReedSharkHide {1-10}
+	V_ArmoredilloHide {1-10}
+	V_Linen {1-10}
+	V_Marble {1-10}
+	V_Bronze {1-10}
+	V_Mahogany {1-7,8,9,10}
+	V_Pine {1-10}
+	V_Alabaster {1-10}
+	V_Amber {1-10}
+	V_Ceramic {1-10}
+	V_Wool {1-10}
+	V_Ruby {1-10}
+	V_Copper {1-10}
+	V_Moonstone {1-10}
+	V_Silver {1-10}
+	V_Opal {1-10}
+	V_Velvet {1-10}
+	V_Amethyst {1-10}
+	V_Ebony {1-10}
+	V_Silk {1-10}
+	V_GreenJade {1-10}
+	V_LapisLazuli {1-10}
+	V_Oak {1-10}
+	V_Obsidian {1-10}
+	V_Onyx {1-10}
+	V_Porcelain {1-10}
+	V_Sapphire {1-10}
+	V_Satin {1-10}
+	V_Serpentine {1-10}
+	V_SmokeyQuartz {1-10}
+	V_Teak {1-10}
+	V_TigerEye {1-10}
+	V_Tourmaline {1-10}
+	V_Turquoise {1-10}
+	V_WhiteJade {1-10}
+	V_WhiteQuartz {1-10}
+	V_YellowGarnet {1-10}
+~~ }
